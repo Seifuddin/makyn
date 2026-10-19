@@ -20,11 +20,11 @@ export default function Home() {
       <IntroSection />
       <StatsCounter />
       <ServicesSection />
+      <CommitmentSection />
       <WhyChooseUs />
       <CTASection />
       <ProjectsSection />
       <TestimonialsSection />
-      <CommitmentSection />
       <FAQSection />
       <ContactSection />
       <SiteFooter />
