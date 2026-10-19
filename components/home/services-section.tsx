@@ -44,7 +44,7 @@ export default function ServicesSection() {
               className="service-item group overflow-hidden"
               key={service.number}
             >
-              <div className="relative mb-5 aspect-[16/10] overflow-hidden rounded-sm bg-[#172b3a]/10">
+              <div className="relative aspect-[16/10] overflow-hidden rounded -sm bg-[#172b3a]/10">
                 {image ? (
                   <Image
                     src={image}
@@ -75,9 +75,9 @@ export default function ServicesSection() {
                 </span>
               </div>
 
-              <div className="service-top">
-                <span className="service-number">{service.number}</span>
-                <span className="service-arrow">
+              <div className="hidden service-top">
+                <span className="hidden service-number">{service.number}</span>
+                <span className="hidden servicearrow">
                   <ArrowIcon />
                 </span>
               </div>
