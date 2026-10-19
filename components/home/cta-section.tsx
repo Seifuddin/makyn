@@ -13,7 +13,7 @@ export default function CTASection() {
         className="absolute left-0 top-0 h-full w-1 bg-[#bd9143]"
       />
 
-      <div className="relative mx-auto flex max-w-6xl flex-col gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
+      <div className="relative mx-auto flex max-w-6xl py-10 flex-col gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
         {/* CTA message */}
         <div className="max-w-xl">
           <p className="mb-2 text-[10px] font-bold tracking-[0.2em] text-[#d5b16b]">

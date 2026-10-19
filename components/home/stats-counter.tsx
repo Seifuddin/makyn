@@ -33,7 +33,7 @@ export default function StatsCounter() {
         className="absolute left-0 top-0 h-0.5 w-16 bg-[#bd9143]"
       />
 
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-6xl py-10">
         <div className="mb-3 flex items-center gap-2">
           <span className="h-px w-5 bg-[#d5b16b]" />
           <p className="text-[9px] font-semibold tracking-[0.18em] text-white/60">

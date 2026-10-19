@@ -5,11 +5,11 @@ import { services } from "@/components/data/home-data";
 
 const serviceImages: Record<string, string> = {
   "Building Construction": "/images/services/networkings.jpg",
-  "Renovations and Remodelling": "/images/services/IT-Technician.jpg",
-  "Masonry and Carpentry Works": "/images/services/computing-uws-5.jpg",
-  "Roofing and Ceiling Installation": "/images/services/networkings.jpg",
-  "Painting and Finishing": "/images/services/IT-Technician.jpg",
-  "Plumbing and Electrical Works": "/images/services/computing-uws-5.jpg",
+  "Renovations & Remodelling": "/images/IT-Technician.jpg",
+  "Masonry & Carpentry": "/images/services/computing-uws-5.jpg",
+  "Roofing & Ceilings": "/images/services/networkings.jpg",
+  "Painting & Finishing": "/images/IT-Technician.jpg",
+  "Construction Solutions": "/images/services/computing-uws-5.jpg",
 };
 
 export default function ServicesSection() {
