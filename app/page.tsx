@@ -6,6 +6,11 @@ import ServicesSection from "@/components/home/services-section";
 import ProjectsSection from "@/components/home/projects-section";
 import CommitmentSection from "@/components/home/commitment-section";
 import ContactSection from "@/components/home/contact-section";
+import TestimonialsSection from "@/components/home/testimonials-section";
+import WhyChooseUs from "@/components/home/why-choose-us";
+import FAQSection from "@/components/home/faq-section";
+import StatsCounter from "@/components/home/stats-counter";
+import CTASection from "@/components/home/cta-section";
 
 export default function Home() {
   return (
@@ -13,9 +18,14 @@ export default function Home() {
       <SiteHeader />
       <HeroSection />
       <IntroSection />
+      <StatsCounter />
       <ServicesSection />
+      <WhyChooseUs />
+      <CTASection />
       <ProjectsSection />
+      <FAQSection />
       <CommitmentSection />
+      <TestimonialsSection />
       <ContactSection />
       <SiteFooter />
     </main>
