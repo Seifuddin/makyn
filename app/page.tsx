@@ -1,5 +1,3 @@
-import SiteHeader from "@/components/layout/site-header";
-import SiteFooter from "@/components/layout/site-footer";
 import HeroSection from "@/components/home/hero-section";
 import IntroSection from "@/components/home/intro-section";
 import ServicesSection from "@/components/home/services-section";
@@ -15,19 +13,15 @@ import CTASection from "@/components/home/cta-section";
 export default function Home() {
   return (
     <main>
-      <SiteHeader />
       <HeroSection />
       <IntroSection />
       <StatsCounter />
       <ServicesSection />
       <CommitmentSection />
+      <ProjectsSection />
       <WhyChooseUs />
       <CTASection />
-      <ProjectsSection />
-      <TestimonialsSection />
       <FAQSection />
-      <ContactSection />
-      <SiteFooter />
     </main>
   );
 }
