@@ -44,7 +44,7 @@ export default function FAQSection() {
     <section
       id="faq"
       aria-labelledby="faq-heading"
-      className="bg-[#f7f5f0] px-5 py-10 text-[#172b3a] sm:px-8 sm:py-12 lg:px-12 lg:py-14"
+      className="bg-[#f7f5f0] px-5 py-24 text-[#172b3a] sm:px-8 sm:py-24 lg:px-12 lg:py-24"
     >
       <div className="mx-auto max-w-6xl">
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-14">

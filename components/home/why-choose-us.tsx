@@ -125,7 +125,7 @@ export default function WhyChooseUs() {
     <section
       id="why-choose-us"
       aria-labelledby="why-choose-us-heading"
-      className="overflow-hidden bg-[#f7f3ec] text-[#172b3a]"
+      className="overflow-hidden pb-20 bg-[#f7f3ec] text-[#172b3a]"
     >
       {/* Compact main section */}
       <div className="mx-auto grid max-w-[1600px] grid-cols-1 lg:grid-cols-[1.04fr_0.96fr]">
@@ -142,8 +142,8 @@ export default function WhyChooseUs() {
               className="object-cover object-center"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-r from-[#f7f3ec] via-[#f7f3ec]/95 to-[#f7f3ec]/55" />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#f7f3ec]/5 via-transparent to-[#f7f3ec]/20" />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#f7f3ec] via-[#f7f3ec]/75 to-[#f7f3ec]/35" />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#f7f3ec]/5 via-transparent to-[#f7f3ec]/10" />
           </div>
 
           {/* Decorative gold architectural line */}
@@ -152,7 +152,7 @@ export default function WhyChooseUs() {
             className="absolute -right-8 top-0 hidden h-[290px] w-16 -skew-x-[28deg] bg-[#c99a4c]/90 lg:block"
           />
 
-          <div className="relative z-10 max-w-[430px]">
+          <div className="pt-20 relative z-10 max-w-[430px]">
             <div className="mb-5 flex items-center gap-3">
               <span className="h-[2px] w-8 bg-[#bd9143]" />
 

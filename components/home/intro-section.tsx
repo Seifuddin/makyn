@@ -25,12 +25,12 @@ export default function IntroSection() {
     <section
       id="about"
       aria-labelledby="intro-heading"
-      className="relative overflow-hidden bg-[#f7f5f0] px-5 py-16 text-[#172b3a] sm:px-8 sm:py-20 lg:px-12 lg:py-24"
+      className="relative overflow-hidden bg-[#f7f5f0] px-5 py-20 text-[#172b3a] sm:px-8 sm:py-20 lg:px-12 lg:py-24"
     >
       <div className="mx-auto max-w-7xl">
         {/* Section introduction */}
         <div className="mb-10 flex items-center gap-4 sm:mb-14">
-          <span className="font-serif text-3xl leading-none text-[#bd9143] sm:text-4xl">
+          <span className="hidden font-serif text-3xl leading-none text-[#bd9143] sm:text-4xl">
             01
           </span>
 
@@ -81,7 +81,7 @@ export default function IntroSection() {
 
             <h2
               id="intro-heading"
-              className="max-w-xl font-serif text-[2.6rem] leading-[1.08] font-medium tracking-tight sm:text-5xl lg:text-[3.65rem]"
+              className="max-w-xl font-serif text-[2rem] leading-[1.08] font-bold tracking-tight sm:text-4xl lg:text-[3rem]"
             >
               We build more
               <br className="hidden sm:block" /> than structures.
@@ -92,7 +92,7 @@ export default function IntroSection() {
 
             <div className="my-6 h-px w-16 bg-[#bd9143]" />
 
-            <div className="max-w-lg space-y-4 text-sm leading-7 text-[#172b3a]/70 sm:text-[15px]">
+            <div className="max-w-lg space-y-3 text-sm leading-7 text-[#172b3a]/70 sm:text-[15px]">
               <p>
                 At Makyn Construction Company Limited, every project begins
                 with understanding your vision and earning your trust.
@@ -107,7 +107,7 @@ export default function IntroSection() {
 
             <a
               href="#services"
-              className="group mt-7 inline-flex items-center gap-4 border-b border-[#bd9143] pb-2 text-xs font-bold uppercase tracking-[0.12em] text-[#172b3a] transition-colors hover:text-[#a47d37]"
+              className="group mt-7 inline-flex items-center gap-4 border-b border-[#bd9143] pb-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#172b3a] transition-colors hover:text-[#a47d37]"
             >
               Explore our expertise
               <span className="transition-transform duration-300 group-hover:translate-x-1">

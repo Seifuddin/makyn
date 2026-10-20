@@ -19,7 +19,7 @@ export default function ServicesSection() {
         <div>
           <div className="eyebrow">
             <span className="eyebrow-line" />
-            02 / OUR EXPERTISE
+             OUR EXPERTISE
           </div>
 
           <h2>

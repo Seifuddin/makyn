@@ -7,7 +7,7 @@ export default function CommitmentSection() {
       <div className="commitment-content">
         <div className="eyebrow">
           <span className="eyebrow-line" />
-          04 / THE MAKYN STANDARD
+           THE MAKYN STANDARD
         </div>
         <h2>
           More than

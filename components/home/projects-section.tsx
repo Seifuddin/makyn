@@ -8,7 +8,7 @@ export default function ProjectsSection() {
         <div>
           <div className="eyebrow">
             <span className="eyebrow-line" />
-            03 / OUR WORK
+             OUR WORK
           </div>
           <h2>
             The vision.
