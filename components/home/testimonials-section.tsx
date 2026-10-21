@@ -97,7 +97,7 @@ export default function TestimonialsSection() {
         {/* Testimonials */}
         <div className="grid gap-4 lg:grid-cols-[1.08fr_0.92fr]">
           {/* Featured testimonial */}
-          <article className="relative flex min-h-[300px] flex-col justify-between overflow-hidden bg-[#172b3a] p-6 text-white sm:min-h-[320px] sm:p-8 lg:p-9">
+          <article className="relative flex min-h-[300px] rounded flex-col justify-between overflow-hidden bg-[#172b3a] p-6 text-white sm:min-h-[320px] sm:p-8 lg:p-9">
             {/* Decorative architectural rings */}
             <div
               aria-hidden="true"
@@ -118,7 +118,7 @@ export default function TestimonialsSection() {
                 <QuoteMark className="h-9 w-9 text-[#d5b16b]/80" />
               </div>
 
-              <blockquote className="mt-7 max-w-lg font-serif text-xl leading-relaxed tracking-[-0.02em] text-white sm:mt-8 sm:text-2xl lg:text-[1.8rem]">
+              <blockquote className="mt-7 max-w-lg font-serif text-lg leading-relaxed tracking-[-0.02em] text-white sm:mt-8 sm:text-xl lg:text-[1.2rem]">
                 “{testimonials[0].quote}”
               </blockquote>
             </div>
