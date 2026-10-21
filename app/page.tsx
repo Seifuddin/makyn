@@ -22,6 +22,7 @@ export default function Home() {
       <WhyChooseUs />
       <CTASection />
       <FAQSection />
+      <TestimonialsSection />
     </main>
   );
 }
