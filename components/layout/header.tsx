@@ -4,8 +4,8 @@
 import { useState } from "react";
 
 const navigation = [
-  { label: "Home", href: "#home" },
-  { label: "About Us", href: "#about" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about-lab" },
   { label: "Our Services", href: "#services" },
   { label: "Projects", href: "#projects" },
   { label: "Contact", href: "#contact" },
@@ -19,7 +19,7 @@ export default function Header() {
       <div className="mx-auto flex h-[76px] max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:h-[84px] lg:px-12 xl:px-16">
         {/* Company identity */}
         <a
-          href="#home"
+          href="/"
           aria-label="Makyn Construction Company Limited - Home"
           className="group flex min-w-0 shrink-0 items-center gap-3"
           onClick={() => setMenuOpen(false)}
