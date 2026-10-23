@@ -6,9 +6,9 @@ import { useState } from "react";
 const navigation = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-lab" },
-  { label: "Our Services", href: "#services" },
-  { label: "Projects", href: "#projects" },
-  { label: "Contact", href: "#contact" },
+  { label: "Our Services", href: "/services" },
+  { label: "Projects", href: "/projects" },
+  { label: "Contact", href: "/contact" },
 ];
 
 export default function Header() {
@@ -76,7 +76,7 @@ export default function Header() {
         {/* Desktop call to action */}
         <div className="hidden items-center xl:flex">
           <a
-            href="#contact"
+            href="/contact"
             className="group inline-flex h-11 items-center gap-3 rounded-sm bg-[#bd9143] px-5 text-[11px] font-bold uppercase tracking-[0.09em] text-[#122432] transition-all duration-300 hover:bg-[#d5b16b] hover:shadow-lg hover:shadow-black/10 2xl:px-6"
           >
             <span>Request a Quote</span>
@@ -168,7 +168,7 @@ export default function Header() {
           ))}
 
           <a
-            href="#contact"
+            href="/contact"
             tabIndex={menuOpen ? 0 : -1}
             onClick={() => setMenuOpen(false)}
             className="mt-4 flex min-h-12 items-center justify-between rounded-sm bg-[#bd9143] px-5 text-xs font-bold uppercase tracking-wider text-[#122432] transition-colors hover:bg-[#d5b16b]"

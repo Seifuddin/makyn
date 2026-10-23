@@ -1,10 +1,10 @@
 
 const quickLinks = [
-  { label: "Home", href: "#home" },
-  { label: "About Us", href: "#about" },
-  { label: "Our Services", href: "#services" },
-  { label: "Our Projects", href: "#projects" },
-  { label: "Contact Us", href: "#contact" },
+  { label: "Home", href: "/" },
+  { label: "About Us", href: "/about-lab" },
+  { label: "Our Services", href: "/services" },
+  { label: "Our Projects", href: "/projects" },
+  { label: "Contact Us", href: "/contact" },
 ];
 
 const services = [
@@ -139,7 +139,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-12 lg:gap-10 lg:py-16">
           {/* Brand */}
           <div className="lg:col-span-4">
-            <a href="#home" className="inline-flex items-center gap-3">
+            <a href="/" className="inline-flex items-center gap-3">
               <BrandMark />
               <span>
                 <span className="block text-lg font-bold uppercase tracking-[0.13em]">
@@ -198,7 +198,7 @@ export default function Footer() {
               {services.map((service) => (
                 <li key={service}>
                   <a
-                    href="#services"
+                    href="/services"
                     className="group inline-flex items-center gap-2 text-sm text-white/60 transition-colors hover:text-[#d5b16b]"
                   >
                     <span className="text-[10px] text-[#bd9143]">/</span>
@@ -249,7 +249,7 @@ export default function Footer() {
             </p>
 
             <a
-              href="#contact"
+              href="/contact"
               className="group mt-6 inline-flex min-h-12 w-full max-w-[260px] items-center justify-between gap-4 bg-[#bd9143] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#122432] transition-colors hover:bg-[#d5b16b]"
             >
               Request a Quote
@@ -267,7 +267,7 @@ export default function Footer() {
           </p>
 
           <a
-            href="#home"
+            href="/"
             className="group inline-flex w-fit items-center gap-2 text-xs text-white/60 transition-colors hover:text-[#d5b16b]"
           >
             Back to top
