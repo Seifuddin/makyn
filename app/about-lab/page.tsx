@@ -13,6 +13,8 @@ import ValuesThatBuildUs from "@/components/about/ValuesThatBuildUs";
 import ProjectDecisionRoom from "@/components/about/ProjectDecisionRoom";
 import TimelineWithoutDates from "@/components/about/TimelineWithoutDates";
 import LivingArchitectureFinale from "@/components/about/LivingArchitectureFinale";
+import IntroSection from "@/components/home/intro-section";
+import AboutHero from "@/components/about/AboutHero";
 
 const entries = [
   { n: "01", name: "LivingBlueprint", id: "living-blueprint" },
@@ -52,18 +54,12 @@ export default function AboutLabPage() {
           {showIndex && <div className="mt-6 grid gap-x-8 sm:grid-cols-2 lg:grid-cols-3">{entries.map(entry => <a key={entry.n} href={`#${entry.id}`} className="border-t border-[#172b3a]/15 py-4 text-sm hover:text-[#a7792e]"><span className="mr-3 text-[#bd9143]">{entry.n}</span>{entry.name}</a>)}</div>}
         </div>
       </section>
-      <LivingBlueprint />
-      <ConstructionDNA />
+      <AboutHero />
+      <ValuesThatBuildUs />
+      <TimelineWithoutDates />
       <ScrollThroughBuilding />
       <MaterialUniverse />
-      <PrecisionEngine />
       <ArchitecturalXRay />
-      <GoldenThread />
-      <BlueprintExplorer />
-      <ValuesThatBuildUs />
-      <ProjectDecisionRoom />
-      <TimelineWithoutDates />
-      <LivingArchitectureFinale />
       <footer className="bg-[#101f2a] py-6 text-center text-[9px] tracking-[.16em] text-white/50">MAKYN / CONSTRUCTION COMPANY LIMITED · COMPONENT LAB</footer>
     </main>
   );

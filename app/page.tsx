@@ -9,6 +9,7 @@ import WhyChooseUs from "@/components/home/why-choose-us";
 import FAQSection from "@/components/home/faq-section";
 import StatsCounter from "@/components/home/stats-counter";
 import CTASection from "@/components/home/cta-section";
+import MaterialUniverse from "@/components/about/MaterialUniverse";
 
 export default function Home() {
   return (
@@ -20,8 +21,9 @@ export default function Home() {
       <CommitmentSection />
       <ProjectsSection />
       <WhyChooseUs />
-      <CTASection />
+      <MaterialUniverse />
       <FAQSection />
+      <CTASection />
       <TestimonialsSection />
     </main>
   );
