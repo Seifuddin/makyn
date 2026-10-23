@@ -9,7 +9,6 @@ export default function About() {
       <AboutHero />
       <OurStory />
       <OurStandards />
-      <ScrollThroughBuilding />
       <AboutCTA />
     </main>
   );
