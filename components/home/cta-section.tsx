@@ -5,7 +5,7 @@ export default function CTASection() {
   return (
     <section
       aria-labelledby="cta-heading"
-      className="relative overflow-hidden bg-[#172b3a] px-5 py-7 text-white sm:px-8 sm:py-8 lg:px-12"
+      className="relative overflow-hidden bg-[#172b3a] px-7 py-7 text-white sm:px-8 sm:py-8 lg:px-12"
     >
       {/* Subtle gold accent */}
       <div

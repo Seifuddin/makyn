@@ -30,7 +30,7 @@ const reasons = [
 
 export default function WhyMakyn() {
   return (
-    <section className="relative overflow-hidden bg-[#172b3a] px-5 py-12 text-[#f7f5f0] sm:px-8 sm:py-14 lg:px-12 lg:py-16">
+    <section className="relative overflow-hidden bg-[#172b3a] px-5 py-20 text-[#f7f5f0] sm:px-8 sm:py-14 lg:px-12 lg:py-16">
       {/* Restrained architectural background detail */}
       <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full border border-[#d5b16b]/10" />
       <div className="pointer-events-none absolute -right-10 -top-10 h-52 w-52 rounded-full border border-[#d5b16b]/10" />

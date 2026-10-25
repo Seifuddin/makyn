@@ -13,7 +13,7 @@ export default function AboutCTA() {
       />
 
       {/* Content remains centered */}
-      <div className="relative mx-auto w-full max-w-7xl px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
+      <div className="relative mx-auto w-full max-w-7xl px-5 py-20 sm:px-8 smpy-12 lg:px-12 lg:py-14">
         <div className="max-w-3xl">
           <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-[#d5b16b]">
             Your trusted construction partner

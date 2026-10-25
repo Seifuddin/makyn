@@ -10,7 +10,7 @@ const photos = {
 };
 
 const wrap = "mx-auto w-full max-w-7xl px-5";
-const eyebrow = "hiddenmb-5 flex items-center gap-3 text-[10px] font-bold uppercase tracking-[.24em] text-[#bd9143]";
+const eyebrow = "hidden mb-5 flex items-center gap-3 text-[10px] font-bold uppercase tracking-[.24em] text-[#bd9143]";
 const buttonGold = "inline-flex items-center gap-4 bg-[#bd9143] px-5 py-3 text-xs font-bold uppercase tracking-[.12em] text-[#172b3a] transition hover:bg-[#d5b16b] focus:outline-none focus:ring-2 focus:ring-[#bd9143] focus:ring-offset-2";
 
 function Eyebrow({ children, light = false }: { children: ReactNode; light?: boolean }) {

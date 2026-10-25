@@ -51,7 +51,7 @@ const socialLinks = [
 
 export default function TeamSection() {
   return (
-    <section className="bg-[#f7f5f0] px-5 py-10 text-[#172b3a] sm:px-8 sm:py-12 lg:px-12 lg:py-14">
+    <section className="bg-[#f7f5f0] px-5 py-24 text-[#172b3a]">
       <div className="mx-auto max-w-6xl">
         <div className="grid items-center gap-7 md:grid-cols-[0.8fr_1.2fr] md:gap-10 lg:gap-14">
           {/* CEO portrait */}

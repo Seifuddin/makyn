@@ -28,7 +28,7 @@ const steps = [
 
 export default function WorkProcess() {
   return (
-    <section className="relative w-full overflow-hidden bg-[#172b3a] text-[#f7f5f0]">
+    <section className="relative py-20 px-5 w-full overflow-hidden bg-[#172b3a] text-[#f7f5f0]">
       {/* Full-width blueprint background */}
       <div
         aria-hidden="true"

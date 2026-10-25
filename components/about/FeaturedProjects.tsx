@@ -36,7 +36,7 @@ export default function FeaturedProjects() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <div>
             <p className="mb-4 text-xs font-semibold uppercase tracking-[0.22em] text-[#bd9143]">
-              Our Featured pProjects
+              Our Featured Projects
             </p>
             <h2 className="text-4xl font-medium tracking-tight sm:text-5xl">
               Spaces. Structures.

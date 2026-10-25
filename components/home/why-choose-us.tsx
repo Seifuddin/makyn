@@ -125,7 +125,7 @@ export default function WhyChooseUs() {
     <section
       id="why-choose-us"
       aria-labelledby="why-choose-us-heading"
-      className="overflow-hidden pb-20 bg-[#f7f3ec] text-[#172b3a]"
+      className="overflow-hidden pb-20 max-w-7xl mx-auto p-5 bg-[#f7f3ec] text-[#172b3a]"
     >
       {/* Compact main section */}
       <div className="mx-auto grid max-w-[1600px] grid-cols-1 lg:grid-cols-[1.04fr_0.96fr]">
