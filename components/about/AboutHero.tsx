@@ -4,11 +4,11 @@ import Link from "next/link";
 
 export default function AboutHero() {
   return (
-    <section className="relative isolate min-h-[680px] overflow-hidden bg-[#172B3A] text-white lg:min-h-[760px]">
-      {/* Background photography */}
+    <section className="relative isolate w-full overflow-hidden bg-[#172b3a] text-[#f7f5f0]">
+      {/* Background image */}
       <Image
         src="/images/services/buildingconstruction.webp"
-        alt="Building construction project"
+        alt="Contemporary construction and architectural design"
         fill
         priority
         sizes="100vw"
@@ -16,67 +16,62 @@ export default function AboutHero() {
       />
 
       {/* Image overlays */}
-      <div className="absolute inset-0 bg-[#101D28]/65" />
-      <div className="absolute inset-0 bg-gradient-to-r from-[#101D28]/95 via-[#101D28]/65 to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#172B3A] to-transparent" />
+      <div className="absolute inset-0 -z-0 bg-gradient-to-r from-[#101f2b]/95 via-[#172b3a]/80 to-[#172b3a]/35" />
 
-      {/* Decorative vertical line */}
-      <div className="absolute bottom-24 right-[12%] top-24 hidden w-px bg-white/20 lg:block" />
+      <div className="absolute inset-0 -z-0 bg-gradient-to-t from-[#101f2b]/75 via-transparent to-[#101f2b]/25" />
 
-      <div className="relative mx-auto flex min-h-[680px] max-w-7xl items-center px-6 py-28 sm:px-10 lg:min-h-[760px] lg:px-16">
-        <div className="max-w-4xl">
-          <div className="mb-8 flex items-center gap-4">
-            <span className="h-px w-12 bg-[#BD9143]" />
-            <span className="text-xs font-semibold uppercase tracking-[0.3em] text-[#D5B16B] sm:text-sm">
-              About Makyn Construction
-            </span>
-          </div>
+      {/* Main content */}
+      <div className="relative mx-auto flex min-h-[440px] w-full max-w-7xl flex-col justify-between px-5 pb-5 pt-20 sm:min-h-[470px] sm:px-8 sm:pb-7 sm:pt-24 lg:min-h-[490px] lg:px-12">
+        {/* Breadcrumb */}
+        <div className="flex items-center gap-2.5 text-[9px] font-semibold uppercase tracking-[0.2em] sm:text-[10px]">
+          <span className="h-px w-6 bg-[#d5b16b]" />
+          <span className="text-[#d5b16b]">About Makyn</span>
+          <span className="text-white/40">/</span>
+          <span className="text-white/65">Our Story</span>
+        </div>
 
-          <h1 className="max-w-4xl text-5xl font-semibold leading-[1.04] tracking-tight sm:text-6xl md:text-7xl lg:text-8xl">
-            Built Through
-            <span className="mt-2 block text-[#D5B16B]">
-              Vision.
-            </span>
-            Built to Last.
-          </h1>
-
-          <p className="mt-8 max-w-2xl text-base leading-8 text-white/75 sm:text-lg">
-            We bring ideas to life through thoughtful planning,
-            skilled workmanship, and a commitment to building
-            spaces that serve people for years to come.
+        {/* Hero text */}
+        <div className="max-w-4xl py-10 sm:py-12">
+          <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.22em] text-[#d5b16b] sm:text-xs">
+            Your trusted construction partner
           </p>
 
-          <div className="mt-10 flex flex-col gap-4 sm:flex-row">
-            <Link
-              href="/contact"
-              className="inline-flex min-h-14 items-center justify-center gap-4 bg-[#BD9143] px-7 py-4 text-sm font-semibold text-[#172B3A] transition hover:bg-[#D5B16B]"
-            >
-              Discuss Your Project
-              <span aria-hidden="true">↗</span>
-            </Link>
+          <h1 className="max-w-4xl text-4xl font-medium leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+            Built on vision.
+            <span className="mt-1 block font-light italic text-[#d5b16b]">
+              Defined by integrity.
+            </span>
+          </h1>
+
+          <div className="mt-5 flex flex-col gap-5 sm:mt-6 sm:flex-row sm:items-end sm:justify-between">
+            <p className="max-w-lg text-sm leading-6 text-white/75 sm:text-base sm:leading-7">
+              We turn ideas into lasting spaces through thoughtful planning,
+              quality workmanship, and dependable construction solutions.
+            </p>
 
             <Link
               href="#our-story"
-              className="inline-flex min-h-14 items-center justify-center border border-white/40 px-7 py-4 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
+              className="group inline-flex w-fit shrink-0 items-center gap-3 border-b border-[#d5b16b]/60 pb-2 text-xs font-semibold text-white transition-colors hover:border-[#d5b16b] hover:text-[#d5b16b] sm:text-sm"
             >
-              Discover Our Story
-              <span aria-hidden="true" className="ml-3">
+              Discover our story
+              <span className="text-base text-[#d5b16b] transition-transform duration-300 group-hover:translate-y-1">
                 ↓
               </span>
             </Link>
           </div>
         </div>
-      </div>
 
-      {/* Bottom caption */}
-      <div className="absolute bottom-0 left-0 right-0 hidden border-t border-white/15 sm:block">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-10 py-5 lg:px-16">
-          <p className="text-xs uppercase tracking-[0.2em] text-white/60">
-            Your Trusted Construction Partner
-          </p>
-          <p className="text-xs uppercase tracking-[0.2em] text-white/60">
-            Quality · Integrity · Craftsmanship
-          </p>
+        {/* Bottom information strip */}
+        <div className="flex items-center justify-between gap-4 border-t border-white/20 pt-4">
+          <span className="text-[8px] font-medium uppercase tracking-[0.16em] text-white/65 sm:text-[10px] sm:tracking-[0.2em]">
+            Planning <span className="px-1 text-[#d5b16b]">·</span>
+            Design <span className="px-1 text-[#d5b16b]">·</span>
+            Construction
+          </span>
+
+          <span className="shrink-0 text-[9px] font-medium uppercase tracking-[0.16em] text-[#d5b16b] sm:text-[10px]">
+            About us <span className="ml-2 text-white/60">01 / 04</span>
+          </span>
         </div>
       </div>
     </section>

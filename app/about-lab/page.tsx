@@ -15,6 +15,16 @@ import TimelineWithoutDates from "@/components/about/TimelineWithoutDates";
 import LivingArchitectureFinale from "@/components/about/LivingArchitectureFinale";
 import IntroSection from "@/components/home/intro-section";
 import AboutHero from "@/components/about/AboutHero";
+import CompanyStory from "@/components/about/CompanyStory";
+import MissionVisionValues from "@/components/about/MissionVisionValues";
+import WhyMakyn from "@/components/about/WhyMakyn";
+import CompanyHighlights from "@/components/about/CompanyHighlights";
+import WorkProcess from "@/components/about/WorkProcess";
+import FeaturedProjects from "@/components/about/FeaturedProjects";
+import TeamSection from "@/components/about/TeamSection";
+import AboutCTA from "@/components/about/AboutCTA";
+import StatsCounter from "@/components/home/stats-counter";
+import CTASection from "@/components/home/cta-section";
 
 const entries = [
   { n: "01", name: "LivingBlueprint", id: "living-blueprint" },
@@ -55,12 +65,17 @@ export default function AboutLabPage() {
         </div>
       </section>
       <AboutHero />
+      <CompanyStory />
+      <WorkProcess />
       <ValuesThatBuildUs />
-      <TimelineWithoutDates />
-      <ScrollThroughBuilding />
-      <MaterialUniverse />
+      <MissionVisionValues />
+      <WhyMakyn />
       <ArchitecturalXRay />
-      <footer className="bg-[#101f2a] py-6 text-center text-[9px] tracking-[.16em] text-white/50">MAKYN / CONSTRUCTION COMPANY LIMITED · COMPONENT LAB</footer>
+      <FeaturedProjects />
+      <AboutCTA />
+      <TeamSection />
+      <ScrollThroughBuilding />
+      <footer className="hidden bg-[#101f2a] py-6 text-center text-[9px] tracking-[.16em] text-white/50">MAKYN / CONSTRUCTION COMPANY LIMITED · COMPONENT LAB</footer>
     </main>
   );
 }

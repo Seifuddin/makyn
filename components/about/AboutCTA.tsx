@@ -1,76 +1,56 @@
-
-import Image from "next/image";
-import Link from "next/link";
-
 export default function AboutCTA() {
   return (
-    <section className="bg-[#F7F5F0] px-4 py-16 sm:px-8 sm:py-24 lg:px-12 lg:py-28">
-      <div className="relative isolate mx-auto max-w-7xl overflow-hidden bg-[#172B3A]">
-        {/* Background image */}
-        <Image
-          src="/images/services/buildingconstruction.webp"
-          alt="Building project representing the potential of a new construction vision"
-          fill
-          sizes="(max-width: 1280px) 100vw, 1280px"
-          className="object-cover object-center"
-        />
+    <section className="relative w-full overflow-hidden bg-[#172b3a]">
+      {/* Decorative blueprint grid */}
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 opacity-[0.07]"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)",
+          backgroundSize: "40px 40px",
+        }}
+      />
 
-        {/* Overlays */}
-        <div className="absolute inset-0 bg-[#172B3A]/85" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[#172B3A] via-[#172B3A]/90 to-[#172B3A]/35" />
+      {/* Content remains centered */}
+      <div className="relative mx-auto w-full max-w-7xl px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
+        <div className="max-w-3xl">
+          <p className="mb-3 text-xs font-semibold uppercase tracking-[0.25em] text-[#d5b16b]">
+            Your trusted construction partner
+          </p>
 
-        {/* Gold accent */}
-        <div className="absolute bottom-0 right-0 top-0 hidden w-2 bg-[#BD9143] sm:block" />
+          <h2 className="max-w-2xl text-3xl font-semibold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
+            Let&apos;s build something worth building.
+          </h2>
 
-        <div className="relative grid gap-12 px-7 py-16 sm:px-12 sm:py-20 lg:grid-cols-[1fr_auto] lg:items-end lg:px-16 lg:py-24">
-          <div className="max-w-3xl">
-            <div className="mb-7 flex items-center gap-4">
-              <span className="h-px w-10 bg-[#BD9143]" />
-              <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#D5B16B]">
-                Your Vision. Our Commitment.
-              </span>
-            </div>
+          <p className="mt-4 max-w-xl text-sm leading-7 text-white/70 sm:text-base">
+            Have a project in mind? Let&apos;s discuss your plans and turn your
+            vision into a lasting structure.
+          </p>
 
-            <h2 className="text-4xl font-semibold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
-              Have a Project
-              <span className="block font-light italic text-[#D5B16B]">
-                in Mind?
-              </span>
-              Let&apos;s Build It.
-            </h2>
-
-            <p className="mt-7 max-w-2xl text-base leading-8 text-white/70 sm:text-lg">
-              From new construction to renovations and finishing,
-              let&apos;s discuss your requirements and explore
-              the right solution for your project.
-            </p>
-          </div>
-
-          <div className="flex flex-col gap-4 sm:flex-row lg:min-w-[210px] lg:flex-col">
-            <Link
+          <div className="mt-7 flex flex-wrap items-center gap-3">
+            <a
               href="/contact"
-              className="inline-flex min-h-14 items-center justify-center gap-4 bg-[#BD9143] px-7 py-4 text-sm font-semibold text-[#172B3A] transition hover:bg-[#D5B16B]"
+              className="inline-flex items-center justify-center bg-[#bd9143] px-6 py-3 text-sm font-semibold text-[#172b3a] transition hover:bg-[#d5b16b]"
             >
-              Start a Conversation
-              <span aria-hidden="true">↗</span>
-            </Link>
+              Discuss Your Project
+              <span className="ml-3" aria-hidden="true">
+                →
+              </span>
+            </a>
 
-            <Link
+            <a
               href="/services"
-              className="inline-flex min-h-14 items-center justify-center border border-white/35 px-7 py-4 text-sm font-semibold text-white transition hover:border-white hover:bg-white/10"
+              className="inline-flex items-center justify-center border border-white/25 px-6 py-3 text-sm font-medium text-white transition hover:border-[#d5b16b] hover:text-[#d5b16b]"
             >
-              Explore Our Services
-            </Link>
+              Explore Services
+            </a>
           </div>
         </div>
 
-        {/* Footer strip */}
-        <div className="relative border-t border-white/15 px-7 py-5 sm:px-12 lg:px-16">
-          <p className="text-[10px] font-medium uppercase tracking-[0.2em] text-white/50 sm:text-xs">
-            Makyn Construction Company Limited
-            <span className="mx-3 text-[#BD9143]">/</span>
-            Your Trusted Construction Partner
-          </p>
+        <div className="mt-10 flex flex-col gap-2 border-t border-white/15 pt-4 text-xs text-white/50 sm:flex-row sm:items-center sm:justify-between">
+          <span>MAKYN CONSTRUCTION COMPANY LIMITED</span>
+          <span>Built on trust. Designed to last.</span>
         </div>
       </div>
     </section>
