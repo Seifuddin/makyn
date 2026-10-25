@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function WhatsAppButton() {
   // WhatsApp link (no prefilled message)
-  const whatsappNumber = "25490112697";
+  const whatsappNumber = "254790112697";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
