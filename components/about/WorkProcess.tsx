@@ -63,36 +63,26 @@ export default function WorkProcess() {
           </p>
         </div>
 
+        
+    
         {/* Process stages */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
             <article
               key={step.number}
-              className={`group relative py-5 sm:px-4 sm:py-6 lg:px-5 ${
-                index !== 0
-                  ? "border-t border-white/15 sm:border-t-0"
-                  : ""
-              } ${
-                index === 2
-                  ? "sm:border-t sm:border-white/15 lg:border-t-0"
-                  : ""
-              } ${
-                index % 2 === 1
-                  ? "sm:border-l sm:border-white/15 lg:border-l"
-                  : ""
-              } ${
-                index > 0
-                  ? "lg:border-l lg:border-white/15"
-                  : ""
-              }`}
+              className="group relative flex h-full flex-col overflow-hidden rounded-lg border border-white/15 bg-[#1c3445]/80 p-4 transition-all duration-300 hover:-translate-y-1 hover:border-[#d5b16b]/70 hover:bg-[#203b4e] hover:shadow-[0_10px_25px_rgba(0,0,0,0.15)]"
             >
+              {/* Gold top accent */}
+              <span className="absolute left-0 top-0 h-[2px] w-0 bg-[#d5b16b] transition-all duration-300 group-hover:w-full" />
+
+              {/* Step number */}
               <div className="mb-4 flex items-center gap-3">
-                <span className="text-[11px] font-semibold tabular-nums text-[#d5b16b]">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-md border border-[#d5b16b]/35 bg-[#d5b16b]/10 text-[11px] font-semibold tabular-nums text-[#d5b16b] transition-colors duration-300 group-hover:bg-[#d5b16b] group-hover:text-[#172b3a]">
                   {step.number}
                 </span>
 
                 <span className="h-px flex-1 bg-white/15">
-                  <span className="block h-px w-0 bg-[#d5b16b] transition-all duration-300 group-hover:w-full" />
+                  <span className="block h-px w-0 bg-[#d5b16b] transition-all duration-500 group-hover:w-full" />
                 </span>
 
                 <span className="text-[9px] tracking-widest text-white/40">
@@ -100,16 +90,20 @@ export default function WorkProcess() {
                 </span>
               </div>
 
-              <h3 className="text-lg font-medium tracking-tight text-white transition-colors group-hover:text-[#d5b16b] sm:text-xl">
+              {/* Step content */}
+              <h3 className="text-base font-medium tracking-tight text-white transition-colors duration-300 group-hover:text-[#d5b16b] sm:text-lg">
                 {step.title}
               </h3>
 
-              <p className="mt-2 max-w-sm text-xs leading-5 text-white/60 sm:text-sm sm:leading-6">
+              <p className="mt-2 text-xs leading-5 text-white/60 sm:text-[13px]">
                 {step.description}
               </p>
             </article>
           ))}
         </div>
+
+
+
 
         {/* Footer note */}
         <div className="flex flex-col gap-2 border-t border-white/15 pt-4 sm:flex-row sm:items-start sm:gap-3">
