@@ -201,7 +201,7 @@ export default function Footer() {
                     href="/services"
                     className="group inline-flex items-center gap-2 text-sm text-white/60 transition-colors hover:text-[#d5b16b]"
                   >
-                    <span className="text-[10px] text-[#bd9143]">/</span>
+                    <span className="text-[10px] text-[#bd9143]"></span>
                     {service}
                   </a>
                 </li>
