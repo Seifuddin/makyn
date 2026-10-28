@@ -41,7 +41,7 @@ export default function WorkProcess() {
       />
 
       {/* Centered content */}
-      <div className="relative mx-auto w-full max-w-7xl px-5 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-12">
+      <div className="relative mx-auto w-full max-w-7xl px5 py-8 smpx-8 sm:py-10 lg:px12 lg:py-12">
         {/* Header */}
         <div className="flex flex-col gap-3 border-b border-white/15 pb-5 sm:flex-row sm:items-end sm:justify-between">
           <div>

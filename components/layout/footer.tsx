@@ -260,32 +260,50 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="flex flex-col gap-3 border-t border-white/10 py-6 sm:flex-row sm:items-center sm:justify-between">
-          <p className="text-xs leading-6 text-white/45">
-            © 2026 Makyn Construction Company Limited. All rights reserved.
-          </p>
+       
+        {/* Copyright and designer credit */}
+        <div className="border-t border-white/10 py-5">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <p className="text-xs leading-6 text-white/45">
+              © 2026 Makyn Construction Company Limited. All rights reserved.
+            </p>
 
-          <a
-            href="/"
-            className="group inline-flex w-fit items-center gap-2 text-xs text-white/60 transition-colors hover:text-[#d5b16b]"
-          >
-            Back to top
-            <svg
-              viewBox="0 0 20 20"
-              fill="none"
-              className="h-4 w-4 transition-transform group-hover:-translate-y-1"
-              aria-hidden="true"
+            <a
+              href="/"
+              className="group inline-flex w-fit items-center gap-2 text-xs text-white/60 transition-colors hover:text-[#d5b16b]"
             >
-              <path
-                d="M10 16V4M4 10L10 4L16 10"
-                stroke="currentColor"
-                strokeWidth="1.6"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-          </a>
+              Back to top
+              <svg
+                viewBox="0 0 20 20"
+                fill="none"
+                className="h-4 w-4 transition-transform group-hover:-translate-y-1"
+                aria-hidden="true"
+              >
+                <path
+                  d="M10 16V4M4 10L10 4L16 10"
+                  stroke="currentColor"
+                  strokeWidth="1.6"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+
+          {/* Website designer credit */}
+          <div className="mt-4 border-t border-white/[0.06] pt-4 text-center">
+            <p className="text-[11px] tracking-wide text-white/45 sm:text-xs">
+              Built and designed by{" "}
+              <a
+                href="https://lapsa.vercel.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-[#d5b16b] transition-colors duration-200 hover:text-white"
+              >
+                Lapsa Web and Graphics
+              </a>
+            </p>
+          </div>
         </div>
       </div>
     </footer>
