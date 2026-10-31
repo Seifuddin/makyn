@@ -30,96 +30,91 @@ export default function StatsCounter() {
   return (
     <section
       aria-label="Makyn company statistics"
-      className="relative isolate overflow-hidden bg-[#172B3A] text-white"
+      className="relative isolate overflow-hidden bg-[#172b3a] px-5 py-10 text-white sm:px-8 sm:py-12 lg:px-12"
     >
-      {/* Subtle architectural grid */}
+      {/* Subtle architectural background */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 -z-10 opacity-[0.07]"
+        className="pointer-events-none absolute inset-0 -z-10 opacity-[0.045]"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(255,255,255,0.35) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.35) 1px, transparent 1px)",
-          backgroundSize: "48px 48px",
+            "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)",
+          backgroundSize: "42px 42px",
         }}
       />
 
-      {/* Decorative gold corner */}
-      <div
-        aria-hidden="true"
-        className="absolute right-0 top-0 h-24 w-24 border-r border-t border-[#BD9143]/40 sm:h-32 sm:w-32"
-      />
+      <div className="mx-auto max-w-7xl">
 
-      <div className="mx-auto max-w-7xl px-5 py-8 sm:px-8 sm:py-10 lg:px-12 lg:py-12">
-        {/* Compact section heading */}
-        <div className="mb-6 flex flex-col justify-between gap-3 border-b border-white/15 pb-5 sm:mb-7 sm:flex-row sm:items-end sm:gap-6 sm:pb-6">
+        {/* Compact heading */}
+        <div className="mb-7 flex flex-col justify-between gap-3 sm:flex-row sm:items-end">
           <div>
             <div className="mb-2 flex items-center gap-3">
-              <span className="h-px w-7 bg-[#D5B16B]" />
-              <p className="text-[9px] font-semibold uppercase tracking-[0.23em] text-[#D5B16B]">
+              <span className="h-px w-7 bg-[#d5b16b]" />
+              <span className="text-[9px] font-semibold uppercase tracking-[0.22em] text-[#d5b16b]">
                 The Makyn Difference
-              </p>
+              </span>
             </div>
 
-            <h2 className="max-w-xl text-2xl font-medium leading-tight tracking-tight sm:text-3xl lg:text-4xl">
-              Experience you can build on.
+            <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
+              Experience you can{" "}
+              <span className="font-normal italic text-[#d5b16b]">
+                build on.
+              </span>
             </h2>
           </div>
 
-          <p className="max-w-sm text-xs leading-5 text-white/65 sm:text-right sm:text-sm">
-            Every project reflects our commitment to dependable workmanship,
-            thoughtful planning and lasting quality.
+          <p className="max-w-sm text-xs leading-5 text-white/55 sm:text-right">
+            A record of dependable workmanship, lasting relationships
+            and commitment to quality.
           </p>
         </div>
 
-        {/* Statistics */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
-          {stats.map((stat, index) => (
+        {/* Statistics cards */}
+        <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 lg:grid-cols-4">
+          {stats.map((stat) => (
             <article
-              key={stat.label}
-              className={`group relative min-w-0 border-b border-white/15 py-5 first:pt-0 last:border-b-0 sm:px-5 sm:py-5 sm:first:pl-0 sm:last:pr-0 lg:border-b-0 lg:border-r lg:px-5 lg:py-1 lg:first:pl-0 lg:last:border-r-0 lg:last:pr-0 ${
-                index === 0 ? "lg:pt-1" : ""
-              }`}
+              key={stat.index}
+              className="group relative overflow-hidden border border-white/10 bg-white/[0.045] p-5 transition-all duration-300 hover:border-[#bd9143]/60 hover:bg-white/[0.075] sm:p-5"
             >
-              {/* Number and index */}
-              <div className="mb-4 flex items-start justify-between gap-3">
-                <span className="text-[9px] font-medium tracking-[0.2em] text-white/40">
+              {/* Top detail */}
+              <div className="mb-4 flex items-center justify-between">
+                <span className="text-[9px] font-semibold tracking-[0.2em] text-white/35">
                   {stat.index}
                 </span>
 
-                <span
-                  aria-hidden="true"
-                  className="mt-1 h-2 w-2 rotate-45 border border-[#BD9143] transition-colors duration-300 group-hover:bg-[#BD9143]"
-                />
+                <span className="h-2 w-2 rotate-45 border border-[#bd9143] transition-colors group-hover:bg-[#bd9143]" />
               </div>
 
-              {/* Large statistic */}
-              <p className="text-4xl font-medium leading-none tracking-[-0.055em] text-[#D5B16B] transition-transform duration-300 group-hover:translate-x-1 sm:text-5xl xl:text-6xl">
+              {/* Statistic */}
+              <p className="text-4xl font-semibold leading-none tracking-[-0.055em] text-[#d5b16b] sm:text-[2.7rem]">
                 {stat.number}
               </p>
 
               {/* Label */}
-              <h3 className="mt-3 max-w-[210px] text-sm font-semibold leading-5 text-white">
+              <h3 className="mt-3 text-sm font-semibold text-white">
                 {stat.label}
               </h3>
 
-              {/* Gold accent */}
-              <div className="my-2.5 h-px w-8 bg-[#BD9143] transition-all duration-300 group-hover:w-14" />
+              {/* Accent */}
+              <div className="my-3 h-px w-8 bg-[#bd9143] transition-all duration-300 group-hover:w-14" />
 
               {/* Description */}
-              <p className="max-w-[230px] text-xs leading-5 text-white/55">
+              <p className="text-[11px] leading-5 text-white/50">
                 {stat.description}
               </p>
+
+              {/* Bottom decorative line */}
+              <div className="absolute bottom-0 left-0 h-[2px] w-0 bg-[#bd9143] transition-all duration-500 group-hover:w-full" />
             </article>
           ))}
         </div>
 
-        {/* Bottom architectural line */}
-        <div className="mt-5 flex items-center gap-3 border-t border-white/15 pt-4">
-          <span className="h-1 w-9 shrink-0 bg-[#BD9143]" />
-          <p className="text-[8px] font-medium uppercase tracking-[0.2em] text-white/45 sm:text-[9px]">
+        {/* Small brand signature */}
+        <div className="mt-5 flex items-center gap-3">
+          <span className="h-[2px] w-7 bg-[#bd9143]" />
+          <p className="text-[8px] font-medium uppercase tracking-[0.2em] text-white/40">
             MAKYN CONSTRUCTION COMPANY LIMITED
           </p>
-          <span className="hidden h-px flex-1 bg-white/10 sm:block" />
         </div>
       </div>
     </section>

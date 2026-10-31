@@ -10,6 +10,7 @@ import FAQSection from "@/components/home/faq-section";
 import StatsCounter from "@/components/home/stats-counter";
 import CTASection from "@/components/home/cta-section";
 import MaterialUniverse from "@/components/about/MaterialUniverse";
+import BuildingCategories from "@/components/building-categories/BuildingCategories";
 
 export default function Home() {
   return (
@@ -19,10 +20,9 @@ export default function Home() {
       <StatsCounter />
       <ServicesSection />
       <CommitmentSection />
-      <ProjectsSection />
-      <WhyChooseUs />
-      <MaterialUniverse />
+      <BuildingCategories />
       <FAQSection />
+      <WhyChooseUs />
       <CTASection />
       <TestimonialsSection />
     </main>

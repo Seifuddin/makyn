@@ -4,6 +4,7 @@ const quickLinks = [
   { label: "About Us", href: "/about-lab" },
   { label: "Our Services", href: "/services" },
   { label: "Our Projects", href: "/projects" },
+  { label: "Our Gallery", href: "/gallery" },
   { label: "Contact Us", href: "/contact" },
 ];
 

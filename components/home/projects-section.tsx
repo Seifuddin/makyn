@@ -44,7 +44,7 @@ export default function ProjectsSection() {
           </article>
         ))}
       </div>
-      <p className="portfolio-note">
+      <p className="hidden portfolio-note">
         Illustrative photography — replace with Makyn&apos;s actual projects
         as they become available.
       </p>

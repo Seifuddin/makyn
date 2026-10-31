@@ -34,9 +34,9 @@ export default function IntroSection() {
             01
           </span>
 
-          <span className="h-px w-10 bg-[#bd9143]" />
+          <span className="hidden h-px w-10 bg-[#bd9143]" />
 
-          <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[#172b3a]/65">
+          <p className="hidden text-[10px] font-semibold uppercase tracking-[0.22em] text-[#172b3a]/65">
             Who we are
           </p>
         </div>
