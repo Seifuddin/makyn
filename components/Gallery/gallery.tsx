@@ -61,6 +61,337 @@ const galleryImages = [
     description: "Another milestone in our construction journey.",
     shape: "normal",
   },
+
+
+  {
+    src: "/images/gallery/1792943151112.jpg",
+    title: "Construction in Progress",
+    category: "Development",
+    description: "Carefully managed construction work.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944510852.jpg",
+    title: "Interior Finishing",
+    category: "Finishing",
+    description: "Attention to detail in every finishing stage.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792943026276.jpg",
+    title: "Structural Development",
+    category: "Construction",
+    description: "Strong foundations and reliable workmanship.",
+    shape: "wide",
+  },
+  {
+    src: "/images/gallery/1792944439922.jpg",
+    title: "Completed Project",
+    category: "Architecture",
+    description: "A finished space built with purpose.",
+    shape: "tall",
+  },
+  {
+    src: "/images/gallery/1792944448154.jpg",
+    title: "Building Details",
+    category: "Craftsmanship",
+    description: "Precision and quality in every detail.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944515390.jpg",
+    title: "Our Work",
+    category: "Development",
+    description: "Another milestone in our construction journey.",
+    shape: "normal",
+  },
+
+
+  {
+    src: "/images/gallery/1792944507845.jpg",
+    title: "Construction in Progress",
+    category: "Development",
+    description: "Carefully managed construction work.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944498714.jpg",
+    title: "Interior Finishing",
+    category: "Finishing",
+    description: "Attention to detail in every finishing stage.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944496070.jpg",
+    title: "Structural Development",
+    category: "Construction",
+    description: "Strong foundations and reliable workmanship.",
+    shape: "wide",
+  },
+  {
+    src: "/images/gallery/1792944481975.jpg",
+    title: "Completed Project",
+    category: "Architecture",
+    description: "A finished space built with purpose.",
+    shape: "tall",
+  },
+  {
+    src: "/images/gallery/1792944478917.jpg",
+    title: "Building Details",
+    category: "Craftsmanship",
+    description: "Precision and quality in every detail.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944520129.jpg",
+    title: "Our Work",
+    category: "Development",
+    description: "Another milestone in our construction journey.",
+    shape: "normal",
+  },
+
+
+  {
+    src: "/images/gallery/1792944530385.jpg",
+    title: "Construction in Progress",
+    category: "Development",
+    description: "Carefully managed construction work.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944533316.jpg",
+    title: "Interior Finishing",
+    category: "Finishing",
+    description: "Attention to detail in every finishing stage.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944544576.jpg",
+    title: "Structural Development",
+    category: "Construction",
+    description: "Strong foundations and reliable workmanship.",
+    shape: "wide",
+  },
+  {
+    src: "/images/gallery/1792944554949.jpg",
+    title: "Completed Project",
+    category: "Architecture",
+    description: "A finished space built with purpose.",
+    shape: "tall",
+  },
+  {
+    src: "/images/gallery/1792944582829.jpg",
+    title: "Building Details",
+    category: "Craftsmanship",
+    description: "Precision and quality in every detail.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944579177.jpg",
+    title: "Our Work",
+    category: "Development",
+    description: "Another milestone in our construction journey.",
+    shape: "normal",
+  },
+
+
+
+   {
+    src: "/images/gallery/1792944575920.jpg",
+    title: "Construction in Progress",
+    category: "Development",
+    description: "Carefully managed construction work.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944559261.jpg",
+    title: "Interior Finishing",
+    category: "Finishing",
+    description: "Attention to detail in every finishing stage.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944556558.jpg",
+    title: "Structural Development",
+    category: "Construction",
+    description: "Strong foundations and reliable workmanship.",
+    shape: "wide",
+  },
+  {
+    src: "/images/gallery/1792944605505.jpg",
+    title: "Completed Project",
+    category: "Architecture",
+    description: "A finished space built with purpose.",
+    shape: "tall",
+  },
+  {
+    src: "/images/gallery/1792944614701.jpg",
+    title: "Building Details",
+    category: "Craftsmanship",
+    description: "Precision and quality in every detail.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944621279.jpg",
+    title: "Our Work",
+    category: "Development",
+    description: "Another milestone in our construction journey.",
+    shape: "normal",
+  },
+
+  {
+    src: "/images/gallery/1792944674211.jpg",
+    title: "Construction in Progress",
+    category: "Development",
+    description: "Carefully managed construction work.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944671536.jpg",
+    title: "Interior Finishing",
+    category: "Finishing",
+    description: "Attention to detail in every finishing stage.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944654030.jpg",
+    title: "Structural Development",
+    category: "Construction",
+    description: "Strong foundations and reliable workmanship.",
+    shape: "wide",
+  },
+  {
+    src: "/images/gallery/1792944683008.jpg",
+    title: "Completed Project",
+    category: "Architecture",
+    description: "A finished space built with purpose.",
+    shape: "tall",
+  },
+  {
+    src: "/images/gallery/1792944695614.jpg",
+    title: "Building Details",
+    category: "Craftsmanship",
+    description: "Precision and quality in every detail.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944697985.jpg",
+    title: "Our Work",
+    category: "Development",
+    description: "Another milestone in our construction journey.",
+    shape: "normal",
+  },
+
+
+
+   {
+    src: "/images/gallery/1793082166496.jpg",
+    title: "Construction in Progress",
+    category: "Development",
+    description: "Carefully managed construction work.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944746098.jpg",
+    title: "Interior Finishing",
+    category: "Finishing",
+    description: "Attention to detail in every finishing stage.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1792944726282.jpg",
+    title: "Structural Development",
+    category: "Construction",
+    description: "Strong foundations and reliable workmanship.",
+    shape: "wide",
+  },
+  {
+    src: "/images/gallery/1792944717480.jpg",
+    title: "Completed Project",
+    category: "Architecture",
+    description: "A finished space built with purpose.",
+    shape: "tall",
+  },
+  {
+    src: "/images/gallery/1792944711774.jpg",
+    title: "Building Details",
+    category: "Craftsmanship",
+    description: "Precision and quality in every detail.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1793082208100.jpg",
+    title: "Our Work",
+    category: "Development",
+    description: "Another milestone in our construction journey.",
+    shape: "normal",
+  },
+
+
+  {
+    src: "/images/gallery/1793082213778.jpg",
+    title: "Construction in Progress",
+    category: "Development",
+    description: "Carefully managed construction work.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1793082256044.jpg",
+    title: "Interior Finishing",
+    category: "Finishing",
+    description: "Attention to detail in every finishing stage.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1793082263417.jpg",
+    title: "Structural Development",
+    category: "Construction",
+    description: "Strong foundations and reliable workmanship.",
+    shape: "wide",
+  },
+  {
+    src: "/images/gallery/1793082339315.jpg",
+    title: "Completed Project",
+    category: "Architecture",
+    description: "A finished space built with purpose.",
+    shape: "tall",
+  },
+  {
+    src: "/images/gallery/1793082333280.jpg",
+    title: "Building Details",
+    category: "Craftsmanship",
+    description: "Precision and quality in every detail.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1793082317922.jpg",
+    title: "Our Work",
+    category: "Development",
+    description: "Another milestone in our construction journey.",
+    shape: "normal",
+  },
+
+  {
+    src: "/images/gallery/1793082314175.jpg",
+    title: "Our Work",
+    category: "Development",
+    description: "Another milestone in our construction journey.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1793082296470.jpg",
+    title: "Our Work",
+    category: "Development",
+    description: "Another milestone in our construction journey.",
+    shape: "normal",
+  },
+  {
+    src: "/images/gallery/1793082366069.jpg",
+    title: "Our Work",
+    category: "Development",
+    description: "Another milestone in our construction journey.",
+    shape: "normal",
+  },
 ];
 
 export default function Gallery() {
@@ -161,7 +492,7 @@ export default function Gallery() {
               </div>
 
               {/* Caption */}
-              <div className="border-b border-x border-[#172b3a]/10 px-4 py-3">
+              <div className="hidden border-b border-x border-[#172b3a]/10 px-4 py-3">
                 <span className="text-[9px] font-semibold uppercase tracking-[0.16em] text-[#bd9143]">
                   {item.category}
                 </span>
