@@ -17,6 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  
   title: {
     default: "Makyn Construction Company Limited | Your Trusted Construction Partner",
     template: "%s | Makyn Construction",
