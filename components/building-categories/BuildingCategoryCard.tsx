@@ -54,7 +54,7 @@ export default function BuildingCategoryCard({
           {title}
         </h3>
 
-        <p className="mb-3 max-w-lg text-sm leading-relaxed text-white/75">
+        <p className="hidden mb-3 max-w-lg text-sm leading-relaxed text-white/75">
           {description}
         </p>
 
