@@ -4,7 +4,7 @@ export default function ProjectsIntro() {
     <section className="relative overflow-hidden bg-[#F7F5F0] px-5 py-10 sm:px-8 sm:py-12 lg:px-12 lg:py-14">
       <div className="mx-auto max-w-7xl">
         {/* Section identifier */}
-        <div className="mb-7 flex items-center justify-between border-b border-[#172B3A]/15 pb-4">
+        <div className="hidden mb-7 flex items-center justify-between border-b border-[#172B3A]/15 pb-4">
           <div className="flex items-center gap-3">
             <span className="h-[2px] w-7 bg-[#BD9143]" />
 

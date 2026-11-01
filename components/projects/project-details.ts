@@ -79,10 +79,14 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "Professional fees, approvals, transport and contingency"
     ],
     gallery: [
+      "/images/projects/Juja3.jpg",
+      "/images/projects/res4.jpeg",
+      "/images/projects/res2.jpeg",
+      "/images/projects/res3.jpeg",
       "/images/projects/homes.jpg",
-      "/images/projects/finishing.jpeg",
-      "/images/projects/Architecture.jpeg",
-      "/images/projects/construction.jpg"
+      "/images/projects/home2.jpg",
+      "/images/projects/hom1.jpg",
+      "/images/projects/casa-bonita.jpeg",
     ],
     faqs: [
       {
@@ -166,10 +170,13 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "Whether the property remains occupied during work"
     ],
     gallery: [
-      "/images/projects/homes.jpg",
+      "/images/projects/renov.jpeg",
       "/images/projects/finishing.jpeg",
-      "/images/projects/Architecture.jpeg",
-      "/images/projects/construction.jpg"
+      "/images/projects/renov1.jpeg",
+      "/images/projects/renov3.webp",
+      "/images/projects/renov4.jpeg",
+      "/images/projects/renovation.webp",
+      "/images/projects/renov2.jpg"
     ],
     faqs: [
       {
@@ -253,10 +260,12 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "Professional appointments and applicable approval fees"
     ],
     gallery: [
-      "/images/projects/homes.jpg",
-      "/images/projects/finishing.jpeg",
+      "/images/projects/arcit.jpeg",
+      "/images/projects/art1.jpeg",
       "/images/projects/Architecture.jpeg",
-      "/images/projects/construction.jpg"
+      "/images/projects/art3.jpeg",
+      "/images/projects/art4.png",
+      "/images/projects/art2.jpeg"
     ],
     faqs: [
       {
@@ -340,10 +349,14 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "Quantity of openings, cuts, fittings and repairs"
     ],
     gallery: [
-      "/images/projects/homes.jpg",
-      "/images/projects/finishing.jpeg",
-      "/images/projects/Architecture.jpeg",
-      "/images/projects/construction.jpg"
+      "/images/projects/mason1.jpeg",
+      "/images/projects/mason.jpg",
+      "/images/projects/mason2.jpeg",
+      "/images/projects/mason4.jpeg",
+      "/images/projects/masonn.jpeg",
+      "/images/projects/masonnn.jpeg",
+      "/images/projects/manonery.jpeg",
+      "/images/projects/mason3.jpeg"
     ],
     faqs: [
       {
@@ -427,10 +440,14 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "Access, working height, removal and disposal of old materials"
     ],
     gallery: [
-      "/images/projects/homes.jpg",
-      "/images/projects/finishing.jpeg",
-      "/images/projects/Architecture.jpeg",
-      "/images/projects/construction.jpg"
+      "/images/projects/roofin.jpeg",
+      "/images/projects/roofing1.jpeg",
+      "/images/projects/roofing2.jpeg",
+      "/images/projects/roofing3.jpeg",
+      "/images/projects/roof.jpeg",
+      "/images/projects/roof1.jpeg",
+      "/images/projects/roof2.jpeg",
+      "/images/projects/roof3.jpeg"
     ],
     faqs: [
       {
@@ -514,10 +531,14 @@ export const projectDetails: Record<string, ProjectDetail> = {
       "Decorative effects, colour changes and specialist coatings"
     ],
     gallery: [
-      "/images/projects/homes.jpg",
-      "/images/projects/finishing.jpeg",
-      "/images/projects/Architecture.jpeg",
-      "/images/projects/construction.jpg"
+      "/images/projects/paint.jpeg",
+      "/images/projects/paint1.jpeg",
+      "/images/projects/paint2.jpeg",
+      "/images/projects/paint3.jpeg",
+      "/images/projects/paint4.webp",
+      "/images/projects/paintt.jpeg",
+      "/images/projects/paintin.jpeg",
+      "/images/projects/panintingg.jpg"
     ],
     faqs: [
       {

@@ -43,7 +43,7 @@ export default function ProjectsGallery() {
     >
       <div className="mx-auto max-w-7xl">
         {/* Compact heading */}
-        <div className="mb-6 flex flex-col gap-3 border-b border-[#172B3A]/15 pb-5 md:flex-row md:items-end md:justify-between">
+        <div className="hidden mb-6 flex flex-col gap-3 border-b border-[#172B3A]/15 pb-5 md:flex-row md:items-end md:justify-between">
           <div>
             <p className="mb-2 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#BD9143]">
               Our Portfolio
