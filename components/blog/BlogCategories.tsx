@@ -2,15 +2,11 @@
 "use client";
 
 import { useState } from "react";
+import { blogCategories } from "@/lib/blog";
 
 const categories = [
   "All Articles",
-  "Construction Knowledge",
-  "Architecture & Design",
-  "Home Improvement",
-  "Building Costs & Planning",
-  "Projects & Inspiration",
-  "Industry Insights",
+  ...blogCategories,
 ];
 
 type BlogCategoriesProps = {
