@@ -118,7 +118,7 @@ export default function WhyChooseUs() {
 
             <h2
               id="why-choose-us-heading"
-              className="text-3xl font-semibold leading-tight tracking-tight sm:text-4xl"
+              className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]"
             >
               Built on trust.
               <span className="ml-2 font-normal italic text-[#bd9143]">
@@ -235,7 +235,7 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Bottom signature */}
-        <div className="mt-5 flex items-center gap-3">
+        <div className="hidden mt-5 flex items-center gap-3">
           <span className="h-[2px] w-8 bg-[#bd9143]" />
           <p className="text-[9px] font-semibold uppercase tracking-[0.18em] text-[#172b3a]/45">
             MAKYN CONSTRUCTION COMPANY LIMITED

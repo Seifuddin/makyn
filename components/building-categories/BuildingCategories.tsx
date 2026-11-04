@@ -20,7 +20,7 @@ export default function BuildingCategories() {
               </span>
             </div>
 
-            <h2 className="text-3xl font-medium leading-[1.12] tracking-tight text-[#172b3a] sm:text-4xl lg:text-[48px]">
+            <h2 className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Creating Spaces.
               <br />
               <span className="font-light italic text-[#bd9143]">

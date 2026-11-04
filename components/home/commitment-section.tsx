@@ -10,9 +10,8 @@ export default function CommitmentSection() {
            THE MAKYN STANDARD
         </div>
         <h2>
-          More than
-          <br />
-          structures.
+          More than Structures.
+        
           <br />
           <span>We build trust.</span>
         </h2>

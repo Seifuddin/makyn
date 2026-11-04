@@ -34,7 +34,7 @@ export default function ServicesSection() {
               </span>
             </div>
 
-            <h2 className="text-4xl font-semibold leading-[1.08] tracking-tight text-[#172b3a] sm:text-5xl lg:text-[3.6rem]">
+            <h2 className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Built around
               <br />
               <span className="font-normal italic text-[#bd9143]">

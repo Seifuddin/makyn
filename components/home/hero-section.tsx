@@ -36,19 +36,19 @@ export default function HeroSection() {
           Built on trust. Defined by quality.
         </div>
 
-        <div className="max-w-4xl py-9 sm:py-11">
+        <div className="max-w-4xl py-9 pb-20 sm:py-11">
           <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.22em] text-white/65 sm:text-xs">
             Your trusted construction partner
           </p>
 
-          <h1 className="text-5xl font-medium leading-[0.98] tracking-tight sm:text-6xl md:text-7xl lg:text-[5.5rem]">
+          <h1 className="text-5xl font-serif font-extrabold leading-[0.98] tracking-tight sm:text-6xl md:text-7xl lg:text-[5.5rem]">
             We build
             <span className="mt-2 block font-light italic text-[#d5b16b]">
               what matters.
             </span>
           </h1>
 
-          <div className="mt-5 flex flex-col gap-6 sm:mt-6 sm:flex-row sm:items-end sm:justify-between">
+          <div className="mt-5 flex flex-col gap-6 sm:mt-6 sm:flex-row sm:items-end sm:justify-between mb-10">
             <p className="max-w-lg text-sm leading-6 text-white/75 sm:text-base sm:leading-7">
               From the first foundation to the final finish, we bring your
               construction vision to life with care, precision and purpose.
@@ -76,7 +76,7 @@ export default function HeroSection() {
         </div>
 
         {/* Bottom information strip */}
-        <div className="flex items-center justify-between gap-4 border-t border-white/20 pt-4">
+        <div className="hidden flex items-center justify-between gap-4 border-t border-white/20 pt-4">
           <span className="text-[8px] font-medium uppercase tracking-[0.14em] text-white/60 sm:text-[10px] sm:tracking-[0.18em]">
             Planning <span className="px-1 text-[#d5b16b]">/</span> Design
             <span className="px-1 text-[#d5b16b]">/</span> Construction

@@ -46,7 +46,7 @@ export default function FAQSection() {
       aria-labelledby="faq-heading"
       className="bg-[#f7f5f0] px-5 py-24 text-[#172b3a] sm:px-8 sm:py-24 lg:px-12 lg:py-24"
     >
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-14">
           {/* Left introduction */}
           <div className="lg:sticky lg:top-24 lg:self-start">
@@ -59,7 +59,7 @@ export default function FAQSection() {
 
             <h2
               id="faq-heading"
-              className="max-w-md text-3xl leading-[1.15] font-semibold tracking-tight sm:text-4xl"
+              className="max-w-md font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]"
             >
               Good projects
               <span className="block text-[#a77c35]">
@@ -173,7 +173,7 @@ export default function FAQSection() {
         </div>
 
         {/* Bottom brand detail */}
-        <div className="mt-7 flex items-center justify-between border-t border-[#172b3a]/10 pt-4">
+        <div className="hidden mt-7 flex items-center justify-between border-t border-[#172b3a]/10 pt-4">
           <span className="text-[9px] font-bold tracking-[0.16em] text-[#172b3a]/45">
             MAKYN CONSTRUCTION COMPANY LIMITED
           </span>

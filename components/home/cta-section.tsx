@@ -22,7 +22,7 @@ export default function CTASection() {
 
           <h2
             id="cta-heading"
-            className="text-2xl leading-tight font-semibold tracking-tight sm:text-3xl"
+            className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]"
           >
             Planning your next project?
           </h2>

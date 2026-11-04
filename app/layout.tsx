@@ -17,9 +17,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  
+metadataBase: new URL("https://www.makyn.co.ke"),
   title: {
-    default: "Makyn Construction Company Limited | Your Trusted Construction Partner",
+    default: "Makyn Construction Company Limited",
     template: "%s | Makyn Construction",
   },
   description:

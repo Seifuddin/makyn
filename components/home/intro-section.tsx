@@ -81,7 +81,7 @@ export default function IntroSection() {
 
             <h2
               id="intro-heading"
-              className="max-w-xl font-serif text-[2rem] leading-[1.08] font-bold tracking-tight sm:text-4xl lg:text-[3rem]"
+              className="max-w-xl font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]"
             >
               We build more
               <br className="hidden sm:block" /> than structures.
