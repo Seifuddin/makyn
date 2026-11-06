@@ -46,7 +46,7 @@ export default function ServicesHero() {
             Your trusted construction partner
           </p>
 
-          <h1 className="max-w-5xl text-4xl font-medium leading-[1.02] tracking-tight sm:text-6xl md:text-7xl lg:text-[5rem]">
+          <h1 className="max-w-5xl text-4xl font-serif font-bold leading-[1.02] tracking-tight md:text-6xl md:text-7xllg:text-[5rem]">
             Comprehensive
             <span className="mt-2 block font-light italic text-[#d5b16b]">
               Construction Services.

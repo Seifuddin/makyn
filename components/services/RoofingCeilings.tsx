@@ -42,9 +42,9 @@ export default function RoofingCeilings() {
                 </p>
               </div>
 
-              <h1 className="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight sm:text-4xl lg:text-5xl">
+              <h1 className="mt-5 font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
                 Protection above.
-                <span className="mt-1 block text-[#bd9143]">
+                <span className="mt-1 block italic text-[#bd9143]">
                   Finishing within.
                 </span>
               </h1>
@@ -137,7 +137,7 @@ export default function RoofingCeilings() {
               </p>
             </div>
 
-            <h2 className="mt-4 text-2xl font-semibold leading-tight tracking-tight sm:text-3xl lg:text-4xl">
+            <h2 className="mt-4 font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Essential details, carefully considered.
             </h2>
           </div>
@@ -200,7 +200,7 @@ export default function RoofingCeilings() {
               </p>
             </div>
 
-            <h2 className="mt-3 text-2xl font-semibold leading-tight sm:text-3xl">
+            <h2 className="mt-3 font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Let's plan the details of your project.
             </h2>
 
@@ -212,7 +212,7 @@ export default function RoofingCeilings() {
 
           <Link
             href="/contact"
-            className="group inline-flex w-fit shrink-0 items-center gap-3 bg-[#bd9143] px-5 py-3.5 text-sm font-semibold text-[#172b3a] transition-colors duration-300 hover:bg-[#d5b16b]"
+            className="group inline-flex w-fit shrink-0 items-center gap-3 px-5 py-3.5 text-sm font-semibold text[#172b3a] transition-colors duration-300 bg-[#d5b16b]"
           >
             Request a Consultation
             <span

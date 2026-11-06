@@ -21,7 +21,7 @@ export default function AboutHero() {
       <div className="absolute inset-0 -z-0 bg-gradient-to-t from-[#101f2b]/75 via-transparent to-[#101f2b]/25" />
 
       {/* Main content */}
-      <div className="relative mx-auto flex min-h-[440px] w-full max-w-7xl flex-col justify-between px-5 pb-5 pt-20 sm:min-h-[470px] sm:px-8 sm:pb-7 sm:pt-24 lg:min-h-[490px] lg:px-12">
+      <div className="relative mx-auto flex min-h-[440px] w-full max-w-7xl flex-col justify-between px-5 pb-5 pt-20 sm:min-h-[470px]">
         {/* Breadcrumb */}
         <div className="flex items-center gap-2.5 text-[9px] font-semibold uppercase tracking-[0.2em] sm:text-[10px]">
           <span className="h-px w-6 bg-[#d5b16b]" />
@@ -31,14 +31,14 @@ export default function AboutHero() {
         </div>
 
         {/* Hero text */}
-        <div className="max-w-4xl py-10 sm:py-12">
+        <div className="max-w-4xl py-12">
           <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.22em] text-[#d5b16b] sm:text-xs">
             Your trusted construction partner
           </p>
 
-          <h1 className="max-w-4xl text-4xl font-medium leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="max-w-4xl text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Built on vision.
-            <span className="mt-1 block font-light italic text-[#d5b16b]">
+            <span className="mt-1 block font-semibold italic text-[#d5b16b]">
               Defined by integrity.
             </span>
           </h1>

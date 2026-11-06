@@ -45,9 +45,9 @@ export default function ConstructionSolutions() {
           </p>
         </div>
 
-        <h1 className="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight sm:text-4xl lg:text-5xl">
+        <h1 className="mt-5 font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
           Your project.
-          <span className="mt-1 block text-[#bd9143]">
+          <span className="mt-1 block italic text-[#bd9143]">
             A practical way forward.
           </span>
         </h1>
@@ -144,7 +144,7 @@ export default function ConstructionSolutions() {
               </p>
             </div>
 
-            <h2 className="mt-4 max-w-lg text-2xl font-semibold leading-tight tracking-tight sm:text-3xl lg:text-4xl">
+            <h2 className="mt-4 max-w-lg font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Solutions shaped around your needs.
             </h2>
 

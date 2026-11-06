@@ -87,7 +87,7 @@ ${name}`
 
       <div className="relative mx-auto max-w-7xl px-6 sm:px-10 lg:px-16">
         {/* Heading */}
-        <div className="mb-14 max-w-3xl sm:mb-20">
+        <div className="hidden mb-14 max-w-3xl sm:mb-20">
           <div className="mb-6 flex items-center gap-4">
             <span className="h-px w-10 bg-[#BD9143]" />
             <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#94702F]">
@@ -95,9 +95,9 @@ ${name}`
             </span>
           </div>
 
-          <h2 className="text-4xl font-semibold leading-tight tracking-tight text-[#172B3A] sm:text-5xl md:text-6xl lg:text-7xl">
+          <h2 className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
             Have a Project
-            <span className="block font-light italic text-[#BD9143]">
+            <span className="block italic text-[#BD9143]">
               in Mind?
             </span>
             Let's Talk.
@@ -129,7 +129,7 @@ ${name}`
               Contact Information
             </p>
 
-            <h3 className="mt-5 text-3xl font-semibold leading-snug sm:text-4xl">
+            <h3 className="mt-5 font-serif text-3xl font-semibold leading-snug sm:text-4xl">
               Let's turn your
               <span className="block font-light italic text-[#D5B16B]">
                 vision into reality.

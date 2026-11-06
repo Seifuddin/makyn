@@ -30,7 +30,7 @@ const reasons = [
 
 export default function WhyMakyn() {
   return (
-    <section className="relative overflow-hidden bg-[#172b3a] px-5 py-20 text-[#f7f5f0] sm:px-8 sm:py-14 lg:px-12 lg:py-16">
+    <section className="relative overflow-hidden bg-[#172b3a] px-5 py-20 text-[#f7f5f0]">
       {/* Restrained architectural background detail */}
       <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full border border-[#d5b16b]/10" />
       <div className="pointer-events-none absolute -right-10 -top-10 h-52 w-52 rounded-full border border-[#d5b16b]/10" />
@@ -43,9 +43,9 @@ export default function WhyMakyn() {
             The Makyn difference
           </p>
 
-          <h2 className="text-3xl font-medium leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+          <h2 className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
             Good work is built on{" "}
-            <span className="font-light italic text-[#d5b16b]">
+            <span className="font-normal italic text-[#d5b16b]">
               good decisions.
             </span>
           </h2>
@@ -69,7 +69,7 @@ export default function WhyMakyn() {
               className="object-cover transition-transform duration-700 hover:scale-[1.03]"
             />
 
-            <div className="absolute inset-0 bg-gradient-to-t from-[#172b3a]/85 via-[#172b3a]/10 to-transparent" />
+            <div className="hidden absoluteinset-0bg-gradient-to-t from-[#172b3a]/85 via-[#172b3a]/10 to-transparent" />
 
             <div className="absolute bottom-0 left-0 flex items-center gap-3 p-5 sm:p-7">
               <span className="h-9 w-px bg-[#d5b16b]" />

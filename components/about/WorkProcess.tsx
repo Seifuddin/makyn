@@ -50,9 +50,9 @@ export default function WorkProcess() {
               Our working Process
             </p>
 
-            <h2 className="text-2xl font-medium leading-tight tracking-tight sm:text-3xl lg:text-4xl">
+            <h2 className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               From concept
-              <span className="font-light italic text-[#d5b16b]">
+              <span className="font-normal italic text-[#d5b16b]">
                 {" "}to completion.
               </span>
             </h2>

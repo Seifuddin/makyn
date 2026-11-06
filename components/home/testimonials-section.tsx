@@ -63,7 +63,7 @@ export default function TestimonialsSection() {
     <section
       id="testimonials"
       aria-labelledby="testimonials-heading"
-      className="overflow-hidden bg-[#f7f5f0] px-5 py-20 text-[#172b3a]"
+      className="overflow-hidden bg-[#f7f5f0] px-5 pt-20 text-[#172b3a]"
     >
       <div className="mx-auto max-w-7xl">
         {/* Section introduction */}

@@ -43,7 +43,7 @@ export default function RenovationsRemodelling() {
               </p>
             </div>
 
-            <h1 className="mt-5 max-w-xl text-3xl font-semibold leading-[1.12] tracking-tight sm:text-4xl lg:text-5xl">
+            <h1 className="mt-5 font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               A new perspective on your existing space.
             </h1>
 
@@ -63,7 +63,7 @@ export default function RenovationsRemodelling() {
             <div className="mt-6 flex flex-wrap items-center gap-5">
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-3 bg-[#172b3a] px-5 py-3.5 text-sm font-semibold text-white transition-colors duration-300 hover:bg-[#bd9143] hover:text-[#172b3a]"
+                className="group inline-flex items-center gap-3 px-5 py-3.5 text-sm font-semibold text-white transition-colors duration-300 bg-[#bd9143] text-[#172b3a]"
               >
                 Transform Your Space
                 <span
@@ -138,7 +138,7 @@ export default function RenovationsRemodelling() {
                 </p>
               </div>
 
-              <h2 className="mt-4 text-2xl font-semibold leading-tight tracking-tight sm:text-3xl lg:text-4xl">
+              <h2 className="mt-4 font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
                 Make more of the space you have.
               </h2>
             </div>
@@ -196,7 +196,7 @@ export default function RenovationsRemodelling() {
               </p>
             </div>
 
-            <h2 className="mt-3 text-2xl font-semibold leading-tight sm:text-3xl">
+            <h2 className="mt-3 font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Tell us what you would like to improve.
             </h2>
 

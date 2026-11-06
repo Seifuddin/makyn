@@ -52,7 +52,7 @@ const socialLinks = [
 export default function TeamSection() {
   return (
     <section className="bg-[#f7f5f0] px-5 py-24 text-[#172b3a]">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         <div className="grid items-center gap-7 md:grid-cols-[0.8fr_1.2fr] md:gap-10 lg:gap-14">
           {/* CEO portrait */}
           <div className="relative mx-auto w-full max-w-sm md:max-w-none">
@@ -87,9 +87,9 @@ export default function TeamSection() {
               Meet our leadership
             </p>
 
-            <h2 className="text-3xl font-medium leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+            <h2 className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Leadership with
-              <span className="block font-light italic text-[#bd9143]">
+              <span className="block font-normal italic text-[#bd9143]">
                 purpose and vision.
               </span>
             </h2>
@@ -139,7 +139,7 @@ export default function TeamSection() {
 
               <Link
                 href="/contact"
-                className="ml-auto inline-flex items-center gap-2 border-b border-[#bd9143] pb-1 text-xs font-semibold transition-colors hover:text-[#bd9143] sm:text-sm"
+                className="hidden ml-auto inline-flex items-center gap-2 border-b border-[#bd9143] pb-1 text-xs font-semibold transition-colors hover:text-[#bd9143] sm:text-sm"
               >
                 Contact us
                 <span aria-hidden="true">↗</span>

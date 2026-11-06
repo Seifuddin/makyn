@@ -41,9 +41,9 @@ export default function MasonryCarpentry() {
         </p>
       </div>
 
-      <h1 className="mt-5 text-3xl font-semibold leading-[1.12] tracking-tight sm:text-4xl lg:text-5xl">
+      <h1 className="mt-5 font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
         Built by skill.
-        <span className="mt-1 block text-[#bd9143]">
+        <span className="mt-1 block italic text-[#bd9143]">
           Defined by detail.
         </span>
       </h1>
@@ -135,7 +135,7 @@ export default function MasonryCarpentry() {
               </p>
             </div>
 
-            <h2 className="mt-4 text-2xl font-semibold leading-tight tracking-tight sm:text-3xl lg:text-4xl">
+            <h2 className="mt-4 font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               The craft behind a well-finished building.
             </h2>
           </div>
@@ -203,7 +203,7 @@ export default function MasonryCarpentry() {
               </p>
             </div>
 
-            <h2 className="mt-3 text-2xl font-semibold leading-tight sm:text-3xl">
+            <h2 className="mt-3 font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Need dependable workmanship for your project?
             </h2>
 

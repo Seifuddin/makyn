@@ -35,9 +35,9 @@ export default function BuildingConstruction() {
         01 / Building Construction
       </p>
 
-      <h1 className="max-w-2xl text-3xl font-semibold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+      <h1 className="max-w-2xl font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
         Strong foundations.
-        <span className="mt-1 block text-[#bd9143]">
+        <span className="mt-1 block italic text-[#bd9143]">
           Lasting structures.
         </span>
       </h1>
@@ -104,7 +104,7 @@ export default function BuildingConstruction() {
               Our Approach
             </p>
 
-            <h2 className="mt-3 max-w-md text-2xl font-semibold leading-tight sm:text-3xl lg:text-4xl">
+            <h2 className="mt-3 font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Every stage matters.
             </h2>
 
@@ -148,7 +148,7 @@ export default function BuildingConstruction() {
               Have a Building Project?
             </p>
 
-            <h2 className="mt-2 text-xl font-semibold leading-snug sm:text-2xl lg:text-3xl">
+            <h2 className="mt-2 font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Let&apos;s build something meaningful together.
             </h2>
 

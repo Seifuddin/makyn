@@ -5,7 +5,7 @@ export default function CompanyStory() {
   return (
     <section
       id="our-story"
-      className="overflow-hidden bg-[#f7f5f0] px-6 py-14 text-[#172b3a] sm:px-10 sm:py-16 lg:px-16 lg:py-20"
+      className="overflow-hidden bg-[#f7f5f0] px-6 py-14 text-[#172b3a]"
     >
       <div className="mx-auto grid max-w-7xl items-center gap-9 lg:grid-cols-[1.05fr_0.95fr] lg:gap-16">
         {/* Architectural image */}
@@ -40,9 +40,9 @@ export default function CompanyStory() {
             Who we are
           </div>
 
-          <h2 className="max-w-xl text-3xl font-medium leading-tight tracking-tight sm:text-4xl lg:text-5xl">
+          <h2 className="max-w-xl font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
             More than construction.
-            <span className="mt-1 block font-light text-[#bd9143]">
+            <span className="mt-1 block font-normal italic text-[#bd9143]">
               A foundation for the future.
             </span>
           </h2>

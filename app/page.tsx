@@ -28,12 +28,11 @@ export default function Home() {
       <IntroSection />
       <StatsCounter />
       <ServicesSection />
-      <CommitmentSection />
-      <BuildingCategories />
-      <FAQSection />
       <WhyChooseUs />
       <CTASection />
+      <FAQSection />
       <TestimonialsSection />
+      <BuildingCategories />
       <FeaturedArticle />
     </main>
   );
