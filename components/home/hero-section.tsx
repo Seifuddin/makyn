@@ -22,7 +22,7 @@ export default function HeroSection() {
       {/* Cinematic navy overlays */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-0 bg-gradient-to-r from-[#101f2b]/95 via-transparent [#172b3a]/80 to[#172b3a]/25"
+        className="absolute inset-0 -z-0 bg-gradient-to-r from-[#101f2b]/95 via-[#172b3a]/80 to[#172b3a]/25"
       />
       <div
         aria-hidden="true"
