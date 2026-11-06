@@ -22,15 +22,15 @@ export default function HeroSection() {
       {/* Cinematic navy overlays */}
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-0 bg-gradient-to-r from-[#101f2b]/95 via-[#172b3a]/80 to-[#172b3a]/25"
+        className="absolute inset-0 -z-0 bg-gradient-to-r from-[#101f2b]/95 via-transparent [#172b3a]/80 to[#172b3a]/25"
       />
       <div
         aria-hidden="true"
-        className="absolute inset-0 -z-0 bg-gradient-to-t from-[#101f2b]/80 via-transparent to-[#101f2b]/20"
+        className="absolute inset-0 -z-0 bg-gradient-to-t from-[#101f2b]/80 via-transparent to[#101f2b]/20"
       />
 
       {/* Hero content */}
-      <div className="relative mx-auto flex min-h-[480px] w-full max-w-7xl flex-col justify-between px-5 pb-5 pt-24 sm:min-h-[500px] sm:px-8 sm:pb-7 lg:min-h-[530px] lg:px-12">
+      <div className="relative mx-auto flex min-h-[480px] w-full max-w-7xl flex-col justify-between px-5 pb-5 pt-24 sm:min-h-[500px] sm:pb-7 lg:min-h-[530px]">
         <div className="flex items-center gap-3 text-[9px] font-semibold uppercase tracking-[0.2em] text-[#d5b16b] sm:text-[10px]">
           <span className="h-px w-7 bg-[#d5b16b]" />
           Built on trust. Defined by quality.
@@ -41,20 +41,20 @@ export default function HeroSection() {
             Your trusted construction partner
           </p>
 
-          <h1 className="text-5xl font-serif font-extrabold leading-[0.98] tracking-tight sm:text-6xl md:text-7xl lg:text-[5.5rem]">
+          <h1 className="text-5xl font-serif font-extrabold leading-[0.98] tracking-tight md:text-6xl">
             We build
-            <span className="mt-2 block font-light italic text-[#d5b16b]">
+            <span className="block italic text-[#d5b16b]">
               what matters.
             </span>
           </h1>
 
-          <div className="mt-5 flex flex-col gap-6 sm:mt-6 sm:flex-row sm:items-end sm:justify-between mb-10">
+          <div className="mt-5 flexflex-col gap-6 sm:mt-6 sm:flex-row sm:items-end sm:justify-between mb-10">
             <p className="max-w-lg text-sm leading-6 text-white/75 sm:text-base sm:leading-7">
               From the first foundation to the final finish, we bring your
               construction vision to life with care, precision and purpose.
             </p>
 
-            <div className="flex shrink-0 flex-wrap items-center gap-3">
+            <div className="flex shrink-0 flex-wrap items-center gap-3 mt-7">
               <Link
                 href="#contact"
                 className="group inline-flex items-center gap-3 bg-[#bd9143] px-5 py-3 text-xs font-semibold text-[#172b3a] transition-colors hover:bg-[#d5b16b] sm:text-sm"

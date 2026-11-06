@@ -102,7 +102,7 @@ export default function WhyChooseUs() {
     <section
       id="why-choose-us"
       aria-labelledby="why-choose-us-heading"
-      className="bg-[#f7f5f0] px-5 py-12 text-[#172b3a] sm:px-8 sm:py-14 lg:px-12 lg:py-16"
+      className="bg-[#f7f5f0] px-5 pb-34 text-[#172b3a]"
     >
       <div className="mx-auto max-w-7xl">
 
@@ -121,7 +121,7 @@ export default function WhyChooseUs() {
               className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]"
             >
               Built on trust.
-              <span className="ml-2 font-normal italic text-[#bd9143]">
+              <span className="ml-2 italic text-[#bd9143]">
                 Defined by quality.
               </span>
             </h2>
@@ -134,10 +134,10 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Main content */}
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-[0.88fr_1.42fr]">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2">
 
           {/* Introduction image panel */}
-          <div className="group relative min-h-[280px] overflow-hidden bg-[#172b3a] sm:min-h-[300px] lg:min-h-[340px]">
+          <div className="group relative min-h-[370px] overflow-hidden bg-[#172b3a] md:min-h-[400px] lg:min-h-[420px]">
             <Image
               src="/images/beautifuldesign.jpg"
               alt="Modern building under construction"
@@ -164,34 +164,26 @@ export default function WhyChooseUs() {
                 Your trusted construction partner
               </p>
 
-              <h3 className="max-w-sm font-serif text-3xl font-medium leading-tight text-white sm:text-4xl">
+              <h3 className="max-w-sm font-serif text-3xl font-medium leading-tight text-white">
                 We build more than structures.
                 <span className="block italic text-[#d5b16b]">
                   We build confidence.
                 </span>
               </h3>
 
-              <a
-                href="#about"
-                className="group/link mt-5 inline-flex items-center gap-3 text-xs font-medium text-white transition-colors hover:text-[#d5b16b]"
-              >
-                Discover Makyn
-                <span className="flex h-7 w-7 items-center justify-center rounded-full border border-white/40 transition-all group-hover/link:border-[#d5b16b] group-hover/link:bg-[#d5b16b] group-hover/link:text-[#172b3a]">
-                  <ArrowRight />
-                </span>
-              </a>
+              
             </div>
           </div>
 
           {/* Four benefit cards */}
-          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
+          <div className="grid grid-cols-1 gap-3 mt-14 md:mt-0 m:grid-cols-2">
             {reasons.map((reason) => (
               <article
                 key={reason.number}
-                className="group relative flex min-h-[150px] overflow-hidden border border-[#172b3a]/10 bg-white transition-all duration-300 hover:-translate-y-0.5 hover:border-[#bd9143]/60 hover:shadow-[0_10px_25px_rgba(23,43,58,0.07)]"
+                className="group relative flex h-[120px] min-h-[100px] overflow-hidden shadow-lg border-b border-[#172b3a]/10 bgwhite transition-all duration-300 hover:-translate-y-0.5 hover:border-[#bd9143]/60 hover:shadow-[0_10px_25px_rgba(23,43,58,0.07)]"
               >
                 {/* Small image section */}
-                <div className="relative w-[88px] shrink-0 overflow-hidden sm:w-[95px]">
+                <div className="hidden relative w-[88px] shrink-0 overflow-hidden sm:w-[95px]">
                   <Image
                     src={reason.image}
                     alt={reason.imageAlt}
@@ -208,8 +200,8 @@ export default function WhyChooseUs() {
                 </div>
 
                 {/* Card content */}
-                <div className="flex min-w-0 flex-1 flex-col justify-center p-3 sm:p-4">
-                  <div className="mb-2 flex items-center justify-between">
+                <div className="flex min-w-0 flex-1 flex-col justify-center p-2">
+                  <div className="mb-1 flex items-center justify-between">
                     <span className="text-[#bd9143]">
                       <LineIcon>{reason.icon}</LineIcon>
                     </span>
@@ -223,11 +215,11 @@ export default function WhyChooseUs() {
                     {reason.title}
                   </h3>
 
-                  <p className="mt-1.5 text-[11px] leading-[1.55] text-[#172b3a]/65">
+                  <p className="mt-1.5 text-[13px] leading-[1.55] text-[#172b3a]/65">
                     {reason.description}
                   </p>
 
-                  <div className="mt-3 h-[2px] w-6 bg-[#bd9143] transition-all duration-300 group-hover:w-12" />
+                  <div className="mt-2 h-[2px] w-6 bg-[#bd9143] transition-all duration-300 group-hover:w-12" />
                 </div>
               </article>
             ))}

@@ -53,7 +53,7 @@ export default function OurStory() {
             <div className="mb-8 flex items-center gap-4">
               <span className="h-px w-10 bg-[#BD9143]" />
               <span className="text-xs font-semibold uppercase tracking-[0.25em] text-[#9A7130]">
-                01 / Who We Are
+                Who We Are
               </span>
             </div>
 

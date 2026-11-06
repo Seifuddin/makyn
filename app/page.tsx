@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 import HeroSection from "@/components/home/hero-section";
 import IntroSection from "@/components/home/intro-section";
 import ServicesSection from "@/components/home/services-section";
@@ -11,8 +15,13 @@ import StatsCounter from "@/components/home/stats-counter";
 import CTASection from "@/components/home/cta-section";
 import MaterialUniverse from "@/components/about/MaterialUniverse";
 import BuildingCategories from "@/components/building-categories/BuildingCategories";
+import FeaturedArticle from "@/components/blog/FeaturedArticle";
+
 
 export default function Home() {
+  const [activeCategory, setActiveCategory] =
+      useState("All Articles");
+
   return (
     <main>
       <HeroSection />
@@ -25,6 +34,7 @@ export default function Home() {
       <WhyChooseUs />
       <CTASection />
       <TestimonialsSection />
+      <FeaturedArticle />
     </main>
   );
 }

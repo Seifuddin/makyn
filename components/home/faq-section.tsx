@@ -44,7 +44,7 @@ export default function FAQSection() {
     <section
       id="faq"
       aria-labelledby="faq-heading"
-      className="bg-[#f7f5f0] px-5 py-24 text-[#172b3a] sm:px-8 sm:py-24 lg:px-12 lg:py-24"
+      className="bg-[#f7f5f0] px-5 py-24 text-[#172b3a]"
     >
       <div className="mx-auto max-w-7xl">
         <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:gap-14">
@@ -62,7 +62,7 @@ export default function FAQSection() {
               className="max-w-md font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]"
             >
               Good projects
-              <span className="block text-[#a77c35]">
+              <span className="block italic text-[#a77c35]">
                 start with clarity.
               </span>
             </h2>
@@ -162,7 +162,7 @@ export default function FAQSection() {
                     hidden={!isOpen}
                     className="pb-4 pl-9 pr-8 sm:pb-5"
                   >
-                    <p className="max-w-xl text-xs leading-6 text-[#172b3a]/70 sm:text-[13px]">
+                    <p className="max-w-xl text-sm leading-6 text-[#172b3a]/70 sm:text[13px]">
                       {faq.answer}
                     </p>
                   </div>

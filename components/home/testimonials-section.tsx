@@ -63,9 +63,9 @@ export default function TestimonialsSection() {
     <section
       id="testimonials"
       aria-labelledby="testimonials-heading"
-      className="overflow-hidden bg-[#f7f5f0] px-6 py-20 text-[#172b3a] sm:px-8 sm:py-12 lg:px-12 lg:py-14"
+      className="overflow-hidden bg-[#f7f5f0] px-5 py-20 text-[#172b3a]"
     >
-      <div className="mx-auto max-w-[1240px]">
+      <div className="mx-auto max-w-7xl">
         {/* Section introduction */}
         <div className="mb-7 flex flex-col gap-4 sm:mb-8 md:flex-row md:items-end md:justify-between">
           <div>

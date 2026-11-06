@@ -83,9 +83,8 @@ export default function IntroSection() {
               id="intro-heading"
               className="max-w-xl font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]"
             >
-              We build more
-              <br className="hidden sm:block" /> than structures.
-              <span className="mt-1 block text-[#a47d37]">
+              We build more than structures.
+              <span className="mt-1 block italic text-[#a47d37]">
                 We build confidence.
               </span>
             </h2>
@@ -106,7 +105,7 @@ export default function IntroSection() {
             </div>
 
             <a
-              href="#services"
+              href="/services"
               className="group mt-7 inline-flex items-center gap-4 border-b border-[#bd9143] pb-2 text-xs font-semibold uppercase tracking-[0.12em] text-[#172b3a] transition-colors hover:text-[#a47d37]"
             >
               Explore our expertise

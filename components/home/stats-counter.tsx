@@ -30,7 +30,7 @@ export default function StatsCounter() {
   return (
     <section
       aria-label="Makyn company statistics"
-      className="bg-[#172b3a] px-4 py-14 text-white sm:px-8 sm:py-9 lg:px-12"
+      className="bg-[#172b3a] px-5 py-24 text-white"
     >
       <div className="mx-auto max-w-7xl">
 
@@ -46,13 +46,13 @@ export default function StatsCounter() {
 
             <h2 className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Experience you can{" "}
-              <span className="font-normal italic text-[#d5b16b]">
+              <span className="italic text-[#d5b16b]">
                 build on.
               </span>
             </h2>
           </div>
 
-          <p className="max-w-sm text-[11px] leading-4 text-white/55 sm:text-right">
+          <p className="max-w-sm text-[13px] leading-4 text-white/55 sm:text-right">
             A record of dependable workmanship, lasting relationships
             and commitment to quality.
           </p>

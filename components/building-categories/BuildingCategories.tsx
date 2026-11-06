@@ -4,11 +4,11 @@ import { buildingCategories } from "./buildingCategoriesData";
 
 export default function BuildingCategories() {
   return (
-    <section className="relative overflow-hidden bg-[#f7f5f0] py-12 sm:py-14 lg:py-16">
+    <section className="relative overflow-hidden bg-[#f7f5f0] px-5 py-24">
       {/* Decorative Background */}
       <div className="pointer-events-none absolute right-0 top-0 h-80 w-80 rounded-full bg-[#bd9143]/[0.035] blur-3xl" />
 
-      <div className="relative mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
+      <div className="relative mx-auto max-w-7xl">
 
         {/* Introduction */}
         <div className="mb-8 flex flex-col justify-between gap-5 lg:mb-9 lg:flex-row lg:items-end">
@@ -23,7 +23,7 @@ export default function BuildingCategories() {
             <h2 className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Creating Spaces.
               <br />
-              <span className="font-light italic text-[#bd9143]">
+              <span className="italic text-[#bd9143]">
                 Building Possibilities.
               </span>
             </h2>

@@ -15,7 +15,7 @@ const serviceImages: Record<string, string> = {
 export default function ServicesSection() {
   return (
     <section
-      className="relative overflow-hidden bg-[#f7f5f0] px-5 py-20 sm:px-8 lg:px-12 lg:py-24"
+      className="relative overflow-hidden bg-[#f7f5f0] px-5 py-20"
       id="services"
     >
       <div className="mx-auto max-w-7xl">
@@ -27,18 +27,15 @@ export default function ServicesSection() {
             <div className="mb-5 flex items-center gap-3">
               <span className="h-px w-9 bg-[#bd9143]" />
               <span className="text-[11px] font-semibold uppercase tracking-[0.22em] text-[#bd9143]">
-                Our Expertise
-              </span>
-              <span className="text-[10px] tracking-widest text-[#172b3a]/35">
-                / 01—06
+                What we do
               </span>
             </div>
 
             <h2 className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
-              Built around
+              Our Dedicated
               <br />
-              <span className="font-normal italic text-[#bd9143]">
-                your vision.
+              <span className="italic text-[#bd9143]">
+                Services.
               </span>
             </h2>
           </div>
