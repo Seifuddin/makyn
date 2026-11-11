@@ -31,9 +31,9 @@ export default function BlogHero() {
             </span>
           </div>
 
-          <h1 className="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="text-4xl font-serif font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
             Ideas That Shape
-            <span className="block text-[#d5b16b]">
+            <span className="block italic text-[#d5b16b]">
               What We Build.
             </span>
           </h1>

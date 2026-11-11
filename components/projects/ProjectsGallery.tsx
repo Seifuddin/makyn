@@ -153,7 +153,7 @@ export default function ProjectsGallery() {
 
         {/* Compact Load More button */}
         {hasMore && (
-          <div className="mt-7 flex justify-center">
+          <div className="hidden mt-7 flex justify-center">
             <button
               type="button"
               onClick={() =>

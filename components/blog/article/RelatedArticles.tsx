@@ -27,7 +27,7 @@ export default function RelatedArticles({
             Continue Exploring
           </span>
 
-          <h2 className="mt-2 text-2xl font-bold text-[#172b3a] md:text-3xl">
+          <h2 className="mt-2 font-serif text-2xl font-bold text-[#172b3a] md:text-3xl">
             Related Articles
           </h2>
         </div>
@@ -75,7 +75,7 @@ export default function RelatedArticles({
                   {article.readTime}
                 </span>
 
-                <h3 className="mt-3 text-lg font-bold leading-snug text-[#172b3a] transition-colors group-hover:text-[#bd9143]">
+                <h3 className="mt-3 font-serif text-lg font-bold leading-snug text-[#172b3a] transition-colors group-hover:text-[#bd9143]">
                   <Link href={`/blog/${article.slug}`}>
                     {article.title}
                   </Link>

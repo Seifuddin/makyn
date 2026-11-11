@@ -32,7 +32,7 @@ export default function LatestArticles({
               Explore our journal
             </span>
 
-            <h2 className="text-3xl font-semibold tracking-tight text-[#172b3a] sm:text-4xl">
+            <h2 className="text-3xl font-serif font-semibold tracking-tight text-[#172b3a] sm:text-4xl">
               Latest Articles
             </h2>
 
@@ -83,7 +83,7 @@ export default function LatestArticles({
                     <span>{article.readTime}</span>
                   </div>
 
-                  <h3 className="text-xl font-semibold leading-snug text-[#172b3a] transition-colors group-hover:text-[#bd9143]">
+                  <h3 className="text-xl font-serif font-semibold leading-snug text-[#172b3a] transition-colors group-hover:text-[#bd9143]">
                     <Link href={`/blog/${article.slug}`}>
                       {article.title}
                     </Link>

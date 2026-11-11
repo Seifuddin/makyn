@@ -28,7 +28,7 @@ export default function BlogPage() {
         activeCategory={activeCategory}
       />
 
-      <BlogKnowledge />
+    
 
 
     </main>

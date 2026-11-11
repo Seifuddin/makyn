@@ -22,9 +22,9 @@ export default function BlogKnowledge() {
               </span>
             </div>
 
-            <h2 className="text-2xl font-bold leading-tight tracking-tight text-white sm:text-3xl md:text-4xl">
+            <h2 className="text-2xl font-serif font-bold leading-tight tracking-tight text-white sm:text-3xl md:text-4xl">
               Every Great Structure
-              <span className="block text-[#d5b16b]">
+              <span className="block italic text-[#d5b16b]">
                 Begins With Knowledge.
               </span>
             </h2>

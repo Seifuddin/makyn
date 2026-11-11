@@ -142,7 +142,7 @@ function ArticleContent({ slug }: { slug: string }) {
       </section>
 
       {/* Consultation CTA */}
-      <ArticleCTA />
+      
 
     </main>
   );

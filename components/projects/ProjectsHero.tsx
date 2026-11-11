@@ -22,20 +22,21 @@ export default function ProjectsHero() {
           <div className="mb-6 flex items-center gap-3">
             <span className="h-px w-10 bg-[#D5B16B]" />
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#D5B16B] sm:text-sm">
-              Our Portfolio
+              The Build Guide
             </p>
           </div>
 
-          <h1 className="max-w-4xl text-4xl font-medium leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Built with purpose.
-            <span className="mt-2 block font-light text-[#D5B16B]">
-              Made to last.
+          <h1 className="max-w-4xl text-4xl font-semibold font-serif leading-[1.08] tracking-tight text-white sm:text-6xl lg:text-7xl">
+            Everything You Need To Know
+            <span className="mt-2 italic block font-normal text-[#D5B16B]">
+              Before You Build...
             </span>
           </h1>
 
           <p className="mt-6 max-w-xl text-sm leading-7 text-white/75 sm:text-base sm:leading-8">
-            Explore the work, craftsmanship and attention to detail
-            behind the projects we undertake at Makyn Construction.
+            Practical construction advice, cost, insights,
+            planning resources and professional guidance to 
+            help you make informed decisions at every stage of your building journey.
           </p>
 
           <div className="mt-9 flex flex-wrap items-center gap-5">

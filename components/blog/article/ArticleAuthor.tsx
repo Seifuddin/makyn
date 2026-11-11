@@ -29,7 +29,7 @@ export default function ArticleAuthor({
             About the Author
           </span>
 
-          <h3 className="mt-1 text-lg font-bold text-[#172b3a]">
+          <h3 className="mt-1 font-serif text-lg font-bold text-[#172b3a]">
             {name}
           </h3>
 

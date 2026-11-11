@@ -50,7 +50,7 @@ export default function ArticleHero({
         </span>
 
         {/* Title */}
-        <h1 className="mt-6 max-w-4xl text-3xl font-bold leading-tight tracking-tight text-[#172b3a] sm:text-4xl md:text-5xl lg:text-[58px]">
+        <h1 className="mt-6 font-serif max-w-4xl text-3xl font-bold leading-tight tracking-tight text-[#172b3a] sm:text-4xl md:text-5xl lg:text-[58px]">
           {title}
         </h1>
 

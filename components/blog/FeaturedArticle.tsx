@@ -15,7 +15,7 @@ export default function FeaturedArticle() {
         <div className="mb-6 flex items-center gap-3">
           <span className="h-px w-9 bg-[#bd9143]" />
 
-          <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#bd9143]">
+          <span className="text-xs font-serif font-bold uppercase tracking-[0.25em] text-[#bd9143]">
             Editor's Pick
           </span>
         </div>
@@ -39,7 +39,7 @@ export default function FeaturedArticle() {
 
             <div className="absolute inset-0 bg-gradient-to-t from-[#172b3a]/40 to-transparent" />
 
-            <span className="absolute bottom-5 left-5 bg-[#bd9143] px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#172b3a]">
+            <span className="absolute font-serif bottom-5 left-5 bg-[#bd9143] px-4 py-2 text-[10px] font-bold uppercase tracking-[0.2em] text-[#172b3a]">
               Featured Story
             </span>
           </Link>
@@ -59,7 +59,7 @@ export default function FeaturedArticle() {
               <span>{article.readTime}</span>
             </div>
 
-            <h2 className="max-w-xl text-3xl font-semibold leading-tight tracking-tight text-[#172b3a] sm:text-4xl lg:text-[42px]">
+            <h2 className="max-w-xl font-serif text-2xl font-semibold leading-tight tracking-tight text-[#172b3a] smtext-3xl lg:text-[37px]">
               {article.title}
             </h2>
 
@@ -70,7 +70,7 @@ export default function FeaturedArticle() {
             <div className="mt-8">
               <Link
                 href={`/blog/${article.slug}`}
-                className="inline-flex items-center gap-3 bg-[#172b3a] px-6 py-4 text-xs font-bold uppercase tracking-wider text-white transition-all duration-300 hover:bg-[#bd9143] hover:text-[#172b3a]"
+                className="inline-flex items-center gap-3 px-6 py-4 text-xs font-bold uppercase tracking-wider transition-all duration-300 bg-[#bd9143] text-[#172b3a]"
               >
                 Explore This Story
 

@@ -56,7 +56,7 @@ export default function ArticleTableOfContents({
           On This Page
         </span>
 
-        <h3 className="mt-2 text-lg font-bold text-[#172b3a]">
+        <h3 className="mt-2 font-serif text-lg font-bold text-[#172b3a]">
           Table of Contents
         </h3>
       </div>

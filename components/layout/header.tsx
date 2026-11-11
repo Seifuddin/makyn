@@ -7,7 +7,7 @@ const navigation = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-lab" },
   { label: "Our Services", href: "/services" },
-  { label: "Projects", href: "/projects" },
+  { label: "Build Guide", href: "/projects" },
   { label: "Gallery", href: "/gallery" },
   { label: "Blog", href: "/blog" },
   { label: "Contact", href: "/contact" },

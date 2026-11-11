@@ -22,15 +22,15 @@ export default function ProjectsIntro() {
         <div className="grid gap-7 lg:grid-cols-[1.15fr_0.85fr] lg:items-end lg:gap-16">
           <div>
             <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-[#98702F]">
-              Our Selected Projects
+              Getting Started
             </p>
 
-            <h2 className="max-w-3xl text-4xl font-medium leading-[1.08] tracking-[-0.045em] text-[#172B3A] sm:text-5xl lg:text-6xl">
-              Ideas shaped.
+            <h2 className="max-w-3xl font-serif text-4xl font-semibold leading-[1.08] tracking-[-0.045em] text-[#172B3A] sm:text-5xl lg:text-6xl">
+              Detailed Explanations.
               <br />
 
-              <span className="font-normal text-[#BD9143]">
-                Structures built.
+              <span className="font-normal italic text-[#BD9143]">
+                Of Every Service.
               </span>
             </h2>
           </div>
@@ -52,7 +52,7 @@ export default function ProjectsIntro() {
             <div className="mt-5 flex items-center gap-3">
               <span className="h-px w-8 bg-[#BD9143]" />
 
-              <p className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[#172B3A] sm:text-xs">
+              <p className="hidden text-[10px] font-semibold uppercase tracking-[0.16em] text-[#172B3A] sm:text-xs">
                 Explore our work
               </p>
 

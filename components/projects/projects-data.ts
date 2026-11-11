@@ -13,7 +13,7 @@ export const projects: Project[] = [
     slug: "residential-building",
     title: "Building Construction",
     category: "Building Construction",
-    description: "Add the verified project description here.",
+    description: "Thoughtfully executed construction solutions, from foundations to the finishing touches.",
     image: "/images/projects/homes.jpg",
   },
   {
@@ -21,7 +21,7 @@ export const projects: Project[] = [
     slug: "renovations",
     title: "Renovations",
     category: "Renovations",
-    description: "Add the verified project description here.",
+    description: "Transforming existing spaces into modern, functional and beautifully finished environments.",
     image: "/images/projects/finishing.jpeg",
   },
   {
@@ -29,7 +29,7 @@ export const projects: Project[] = [
     slug: "architecture",
     title: "Architecture",
     category: "Architecture",
-    description: "Add the verified project description here.",
+    description: "Creative architectural designs and detailed drawings that transform your vision into practical, functional and beautifully planned spaces.",
     image: "/images/projects/Architecture.jpeg",
   },
   {
@@ -37,7 +37,7 @@ export const projects: Project[] = [
     slug: "masonry",
     title: "Masonry",
     category: "Masonry",
-    description: "Add the verified project description here.",
+    description: "Quality masonry and skilled carpentry delivered with precision and attention to detail.",
     image: "/images/projects/construction.jpg",
   },
   {
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     slug: "roofing",
     title: "Roofing and Ceilings",
     category: "Roofing",
-    description: "Add the verified project description here.",
+    description: "Reliable roofing and ceiling installations designed for durability and a refined finish.",
     image: "/images/projects/roofingceiling.jpg",
   },
   {
@@ -53,7 +53,7 @@ export const projects: Project[] = [
     slug: "painting",
     title: "Painting and Finishings",
     category: "Paintings",
-    description: "Add the verified project description here.",
+    description: "Professional finishing that brings character, consistency and a polished look to every space.",
     image: "/images/projects/painting.jpeg",
   },
 ];

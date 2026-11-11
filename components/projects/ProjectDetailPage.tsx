@@ -39,7 +39,7 @@ export default function ProjectDetailPage({
               </p>
             </div>
 
-            <h1 className="text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
+            <h1 className="text-4xl font-semibold font-serif leading-[1.08] tracking-tight sm:text-5xl lg:text-6xl">
               {detail.headline}
             </h1>
 
@@ -66,7 +66,7 @@ export default function ProjectDetailPage({
             </div>
           </div>
 
-          <div className="hidden border-l border-white/25 pl-6 lg:block">
+          <div className="hidden border-l border-white/25 pl-6 lgblock">
             <p className="text-[10px] uppercase tracking-[0.2em] text-white/60">
               Makyn Construction
             </p>
@@ -105,7 +105,7 @@ export default function ProjectDetailPage({
               Understanding the Service
             </p>
 
-            <h2 className="max-w-md text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
+            <h2 className="max-w-md text-3xl font-semibold font-serif leading-tight tracking-tight sm:text-4xl">
               Work that starts with a clear plan.
             </h2>
 
@@ -149,7 +149,7 @@ export default function ProjectDetailPage({
               From Planning to Completion
             </p>
 
-            <h2 className="text-3xl font-semibold leading-tight sm:text-4xl">
+            <h2 className="text-3xl font-serif font-semibold leading-tight sm:text-4xl">
               How the work is carried out.
             </h2>
 
@@ -170,7 +170,7 @@ export default function ProjectDetailPage({
                   STEP {String(index + 1).padStart(2, "0")}
                 </p>
 
-                <h3 className="mt-3 text-base font-semibold leading-snug">
+                <h3 className="mt-3 text-base font-serif font-semibold leading-snug">
                   {step.title}
                 </h3>
 
@@ -214,7 +214,7 @@ export default function ProjectDetailPage({
               Budget Planning
             </p>
 
-            <h2 className="text-3xl font-semibold leading-tight sm:text-4xl">
+            <h2 className="text-3xl font-serif font-semibold leading-tight sm:text-4xl">
               {detail.priceHeading}
             </h2>
 
@@ -226,11 +226,11 @@ export default function ProjectDetailPage({
 
           {/* Right column: pricing information */}
           <div className="border border-[#172B3A]/15 bg-white/60 p-5 sm:p-7 lg:p-8">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#98702F]">
+            <p className="text-[10px]  font-semibold uppercase tracking-[0.2em] text-[#98702F]">
               Indicative price guide
             </p>
 
-            <p className="mt-3 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">
+            <p className="mt-3 text-3xl font-serif font-extrabold leading-tight tracking-tight sm:text-4xl">
               {detail.priceRange}
             </p>
 
@@ -240,7 +240,7 @@ export default function ProjectDetailPage({
 
             <div className="my-6 h-px bg-[#172B3A]/15" />
 
-            <h3 className="text-base font-semibold">
+            <h3 className="text-base font-serif font-semibold">
               What affects the cost?
             </h3>
 
@@ -280,7 +280,7 @@ export default function ProjectDetailPage({
                 Visual Details
               </p>
 
-              <h2 className="text-3xl font-semibold leading-tight sm:text-4xl">
+              <h2 className="text-3xl font-serif font-semibold leading-tight sm:text-4xl">
                 Explore the work.
               </h2>
             </div>
@@ -311,7 +311,7 @@ export default function ProjectDetailPage({
                     className="object-cover transition-transform duration-500 group-hover:scale-105"
                   />
 
-                  <span className="absolute bottom-3 left-3 bg-[#172B3A]/85 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.15em] text-white">
+                  <span className="hidden absolute bottom-3 left-3 bg-[#172B3A]/85 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.15em] text-white">
                     Detail {String(index + 1).padStart(2, "0")}
                   </span>
                 </div>
@@ -334,7 +334,7 @@ export default function ProjectDetailPage({
               Common Questions
             </p>
 
-            <h2 className="text-3xl font-semibold leading-tight sm:text-4xl">
+            <h2 className="text-3xl font-serif font-semibold leading-tight sm:text-4xl">
               Before you get started.
             </h2>
 
@@ -348,7 +348,7 @@ export default function ProjectDetailPage({
           <div className="divide-y divide-[#172B3A]/15 border-t border-[#172B3A]/15">
             {detail.faqs.map((faq) => (
               <details key={faq.question} className="group py-5">
-                <summary className="flex cursor-pointer list-none items-center justify-between gap-5 text-sm font-semibold leading-6 sm:text-base">
+                <summary className="flex font-serif cursor-pointer list-none items-center justify-between gap-5 text-sm font-semibold leading-6 sm:text-base">
                   <span>{faq.question}</span>
 
                   <span
@@ -369,7 +369,7 @@ export default function ProjectDetailPage({
       </section>
 
       {/* Final call to action */}
-      <section className="bg-[#172B3A] px-5 py-12 text-white sm:px-8 sm:py-14 lg:px-12">
+      <section className="hidden bg-[#172B3A] px-5 py-12 text-white sm:px-8 sm:py-14 lg:px-12">
         <div className="mx-auto flex max-w-7xl flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div className="max-w-2xl">
             <p className="mb-3 text-[10px] font-semibold uppercase tracking-[0.22em] text-[#D5B16B]">

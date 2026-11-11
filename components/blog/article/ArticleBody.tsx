@@ -14,6 +14,7 @@ export default function ArticleBody({
         min-w-0 w-full max-w-none
         text-[#172b3a]/80
         [&_h2]:mb-5
+        [&_h2]:font-serif
         [&_h2]:mt-12
         [&_h2]:scroll-mt-28
         [&_h2]:text-2xl
@@ -22,6 +23,7 @@ export default function ArticleBody({
         [&_h2]:tracking-tight
         [&_h2]:text-[#172b3a]
         [&_h3]:mb-3
+        [&_h3]:font-serif
         [&_h3]:mt-8
         [&_h3]:text-xl
         [&_h3]:font-bold
