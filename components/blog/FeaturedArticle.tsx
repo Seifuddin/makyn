@@ -15,7 +15,7 @@ export default function FeaturedArticle() {
         <div className="mb-6 flex items-center gap-3">
           <span className="h-px w-9 bg-[#bd9143]" />
 
-          <span className="text-xs font-serif font-bold uppercase tracking-[0.25em] text-[#bd9143]">
+          <span className="text-xs font-bold uppercase tracking-[0.25em] text-[#bd9143]">
             Editor's Pick
           </span>
         </div>

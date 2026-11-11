@@ -25,7 +25,7 @@ export const blogArticles: BlogArticle[] = [
   category: "Construction Knowledge",
   description:
     "Building a home is a major investment. Discover ten common construction mistakes that can lead to unnecessary expenses, delays and structural problems, and learn how to avoid them.",
-  image: "/images/services/buildingconstruction.webp",
+  image: "/images/blog/mistakes.jpg",
   author: "Makyn Construction",
   date: "November 1, 2026",
   readTime: "9 min read",
@@ -444,7 +444,7 @@ export const blogArticles: BlogArticle[] = [
   category: "Construction Knowledge",
   description:
     "Discover the different types of building foundations, what influences their selection, and why proper ground assessment is essential before construction begins.",
-  image: "/images/services/buildingconstruction.webp",
+  image: "/images/blog/foundation.jpg",
   author: "Makyn Construction",
   date: "November 1, 2026",
   readTime: "7 min read",
@@ -699,7 +699,7 @@ export const blogArticles: BlogArticle[] = [
   category: "Construction Knowledge",
   description:
     "Planning to build your dream home in Kenya? Understand the major stages of construction, from acquiring land and preparing drawings to finishing and final handover.",
-  image: "/images/services/buildingconstruction.webp",
+  image: "/images/blog/house.jpg",
   author: "Makyn Construction",
   date: "November 1, 2026",
   readTime: "9 min read",
@@ -1084,7 +1084,7 @@ export const blogArticles: BlogArticle[] = [
   category: "Architecture & Design",
   description:
     "Explore modern architectural ideas for Kenyan homes, from contemporary facades and open-plan layouts to natural lighting, outdoor spaces and practical design choices.",
-  image: "/images/about.avif",
+  image: "/images/blog/modern.jpeg",
   author: "Makyn Construction",
   date: "November 1, 2026",
   readTime: "8 min read",
@@ -1255,7 +1255,7 @@ export const blogArticles: BlogArticle[] = [
   category: "Architecture & Design",
   description:
     "Discover why architectural drawings matter, what they communicate, how they support construction planning and why professional design coordination can prevent costly mistakes.",
-  image: "/images/services/buildingconstruction.webp",
+  image: "/images/blog/drawings.jpeg",
   author: "Makyn Construction",
   date: "November 1, 2026",
   readTime: "7 min read",
@@ -1423,7 +1423,7 @@ export const blogArticles: BlogArticle[] = [
   category: "Home Improvement",
   description:
     "Planning to renovate your home? Learn how to assess your property, prioritise improvements, prepare a budget and coordinate renovation work effectively.",
-  image: "/images/services/renovations.webp",
+  image: "/images/blog/statehouse.jpeg",
   author: "Makyn Construction",
   date: "November 1, 2026",
   readTime: "7 min read",
@@ -1580,7 +1580,7 @@ export const blogArticles: BlogArticle[] = [
   category: "Home Improvement",
   description:
     "Discover practical ways to improve your kitchen and bathroom through better layouts, durable materials, lighting, ventilation and functional fittings.",
-  image: "/images/services/renovations.webp",
+  image: "/images/blog/kichen.jpg",
   author: "Makyn Construction",
   date: "November 1, 2026",
   readTime: "6 min read",
@@ -1735,7 +1735,7 @@ export const blogArticles: BlogArticle[] = [
   category: "Building Costs & Planning",
   description:
     "Learn about the major factors affecting building costs in Kenya, including design, materials, labour, site conditions, professional fees and project management.",
-  image: "/images/services/buildingconstruction.webp",
+  image: "/images/blog/cost.webp",
   author: "Makyn Construction",
   date: "November 1, 2026",
   readTime: "8 min read",
@@ -1905,7 +1905,7 @@ export const blogArticles: BlogArticle[] = [
   category: "Building Costs & Planning",
   description:
     "A practical guide to preparing for construction, covering project objectives, land assessment, design, approvals, budgeting, contractor selection and scheduling.",
-  image: "/images/services/buildingconstruction.webp",
+  image: "/images/blog/before.jpeg",
   author: "Makyn Construction",
   date: "November 1, 2026",
   readTime: "7 min read",
@@ -2074,7 +2074,7 @@ export const blogArticles: BlogArticle[] = [
   category: "Projects & Inspiration",
   description:
     "Follow the journey of a building project from the first design concept through site preparation, structural works, installations, finishing and final handover.",
-  image: "/images/services/buildingconstruction.webp",
+  image: "/images/blog/jane.jpeg",
   author: "Makyn Construction",
   date: "November 1, 2026",
   readTime: "7 min read",
@@ -2235,7 +2235,7 @@ export const blogArticles: BlogArticle[] = [
   category: "Industry Insights",
   description:
     "Explore sustainable construction practices that can reduce waste, improve building efficiency, conserve resources and support more responsible development.",
-  image: "/images/services/ConstructionSolutions.jpg",
+  image: "/images/blog/afodabo.jpeg",
   author: "Makyn Construction",
   date: "November 1, 2026",
   readTime: "8 min read",
@@ -2391,7 +2391,7 @@ export const blogArticles: BlogArticle[] = [
   category: "Industry Insights",
   description:
     "Learn what to look for when hiring a construction contractor, including experience, qualifications, project documentation, quotations, communication and quality control.",
-  image: "/images/services/buildingconstruction.webp",
+  image: "/images/blog/contracta.jpeg",
   author: "Makyn Construction",
   date: "November 1, 2026",
   readTime: "7 min read",
