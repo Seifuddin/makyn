@@ -6,7 +6,7 @@ export default function ProjectsHero() {
   return (
     <section className="relative isolate flex min-h-[440px] items-end overflow-hidden bg-[#172B3A] sm:min-h-[500px] lg:min-h-[560px]">
       <Image
-        src="/images/projects/buildingconstruction.webp"
+        src="/images/hero.jpg"
         alt="Makyn Construction architectural portfolio"
         fill
         priority

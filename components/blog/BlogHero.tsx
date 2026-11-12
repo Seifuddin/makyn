@@ -8,7 +8,7 @@ export default function BlogHero() {
 
       {/* Background Image */}
       <Image
-        src="/images/services/buildingconstruction.webp"
+        src="/images/imageconstruction.jpeg"
         alt="Modern building construction"
         fill
         priority

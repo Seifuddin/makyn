@@ -14,7 +14,7 @@ export default function ServicesHero() {
     <section className="relative isolate w-full overflow-hidden bg-[#172b3a] text-[#f7f5f0]">
       {/* Full-width background image */}
       <Image
-        src="/images/services/buildingconstruction.webp"
+        src="/images/imageconstruction.jpeg"
         alt="Makyn construction and building development"
         fill
         priority

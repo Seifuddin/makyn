@@ -7,7 +7,7 @@ export default function AboutHero() {
     <section className="relative isolate w-full overflow-hidden bg-[#172b3a] text-[#f7f5f0]">
       {/* Background image */}
       <Image
-        src="/images/services/buildingconstruction.webp"
+        src="/images/imageconstruction.jpeg"
         alt="Contemporary construction and architectural design"
         fill
         priority
@@ -38,7 +38,7 @@ export default function AboutHero() {
 
           <h1 className="max-w-4xl font-serif text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Built on vision.
-            <span className="mt-1 block font-semibold italic text-[#d5b16b]">
+            <span className="mt-1 block font-normal italic text-[#d5b16b]">
               Defined by integrity.
             </span>
           </h1>
