@@ -50,7 +50,7 @@ export default function BuildingCategoryCard({
           </span>
         </div>
 
-        <h3 className="mb-1 text-xl font-semibold text-white sm:text-2xl">
+        <h3 className="mb-1 font-serif text-xl font-semibold text-white sm:text-2xl">
           {title}
         </h3>
 

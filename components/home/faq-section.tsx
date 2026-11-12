@@ -62,7 +62,7 @@ export default function FAQSection() {
               className="max-w-md font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]"
             >
               Good projects
-              <span className="block italic text-[#a77c35]">
+              <span className="block font-normal italic text-[#a77c35]">
                 start with clarity.
               </span>
             </h2>
@@ -118,7 +118,7 @@ export default function FAQSection() {
                       </span>
 
                       <span
-                        className={`flex-1 text-sm font-semibold leading-5 transition-colors sm:text-[15px] ${
+                        className={`flex-1 font-serif text-sm font-semibold leading-5 transition-colors sm:text-[15px] ${
                           isOpen
                             ? "text-[#98702f]"
                             : "text-[#172b3a] group-hover:text-[#98702f]"

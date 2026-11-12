@@ -23,7 +23,7 @@ export default function BuildingCategories() {
             <h2 className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Creating Spaces.
               <br />
-              <span className="italic text-[#bd9143]">
+              <span className="italic font-normal text-[#bd9143]">
                 Building Possibilities.
               </span>
             </h2>
@@ -51,7 +51,7 @@ export default function BuildingCategories() {
             BUILDING CATEGORIES
           </span>
 
-          <span className="text-[10px] font-medium text-[#bd9143]">
+          <span className="hidden text-[10px] font-medium text-[#bd9143]">
             08 PROJECT TYPES
           </span>
         </div>

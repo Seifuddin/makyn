@@ -121,7 +121,7 @@ export default function WhyChooseUs() {
               className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]"
             >
               Built on trust.
-              <span className="ml-2 italic text-[#bd9143]">
+              <span className="ml-2 italic font-normal text-[#bd9143]">
                 Defined by quality.
               </span>
             </h2>
@@ -211,7 +211,7 @@ export default function WhyChooseUs() {
                     </span>
                   </div>
 
-                  <h3 className="text-sm font-semibold leading-snug text-[#172b3a] sm:text-[15px]">
+                  <h3 className="text-sm font-serif font-semibold leading-snug text-[#172b3a] sm:text-[15px]">
                     {reason.title}
                   </h3>
 

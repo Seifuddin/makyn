@@ -34,7 +34,7 @@ export default function ServicesSection() {
             <h2 className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Our Dedicated
               <br />
-              <span className="italic text-[#bd9143]">
+              <span className="italic font-normal text-[#bd9143]">
                 Services.
               </span>
             </h2>
@@ -107,7 +107,7 @@ export default function ServicesSection() {
                 {/* Content */}
                 <div className="relative flex min-h-[154px] flex-col p-5 sm:p-6">
                   <div className="mb-3 flex items-start justify-between gap-3">
-                    <h3 className="max-w-[85%] text-[17px] font-semibold leading-snug tracking-tight text-[#172b3a]">
+                    <h3 className="max-w-[85%] text-[17px] font-serif font-semibold leading-snug tracking-tight text-[#172b3a]">
                       {service.title}
                     </h3>
                   </div>

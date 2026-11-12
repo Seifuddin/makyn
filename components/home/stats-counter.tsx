@@ -46,7 +46,7 @@ export default function StatsCounter() {
 
             <h2 className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Experience you can{" "}
-              <span className="italic text-[#d5b16b]">
+              <span className="italic font-normal text-[#d5b16b]">
                 build on.
               </span>
             </h2>

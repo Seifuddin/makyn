@@ -20,7 +20,7 @@ export default function CTASection() {
             <h2 className="font-serif text-3xl font-semibold leading-[1.15] tracking-tight sm:text-4xl lg:text-[48px]">
               Have something remarkable
               <br className="hidden sm:block" />
-              in mind<span className="text-[#dfba77]">?</span>
+              <span className="text-[#dfba77] font-normal italic"> in mind?</span>
             </h2>
 
             <p className="mt-4 max-w-xl text-sm leading-7 text-white/65 sm:text-base">

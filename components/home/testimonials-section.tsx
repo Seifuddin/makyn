@@ -39,7 +39,7 @@ export default function TestimonialsSection() {
             <div className="mb-4 flex items-center gap-3">
               <span className="h-px w-9 bg-[#bd9143]" />
               <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#98702f]">
-                Words That Matter
+                Clients Testimonials
               </span>
             </div>
 
@@ -90,7 +90,7 @@ export default function TestimonialsSection() {
                 </div>
 
                 <blockquote
-                  className={`font-serif leading-[1.55] tracking-[-0.015em] ${
+                  className={`fontserif leading-[1.55] tracking-[-0.015em] ${
                     index === 0
                       ? "text-xl sm:text-[22px]"
                       : "text-lg text-[#172b3a]/85"
@@ -106,7 +106,7 @@ export default function TestimonialsSection() {
                 <span className="h-px w-7 bg-[#bd9143]" />
 
                 <div>
-                  <p className="text-xs font-semibold text-[#172b3a]">
+                  <p className="text-xs font-serif font-semibold text-[#172b3a]">
                     {testimonial.name}
                   </p>
                   <p className="mt-1 text-[11px] text-[#172b3a]/55">

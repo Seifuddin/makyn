@@ -84,7 +84,7 @@ export default function IntroSection() {
               className="max-w-xl font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]"
             >
               We build more than structures.
-              <span className="mt-1 block italic text-[#a47d37]">
+              <span className="mt-1 block font-normal italic text-[#a47d37]">
                 We build confidence.
               </span>
             </h2>
