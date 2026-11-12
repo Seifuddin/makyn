@@ -1,55 +1,58 @@
 
-import ArrowIcon from "@/components/ui/arrow-icon";
+import Link from "next/link";
 
 export default function CTASection() {
   return (
-    <section
-      aria-labelledby="cta-heading"
-      className="relative overflow-hidden bg-[#172b3a] px-7 py-7 text-white sm:px-8 sm:py-8 lg:px-12"
-    >
-      {/* Subtle gold accent */}
-      <div
-        aria-hidden="true"
-        className="absolute left-0 top-0 h-full w-1 bg-[#bd9143]"
-      />
+    <section className="relative overflow-hidden bg-[#172b3a] text-white">
+      <div className="mx-auto max-w-7xl px-5 py-12 sm:px-10lg:px-16lg:py-14">
 
-      <div className="relative mx-auto flex max-w-6xl py-10 flex-col gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-8">
-        {/* CTA message */}
-        <div className="max-w-xl">
-          <p className="mb-2 text-[10px] font-bold tracking-[0.2em] text-[#d5b16b]">
-            LET&apos;S BUILD SOMETHING GREAT
-          </p>
+        <div className="flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
 
-          <h2
-            id="cta-heading"
-            className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]"
-          >
-            Planning your next project?
-          </h2>
+          {/* Content */}
+          <div className="max-w-2xl">
+            <div className="mb-5 flex items-center gap-3">
+              <span className="h-px w-9 bg-[#c99a45]" />
+              <span className="text-[10px] font-semibold uppercase tracking-[0.25em] text-[#dfba77]">
+                LET'S CREATE SOMETHING LASTING
+              </span>
+            </div>
 
-          <p className="mt-2 max-w-lg text-xs leading-5 text-white/65 sm:text-sm">
-            From new builds to renovations, let&apos;s discuss your vision
-            and take the next step together.
-          </p>
+            <h2 className="font-serif text-3xl font-semibold leading-[1.15] tracking-tight sm:text-4xl lg:text-[48px]">
+              Have something remarkable
+              <br className="hidden sm:block" />
+              in mind<span className="text-[#dfba77]">?</span>
+            </h2>
+
+            <p className="mt-4 max-w-xl text-sm leading-7 text-white/65 sm:text-base">
+              Every great structure begins with an idea.
+              Whether you're planning a new build, renovation
+              or architectural project, we're ready to help
+              turn your vision into something extraordinary.
+            </p>
+          </div>
+
+          {/* CTA Button */}
+          <div className="shrink-0 lg:pl-8">
+            <Link
+              href="/contact"
+              className="group inline-flex min-h-[58px] items-center justify-between gap-8 bg-[#c99a45] px-7 text-sm font-semibold text-[#172b3a] shadow-lg shadow-black/10 transition-all duration-300 hover:bg-[#dfba77] hover:shadow-xl"
+            >
+              <span>Start Your Project</span>
+
+              <span className="flex h-8 w-8 items-center justify-center rounded-full border border-[#172b3a]/25 text-lg transition-all duration-300 group-hover:translate-x-1 group-hover:bg-[#172b3a] group-hover:text-white">
+                ↗
+              </span>
+            </Link>
+
+            <p className="mt-3 text-right text-[10px] tracking-wide text-white/40">
+              Let's bring your vision to life.
+            </p>
+          </div>
         </div>
 
-        {/* CTA buttons */}
-        <div className="flex shrink-0 flex-wrap items-center gap-3">
-          <a
-            href="#contact"
-            className="inline-flex min-h-10 items-center justify-center gap-2 bg-[#bd9143] px-4 py-2.5 text-xs font-bold text-[#172b3a] transition-colors hover:bg-[#d5b16b]"
-          >
-            Get a Quotation
-            <ArrowIcon />
-          </a>
+        {/* Subtle finishing detail */}
+        <div className="mt-10 h-px w-full bg-gradient-to-r from-[#c99a45]/60 via-white/10 to-transparent" />
 
-          <a
-            href="#services"
-            className="inline-flex min-h-10 items-center justify-center border border-white/25 px-4 py-2.5 text-xs font-semibold text-white transition-colors hover:border-[#d5b16b] hover:text-[#d5b16b]"
-          >
-            Our Services
-          </a>
-        </div>
       </div>
     </section>
   );

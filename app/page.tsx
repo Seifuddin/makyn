@@ -31,8 +31,8 @@ export default function Home() {
       <WhyChooseUs />
       <CTASection />
       <FAQSection />
-      <TestimonialsSection />
       <BuildingCategories />
+      <TestimonialsSection />
       <FeaturedArticle />
     </main>
   );

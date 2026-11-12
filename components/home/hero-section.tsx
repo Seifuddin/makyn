@@ -1,105 +1,91 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import ArrowIcon from "@/components/ui/arrow-icon";
 
 export default function HeroSection() {
   return (
-    <section
-      id="home"
-      className="relative isolate w-full overflow-hidden bg-[#172b3a] text-[#f7f5f0]"
-    >
-      {/* Background image */}
-      <Image
-        src="/images/services/buildingconstruction.webp"
-        alt="Makyn construction and building development"
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover object-center"
-      />
+    <section className="relative isolate overflow-hidden bg-[#f7f5f0]">
+      <div className="relative mx-auto min-h-[560px] max-w-[1600px] lg:min-h-[590px]">
 
-      {/* Cinematic navy overlays */}
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 -z-0 bg-gradient-to-r from-[#101f2b]/95 via-[#172b3a]/80 to[#172b3a]/25"
-      />
-      <div
-        aria-hidden="true"
-        className="absolute inset-0 -z-0 bg-gradient-to-t from-[#101f2b]/80 via-transparent to[#101f2b]/20"
-      />
-
-      {/* Hero content */}
-      <div className="relative mx-auto flex min-h-[480px] w-full max-w-7xl flex-col justify-between px-5 pb-5 pt-24 sm:min-h-[500px] sm:pb-7 lg:min-h-[530px]">
-        <div className="flex items-center gap-3 text-[9px] font-semibold uppercase tracking-[0.2em] text-[#d5b16b] sm:text-[10px]">
-          <span className="h-px w-7 bg-[#d5b16b]" />
-          Built on trust. Defined by quality.
-        </div>
-
-        <div className="max-w-4xl py-9 pb-20 sm:py-11">
-          <p className="mb-3 text-[10px] font-medium uppercase tracking-[0.22em] text-white/65 sm:text-xs">
-            Your trusted construction partner
-          </p>
-
-          <h1 className="text-5xl font-serif font-extrabold leading-[0.98] tracking-tight md:text-6xl">
-            We build
-            <span className="block italic text-[#d5b16b]">
-              what matters.
-            </span>
-          </h1>
-
-          <div className="mt-5 flexflex-col gap-6 sm:mt-6 sm:flex-row sm:items-end sm:justify-between mb-10">
-            <p className="max-w-lg text-sm leading-6 text-white/75 sm:text-base sm:leading-7">
-              From the first foundation to the final finish, we bring your
-              construction vision to life with care, precision and purpose.
-            </p>
-
-            <div className="flex shrink-0 flex-wrap items-center gap-3 mt-7">
-              <Link
-                href="#contact"
-                className="group inline-flex items-center gap-3 bg-[#bd9143] px-5 py-3 text-xs font-semibold text-[#172b3a] transition-colors hover:bg-[#d5b16b] sm:text-sm"
-              >
-                Start Your Project
-                <span className="transition-transform duration-300 group-hover:translate-x-1">
-                  <ArrowIcon />
-                </span>
-              </Link>
-
-              <Link
-                href="#projects"
-                className="inline-flex items-center justify-center border border-white/35 px-5 py-3 text-xs font-semibold text-white transition-colors hover:border-[#d5b16b] hover:text-[#d5b16b] sm:text-sm"
-              >
-                Explore Our Work
-              </Link>
-            </div>
+        {/* Architectural image */}
+        <div className="absolute inset-y-0 right-0 w-full lg:w-[59%]">
+          <div className="absolute inset-0 lg:[clip-path:polygon(13%_0,100%_0,100%_100%,0_100%)]">
+            <Image
+              src="/images/services/buildingconstruction.webp"
+              alt="Modern architectural construction"
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 59vw"
+              className="object-cover object-center"
+            />
+            <div className="absolute inset-0 bg-[#101f2b]/35 lg:bg-gradient-to-r lg:from-[#101f2b]/45 lg:via-transparent lg:to-transparent" />
           </div>
         </div>
 
-        {/* Bottom information strip */}
-        <div className="hidden flex items-center justify-between gap-4 border-t border-white/20 pt-4">
-          <span className="text-[8px] font-medium uppercase tracking-[0.14em] text-white/60 sm:text-[10px] sm:tracking-[0.18em]">
-            Planning <span className="px-1 text-[#d5b16b]">/</span> Design
-            <span className="px-1 text-[#d5b16b]">/</span> Construction
-          </span>
+        {/* Content */}
+        <div className="relative z-10 flex min-h-[560px] items-center px-6 py-20 sm:px-10 lg:min-h-[590px] lg:px-16 xl:px-24">
 
-          <Link
-            href="#about"
-            className="group inline-flex shrink-0 items-center gap-2 text-[9px] font-semibold uppercase tracking-[0.14em] text-white/80 transition-colors hover:text-[#d5b16b] sm:text-[10px]"
-          >
-            Discover Makyn
-            <span className="text-[#d5b16b] transition-transform group-hover:translate-y-1">
-              ↓
-            </span>
-          </Link>
+          <div className="max-w-[650px] lg:w-[54%]">
+
+            <div className="mb-7 flex items-center gap-4">
+              <span className="h-px w-12 bg-[#c99a45]" />
+              <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#c99a45]">
+                MAKYN CONSTRUCTION COMPANY
+              </span>
+            </div>
+
+            <h1 className="font-serif text-[48px] font-bold leading-[1.05] tracking-[-0.04em] text-white sm:text-6xl lg:text-[70px]">
+              Spaces that
+              <br />
+              inspire.
+              <br />
+              <span className="text-[#b58a40] font-normal italic">
+                Structures that last.
+              </span>
+            </h1>
+
+            <p className="mt-7 max-w-[420px] text-sm leading-7 text-white sm:text-base">
+              Thoughtful design. Expert craftsmanship.
+              Lasting construction solutions built around
+              your vision.
+            </p>
+
+            
+<div className="mt-9 flex flex-wrap items-center gap-4">
+  <Link
+    href="/contact"
+    className="group inline-flex min-h-[52px] items-center justify-center gap-5 bg-[#c99a45] px-6 py-3 text-sm font-semibold text-[#172b3a] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#dfba77] hover:shadow-md"
+  >
+    Start a project
+    <span className="text-lg transition-transform duration-300 group-hover:translate-x-1">
+      ↗
+    </span>
+  </Link>
+
+  <Link
+    href="/projects"
+    className="group inline-flex min-h-[52px] items-center justify-center gap-4 border border-[#172b3a]/30 bg-[#f7f5f0]/80 px-6 py-3 text-sm font-semibold text-[#172b3a] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#172b3a] hover:bg-[#172b3a] hover:text-white"
+  >
+    Explore our work
+    <span className="text-base transition-transform duration-300 group-hover:translate-x-1">
+      →
+    </span>
+  </Link>
+</div>
+
+          </div>
         </div>
 
-        {/* Architectural index */}
-        <span
-          aria-hidden="true"
-          className="absolute right-5 top-1/2 hidden -translate-y-1/2 text-[10px] font-medium tracking-[0.25em] text-white/45 [writing-mode:vertical-rl] lg:block"
-        >
-          MAKYN / 001
-        </span>
+        {/* Image caption */}
+        <div className="absolute bottom-8 right-8 z-10 hidden items-center gap-3 lg:flex">
+          <span className="h-px w-9 bg-[#dfba77]" />
+          <span className="text-[9px] uppercase tracking-[0.24em] text-white">
+            Built with purpose
+          </span>
+        </div>
+
+        {/* Gold architectural detail */}
+        <div className="absolute bottom-0 left-0 h-[3px] w-28 bg-[#c99a45]" />
       </div>
     </section>
   );
