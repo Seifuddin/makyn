@@ -9,7 +9,7 @@ export default function HeroSection() {
         {/* Architectural image */}
         <div className="absolute inset-y-0 right-0 w-full lg:w-[59%]">
           <Image
-            src="/images/services/buildingconstruction.webp"
+            src="/images/hero.jpg"
             alt="Makyn Construction building project"
             fill
             priority

@@ -14,7 +14,7 @@ export default function CompanyStory() {
 
           <div className="relative aspect-[5/4] overflow-hidden bg-[#e5e0d5] sm:aspect-[4/3]">
             <Image
-              src="/images/about.avif"
+              src="/images/story.jpg"
               alt="Construction and renovation work"
               fill
               sizes="(max-width: 1024px) 90vw, 45vw"

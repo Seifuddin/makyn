@@ -73,7 +73,7 @@ export default function StatsCounter() {
                 <span className="h-1.5 w-1.5 rotate-45 border border-[#bd9143] transition-colors group-hover:bg-[#bd9143]" />
               </div>
 
-              <p className="text-3xl font-semibold leading-none tracking-tight text-[#d5b16b] sm:text-4xl">
+              <p className="text-3xl font-serif font-semibold leading-none tracking-tight text-[#d5b16b] sm:text-4xl">
                 {stat.number}
               </p>
 

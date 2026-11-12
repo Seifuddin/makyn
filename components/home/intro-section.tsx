@@ -47,7 +47,7 @@ export default function IntroSection() {
           <div className="relative min-w-0">
             <div className="relative aspect-[5/4] overflow-hidden bg-[#e8e3d9] sm:aspect-[4/3]">
               <Image
-                src="/images/about.avif"
+                src="/images/imageconstruction.jpeg"
                 alt="Construction project by Makyn Construction Company Limited"
                 fill
                 priority={false}

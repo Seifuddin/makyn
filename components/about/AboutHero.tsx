@@ -36,7 +36,7 @@ export default function AboutHero() {
             Your trusted construction partner
           </p>
 
-          <h1 className="max-w-4xl text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
+          <h1 className="max-w-4xl font-serif text-4xl font-bold leading-[1.08] tracking-tight sm:text-5xl md:text-6xl lg:text-7xl">
             Built on vision.
             <span className="mt-1 block font-semibold italic text-[#d5b16b]">
               Defined by integrity.

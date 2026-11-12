@@ -66,7 +66,7 @@ export default function MissionVisionValues() {
                 </span>
               </div>
 
-              <h3 className="text-lg font-bold tracking-tight sm:text-xl">
+              <h3 className="text-lg font-serif  font-bold tracking-tight sm:text-xl">
                 {item.title}
               </h3>
 

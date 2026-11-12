@@ -81,7 +81,7 @@ export default function FeaturedProjects() {
               </div>
 
               <div className="border-b border-[#172b3a]/15 py-5">
-                <h3 className="text-2xl font-medium">{project.title}</h3>
+                <h3 className="text-2xl font-serif font-medium">{project.title}</h3>
                 <p className="mt-3 text-sm leading-7 text-[#172b3a]/65">
                   {project.description}
                 </p>

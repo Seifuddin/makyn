@@ -102,7 +102,7 @@ export default function WhyMakyn() {
                   <span className="h-px w-8 bg-[#d5b16b]/50 transition-all duration-300 group-hover:w-12" />
                 </div>
 
-                <h3 className="text-xl font-medium tracking-tight transition-colors duration-300 group-hover:text-[#d5b16b]">
+                <h3 className="text-xl font-serif font-medium tracking-tight transition-colors duration-300 group-hover:text-[#d5b16b]">
                   {reason.title}
                 </h3>
 

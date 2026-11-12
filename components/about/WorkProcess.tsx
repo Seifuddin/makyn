@@ -28,11 +28,11 @@ const steps = [
 
 export default function WorkProcess() {
   return (
-    <section className="relative py-20 px-5 w-full overflow-hidden bg-[#172b3a] text-[#f7f5f0]">
+    <section className="relative py-14 px-5 w-full overflow-hidden bg-[#172b3a] text-[#f7f5f0]">
       {/* Full-width blueprint background */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute inset-0 opacity-[0.08]"
+        className="hidden pointer-events-none absolute inset-0 opacity-[0.08]"
         style={{
           backgroundImage:
             "linear-gradient(rgba(213,177,107,0.45) 1px, transparent 1px), linear-gradient(90deg, rgba(213,177,107,0.45) 1px, transparent 1px)",
@@ -41,7 +41,7 @@ export default function WorkProcess() {
       />
 
       {/* Centered content */}
-      <div className="relative mx-auto w-full max-w-7xl px5 py-8 smpx-8 sm:py-10 lg:px12 lg:py-12">
+      <div className="relative mx-auto w-full max-w-7xl px5 py-smpx-8 sm:py-10lg:px12lg:py-12">
         {/* Header */}
         <div className="flex flex-col gap-3 border-b border-white/15 pb-5 sm:flex-row sm:items-end sm:justify-between">
           <div>
@@ -66,7 +66,7 @@ export default function WorkProcess() {
         
     
         {/* Process stages */}
-        <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid mt-10 gap-3 sm:grid-cols-2 lg:grid-cols-4">
           {steps.map((step, index) => (
             <article
               key={step.number}
@@ -91,7 +91,7 @@ export default function WorkProcess() {
               </div>
 
               {/* Step content */}
-              <h3 className="text-base font-medium tracking-tight text-white transition-colors duration-300 group-hover:text-[#d5b16b] sm:text-lg">
+              <h3 className="text-base font-serif font-medium tracking-tight text-white transition-colors duration-300 group-hover:text-[#d5b16b] sm:text-lg">
                 {step.title}
               </h3>
 
