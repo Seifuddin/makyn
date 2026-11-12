@@ -434,7 +434,7 @@ export default function Gallery() {
               </span>
             </div>
 
-            <h2 className="text-3xl font-semibold tracking-tight text-[#172b3a] sm:text-4xl">
+            <h2 className="text-3xl font-serif font-semibold tracking-tight text-[#172b3a] sm:text-4xl">
               A closer look at
               <span className="ml-2 font-normal italic text-[#bd9143]">
                 our work.

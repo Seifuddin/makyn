@@ -50,7 +50,7 @@ export default function ProjectsHero() {
 
             <Link
               href="/contact"
-              className="group inline-flex items-center gap-3 text-sm font-medium text-white transition hover:text-[#D5B16B]"
+              className="inline-flex min-h-[52px] flex-1 items-center justify-center gap-2 whitespace-nowrap border border-[#172b3a]/30 bg-[#f7f5f0]/90 px-3 text-[11px] font-semibold text-[#172b3a] transition-all duration-300 hover:border-[#c99a45] hover:bg-white sm:flex-none sm:px-6 sm:text-xs"
             >
               Discuss a Project
               <span className="transition-transform group-hover:translate-x-1">

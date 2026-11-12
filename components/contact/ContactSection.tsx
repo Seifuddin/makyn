@@ -162,7 +162,7 @@ ${name}`
                 </div>
 
                 <div className="min-w-0">
-                  <p className="text-xs uppercase tracking-[0.15em] text-white/50">
+                  <p className="text-xs uppercase tracking-[0.15em] text-white/50 font-serif">
                     Email Us
                   </p>
                   <a
@@ -192,7 +192,7 @@ ${name}`
                 </div>
 
                 <div>
-                  <p className="text-xs uppercase tracking-[0.15em] text-white/50">
+                  <p className="text-xs uppercase tracking-[0.15em] text-white/50 font-serif">
                     Call Us
                   </p>
                   <p className="mt-2 text-sm font-medium text-white">
@@ -218,7 +218,7 @@ ${name}`
                 </div>
 
                 <div>
-                  <p className="text-xs uppercase tracking-[0.15em] text-white/50">
+                  <p className="text-xs uppercase tracking-[0.15em] text-white/50 font-serif">
                     Our Location
                   </p>
                   <p className="mt-2 text-sm font-medium text-white">
@@ -245,7 +245,7 @@ ${name}`
                 <p className="text-xs font-semibold uppercase tracking-[0.2em] text-[#94702F]">
                   Project Enquiry
                 </p>
-                <h3 className="mt-3 text-2xl font-semibold text-[#172B3A] sm:text-3xl">
+                <h3 className="mt-3 font-serif text-2xl font-semibold text-[#172B3A] sm:text-3xl">
                   Tell us about your project.
                 </h3>
               </div>
@@ -261,7 +261,7 @@ ${name}`
                 <div>
                   <label
                     htmlFor="contact-name"
-                    className="mb-1 block text-xs font-semibold text-[#172B3A]"
+                    className="mb-1 block text-xs font-semibold text-[#172B3A] font-serif"
                   >
                     Full Name <span className="text-[#BD9143]">*</span>
                   </label>
@@ -279,7 +279,7 @@ ${name}`
                 <div>
                   <label
                     htmlFor="contact-email"
-                    className="mb-1 block text-xs font-semibold text-[#172B3A]"
+                    className="mb-1 block text-xs font-semibold text-[#172B3A] font-serif"
                   >
                     Email Address <span className="text-[#BD9143]">*</span>
                   </label>
@@ -300,7 +300,7 @@ ${name}`
                 <div>
                   <label
                     htmlFor="contact-phone"
-                    className="mb-1 block text-xs font-semibold text-[#172B3A]"
+                    className="mb-1 block text-xs font-semibold text-[#172B3A] font-serif"
                   >
                     Phone Number <span className="text-[#BD9143]">*</span>
                   </label>
@@ -318,7 +318,7 @@ ${name}`
                 <div>
                   <label
                     htmlFor="contact-service"
-                    className="mb-1 block text-xs font-semibold text-[#172B3A]"
+                    className="mb-1 block text-xs font-semibold text-[#172B3A] font-serif"
                   >
                     Service Required <span className="text-[#BD9143]">*</span>
                   </label>
@@ -345,7 +345,7 @@ ${name}`
               <div>
                 <label
                   htmlFor="contact-budget"
-                  className="mb-1 block text-xs font-semibold text-[#172B3A]"
+                  className="mb-1 block text-xs font-semibold text-[#172B3A] font-serif"
                 >
                   Estimated Budget
                   <span className="ml-2 font-normal text-[#172B3A]/45">
@@ -379,7 +379,7 @@ ${name}`
               <div>
                 <label
                   htmlFor="contact-message"
-                  className="mb-1 block text-xs font-semibold text-[#172B3A]"
+                  className="mb-1 block text-xs font-semibold text-[#172B3A] font-serif"
                 >
                   Tell Us About Your Project{" "}
                   <span className="text-[#BD9143]">*</span>

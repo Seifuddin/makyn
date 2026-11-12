@@ -100,7 +100,7 @@ export default function CategoryPageTemplate({
               </span>
             </div>
 
-            <h1 className="max-w-3xl text-4xl font-medium leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-[66px]">
+            <h1 className="max-w-3xl text-4xl font-serif font-semibold leading-[1.08] tracking-tight text-white sm:text-5xl lg:text-[66px]">
               {category.title}
             </h1>
 
@@ -112,11 +112,11 @@ export default function CategoryPageTemplate({
               {category.description}
             </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-8 flex flex-row items-center gap-3 sm:gap-4">
 
               <Link
                 href="/contact"
-                className="group inline-flex items-center gap-4 bg-[#bd9143] px-6 py-4 text-[10px] font-semibold uppercase tracking-[0.16em] text-white transition-colors hover:bg-[#a77d35]"
+                className="inline-flex min-h-[52px] flex-1 items-center justify-center gap-2 whitespace-nowrap bg-[#c99a45] px-3 text-[11px] font-semibold text-[#172b3a] transition-colors duration-300 hover:bg-[#dfba77] sm:flex-none sm:px-6 sm:text-xs"
               >
                 Discuss Your Project
 
@@ -127,7 +127,7 @@ export default function CategoryPageTemplate({
 
               <Link
                 href="#overview"
-                className="inline-flex items-center gap-3 border border-white/35 px-6 py-4 text-[10px] font-semibold uppercase tracking-[0.16em] text-white transition-all hover:border-[#d5b16b] hover:text-[#d5b16b]"
+                className="inline-flex min-h-[52px] flex-1 items-center justify-center gap-2 whitespace-nowrap border border-[#172b3a]/30 bg-[#f7f5f0]/90 px-3 text-[11px] font-semibold text-[#172b3a] transition-all duration-300 hover:border-[#c99a45] hover:bg-white sm:flex-none sm:px-6 sm:text-xs"
               >
                 Discover More
 
@@ -198,10 +198,10 @@ export default function CategoryPageTemplate({
               </span>
             </div>
 
-            <h2 className="text-3xl font-medium leading-tight tracking-tight text-[#172b3a] sm:text-4xl lg:text-[45px]">
+            <h2 className="text-3xl font-semibold font-serif leading-tight tracking-tight text-[#172b3a] sm:text-4xl lg:text-[45px]">
               Building with
               <br />
-              <span className="font-light italic text-[#bd9143]">
+              <span className="font-normal italic text-[#bd9143]">
                 purpose and precision.
               </span>
             </h2>
@@ -274,7 +274,7 @@ export default function CategoryPageTemplate({
                 </span>
               </div>
 
-              <h2 className="text-3xl font-medium tracking-tight text-[#172b3a] sm:text-4xl">
+              <h2 className="text-3xl font-serif font-semibold tracking-tight text-[#172b3a] sm:text-4xl">
                 What We Build
               </h2>
             </div>
@@ -307,7 +307,7 @@ export default function CategoryPageTemplate({
 
                 </div>
 
-                <h3 className="mt-7 text-sm font-medium leading-6 text-[#172b3a] transition-colors group-hover:text-white">
+                <h3 className="mt-7 text-sm font-serif font-medium leading-6 text-[#172b3a] transition-colors group-hover:text-white">
                   {example}
                 </h3>
 
@@ -337,9 +337,9 @@ export default function CategoryPageTemplate({
               </span>
             </div>
 
-            <h2 className="text-3xl font-medium leading-tight text-[#172b3a] sm:text-4xl">
+            <h2 className="text-3xl font-serif font-semibold leading-tight text-[#172b3a] sm:text-4xl">
               What Defines Our
-              <span className="font-light italic text-[#bd9143]">
+              <span className="font-normal italic text-[#bd9143]">
                 {" "}Construction Approach
               </span>
             </h2>
@@ -363,7 +363,7 @@ export default function CategoryPageTemplate({
 
                 </div>
 
-                <h3 className="mb-3 text-lg font-medium text-[#172b3a]">
+                <h3 className="mb-3 font-serif text-lg font-medium text-[#172b3a]">
                   {feature.title}
                 </h3>
 
@@ -387,7 +387,7 @@ export default function CategoryPageTemplate({
 
         {/* Blueprint Decoration */}
         <div
-          className="pointer-events-none absolute inset-0 opacity-[0.06]"
+          className="hidden pointer-events-none absolute inset-0 opacity-[0.06]"
           style={{
             backgroundImage:
               "linear-gradient(rgba(255,255,255,0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,0.5) 1px, transparent 1px)",
@@ -407,9 +407,9 @@ export default function CategoryPageTemplate({
               </span>
             </div>
 
-            <h2 className="text-3xl font-medium leading-tight text-white sm:text-4xl">
+            <h2 className="text-3xl font-serif font-semibold leading-tight text-white sm:text-4xl">
               From Vision to
-              <span className="font-light italic text-[#d5b16b]">
+              <span className="font-medium italic text-[#d5b16b]">
                 {" "}Reality.
               </span>
             </h2>
@@ -434,7 +434,7 @@ export default function CategoryPageTemplate({
 
                 <div className="my-5 h-px w-10 bg-[#bd9143]" />
 
-                <h3 className="mb-3 text-base font-medium text-white">
+                <h3 className="mb-3 font-serif text-base font-medium text-white">
                   {step.title}
                 </h3>
 
@@ -470,7 +470,7 @@ export default function CategoryPageTemplate({
                 </span>
               </div>
 
-              <h2 className="text-3xl font-medium text-[#172b3a] sm:text-4xl">
+              <h2 className="text-3xl font-serif font-semibold text-[#172b3a] sm:text-4xl">
                 Other Building Categories
               </h2>
             </div>
@@ -499,7 +499,7 @@ export default function CategoryPageTemplate({
                     {item.number}
                   </span>
 
-                  <span className="text-sm font-medium text-[#172b3a] transition-colors group-hover:text-white">
+                  <span className="text-sm font-serif font-medium text-[#172b3a] transition-colors group-hover:text-white">
                     {item.shortTitle}
                   </span>
 
@@ -521,7 +521,7 @@ export default function CategoryPageTemplate({
           FINAL CTA
       ========================================== */}
 
-      <section className="px-5 pb-16 sm:px-8 lg:px-12 lg:pb-20">
+      <section className="hidden px-5 pb-16 sm:px-8 lg:px-12 lg:pb-20">
 
         <div className="relative mx-auto max-w-[1440px] overflow-hidden bg-[#172b3a] px-7 py-12 sm:px-12 lg:px-16 lg:py-14">
 
