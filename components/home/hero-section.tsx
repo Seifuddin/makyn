@@ -6,86 +6,93 @@ export default function HeroSection() {
   return (
     <section className="relative isolate overflow-hidden bg-[#f7f5f0]">
       <div className="relative mx-auto min-h-[560px] max-w-[1600px] lg:min-h-[590px]">
-
         {/* Architectural image */}
         <div className="absolute inset-y-0 right-0 w-full lg:w-[59%]">
-          <div className="absolute inset-0 lg:[clip-path:polygon(13%_0,100%_0,100%_100%,0_100%)]">
-            <Image
-              src="/images/services/buildingconstruction.webp"
-              alt="Modern architectural construction"
-              fill
-              priority
-              sizes="(max-width: 1024px) 100vw, 59vw"
-              className="object-cover object-center"
-            />
-            <div className="absolute inset-0 bg-[#101f2b]/35 lg:bg-gradient-to-r lg:from-[#101f2b]/45 lg:via-transparent lg:to-transparent" />
+          <Image
+            src="/images/services/buildingconstruction.webp"
+            alt="Makyn Construction building project"
+            fill
+            priority
+            sizes="(max-width: 1024px) 100vw, 59vw"
+            className="object-cover object-center"
+          />
+
+          {/* Image overlay — subtle, preserving the photograph */}
+          <div className="absolute inset-0 bg-[#101f2b]/35" />
+
+          {/* Soft transition along the left edge */}
+          <div className="absolute inset-0 bg-gradient-to-r from-[#101f2b]/55 via-[#101f2b]/15 to-transparent lg:from-[#101f2b]/35 lg:via-transparent" />
+
+          <div className="absolute bottom-8 right-8 z-10 hidden items-center gap-3 text-white/90 sm:flex">
+            <span className="h-px w-10 bg-[#dfba77]" />
+            <span className="text-[10px] font-medium uppercase tracking-[0.25em]">
+              Built with purpose
+            </span>
           </div>
         </div>
+
+        {/* Original angled image edge */}
+        <div
+          className="absolute inset-y-0 right-0 z-[1] hidden w-[59%] bg-[#f7f5f0] lg:block"
+          style={{
+            clipPath: "polygon(0 0, 13% 0, 0 100%)",
+          }}
+        />
 
         {/* Content */}
-        <div className="relative z-10 flex min-h-[560px] items-center px-6 py-20 sm:px-10 lg:min-h-[590px] lg:px-16 xl:px-24">
+        <div className="relative z-10 flex min-h-[560px] items-center lg:min-h-[590px]">
+          <div className="w-full px-6 py-16 sm:px-10 lg:w-[48%] lg:px-16 lg:py-20">
+            <div className="max-w-[510px]">
+              <div className="mb-6 flex items-center gap-3">
+                <span className="h-[2px] w-10 bg-[#c99a45]" />
+                <p className="text-[10px] font-semibold uppercase tracking-[0.28em] text-[#a8792e]">
+                  MAKYN CONSTRUCTION COMPANY
+                </p>
+              </div>
 
-          <div className="max-w-[650px] lg:w-[54%]">
+              <h1 className="font-serif font-semibold text-[clamp(2.7rem,5vw,4.8rem)] leading-[1.04] tracking-[-0.045em] text-[#172b3a]">
+                Spaces that inspire.
+                <span className="mt-2 block font-normal italic text-[#bd9143]">
+                  Structures that last.
+                </span>
+              </h1>
 
-            <div className="mb-7 flex items-center gap-4">
-              <span className="h-px w-12 bg-[#c99a45]" />
-              <span className="text-[10px] font-semibold uppercase tracking-[0.3em] text-[#c99a45]">
-                MAKYN CONSTRUCTION COMPANY
-              </span>
+              <p className="mt-7 max-w-[420px] text-sm leading-7 text-[#53616a] sm:text-base">
+                From thoughtful designs to exceptional construction, we bring
+                your vision to life with quality, precision and lasting value.
+              </p>
+
+              {/* Buttons remain side by side, including on mobile */}
+              <div className="mt-9 flex flex-row items-center gap-3 sm:gap-4">
+                <Link
+                  href="/contact"
+                  className="inline-flex min-h-[52px] flex-1 items-center justify-center gap-2 whitespace-nowrap bg-[#c99a45] px-3 text-[11px] font-semibold text-[#172b3a] transition-colors duration-300 hover:bg-[#dfba77] sm:flex-none sm:px-6 sm:text-xs"
+                >
+                  Start a Project
+                  <span aria-hidden="true">↗</span>
+                </Link>
+
+                <Link
+                  href="/projects"
+                  className="inline-flex min-h-[52px] flex-1 items-center justify-center gap-2 whitespace-nowrap border border-[#172b3a]/30 bg-[#f7f5f0]/90 px-3 text-[11px] font-semibold text-[#172b3a] transition-all duration-300 hover:border-[#c99a45] hover:bg-white sm:flex-none sm:px-6 sm:text-xs"
+                >
+                  Explore Projects
+                  <span aria-hidden="true">↗</span>
+                </Link>
+              </div>
+
+              <div className="mt-12 flex items-center gap-4">
+                <span className="h-px w-12 bg-[#c99a45]" />
+                <span className="text-[10px] uppercase tracking-[0.2em] text-[#778087]">
+                  Building with purpose. Delivering with excellence.
+                </span>
+              </div>
             </div>
-
-            <h1 className="font-serif text-[48px] font-bold leading-[1.05] tracking-[-0.04em] text-white sm:text-6xl lg:text-[70px]">
-              Spaces that
-              <br />
-              inspire.
-              <br />
-              <span className="text-[#b58a40] font-normal italic">
-                Structures that last.
-              </span>
-            </h1>
-
-            <p className="mt-7 max-w-[420px] text-sm leading-7 text-white sm:text-base">
-              Thoughtful design. Expert craftsmanship.
-              Lasting construction solutions built around
-              your vision.
-            </p>
-
-            
-<div className="mt-9 flex flex-wrap items-center gap-4">
-  <Link
-    href="/contact"
-    className="group inline-flex min-h-[52px] items-center justify-center gap-5 bg-[#c99a45] px-6 py-3 text-sm font-semibold text-[#172b3a] shadow-sm transition-all duration-300 hover:-translate-y-0.5 hover:bg-[#dfba77] hover:shadow-md"
-  >
-    Start a project
-    <span className="text-lg transition-transform duration-300 group-hover:translate-x-1">
-      ↗
-    </span>
-  </Link>
-
-  <Link
-    href="/projects"
-    className="group inline-flex min-h-[52px] items-center justify-center gap-4 border border-[#172b3a]/30 bg-[#f7f5f0]/80 px-6 py-3 text-sm font-semibold text-[#172b3a] transition-all duration-300 hover:-translate-y-0.5 hover:border-[#172b3a] hover:bg-[#172b3a] hover:text-white"
-  >
-    Explore our work
-    <span className="text-base transition-transform duration-300 group-hover:translate-x-1">
-      →
-    </span>
-  </Link>
-</div>
-
           </div>
-        </div>
-
-        {/* Image caption */}
-        <div className="absolute bottom-8 right-8 z-10 hidden items-center gap-3 lg:flex">
-          <span className="h-px w-9 bg-[#dfba77]" />
-          <span className="text-[9px] uppercase tracking-[0.24em] text-white">
-            Built with purpose
-          </span>
         </div>
 
         {/* Gold architectural detail */}
-        <div className="absolute bottom-0 left-0 h-[3px] w-28 bg-[#c99a45]" />
+        <div className="absolute bottom-0 left-0 z-20 h-[3px] w-28 bg-[#c99a45]" />
       </div>
     </section>
   );
