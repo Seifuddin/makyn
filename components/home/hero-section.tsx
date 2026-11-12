@@ -50,14 +50,14 @@ export default function HeroSection() {
                 </p>
               </div>
 
-              <h1 className="font-serif font-semibold text-[clamp(2.7rem,5vw,4.8rem)] leading-[1.04] tracking-[-0.045em] text-[#172b3a]">
+              <h1 className="font-serif font-semibold text-[clamp(2.7rem,5vw,4.8rem)] leading-[1.04] tracking-[-0.045em] text-white lg:text-[#172b3a]">
                 Spaces that inspire.
                 <span className="mt-2 block font-normal italic text-[#bd9143]">
                   Structures that last.
                 </span>
               </h1>
 
-              <p className="mt-7 max-w-[420px] text-sm leading-7 text-[#53616a] sm:text-base">
+              <p className="mt-7 max-w-[420px] text-sm leading-7 text-white lg:text-[#53616a] sm:text-base">
                 From thoughtful designs to exceptional construction, we bring
                 your vision to life with quality, precision and lasting value.
               </p>
@@ -83,7 +83,7 @@ export default function HeroSection() {
 
               <div className="mt-12 flex items-center gap-4">
                 <span className="h-px w-12 bg-[#c99a45]" />
-                <span className="text-[10px] uppercase tracking-[0.2em] text-[#778087]">
+                <span className="text-[10px] uppercase tracking-[0.2em] text-white lg:text-[#778087]">
                   Building with purpose. Delivering with excellence.
                 </span>
               </div>
