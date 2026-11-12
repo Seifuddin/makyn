@@ -139,7 +139,7 @@ export default function WhyChooseUs() {
           {/* Introduction image panel */}
           <div className="group relative min-h-[370px] overflow-hidden bg-[#172b3a] md:min-h-[400px] lg:min-h-[420px]">
             <Image
-              src="/images/beautifuldesign.jpg"
+              src="/images/Makynco/IMG-20261113-WA0069.jpg"
               alt="Modern building under construction"
               fill
               priority

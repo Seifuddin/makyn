@@ -60,7 +60,7 @@ export default function TeamSection() {
 
             <div className="relative aspect-[4/4.2] overflow-hidden bg-[#e5e0d5]">
               <Image
-                src="/images/markceo.jpg"
+                src="/images/Makynco/IMG-20261113-WA0071.jpg"
                 alt="Chief Executive Officer of Makyn Construction Company Limited"
                 fill
                 sizes="(max-width: 768px) 90vw, 35vw"
