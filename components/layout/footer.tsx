@@ -1,4 +1,7 @@
 
+import Image from "next/image";
+import Link from "next/link";
+
 const quickLinks = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about-lab" },
@@ -68,12 +71,10 @@ const socialLinks = [
     name: "LinkedIn",
     href: "https://www.linkedin.com/",
     icon: (
-      <>
-        <path
-          d="M5 8.5H2V21h3V8.5ZM3.5 3A1.8 1.8 0 1 0 3.5 6.6 1.8 1.8 0 0 0 3.5 3ZM22 13.2c0-3.8-2-5.5-4.6-5.5a4 4 0 0 0-3.6 2V8.5h-3V21h3v-6.2c0-1.6.3-3.2 2.3-3.2s2 1.9 2 3.3V21h3.1l.8-7.8Z"
-          fill="currentColor"
-        />
-      </>
+      <path
+        d="M5 8.5H2V21h3V8.5ZM3.5 3A1.8 1.8 0 1 0 3.5 6.6 1.8 1.8 0 0 0 3.5 3ZM22 13.2c0-3.8-2-5.5-4.6-5.5a4 4 0 0 0-3.6 2V8.5h-3V21h3v-6.2c0-1.6.3-3.2 2.3-3.2s2 1.9 2 3.3V21h3.1l.8-7.8Z"
+        fill="currentColor"
+      />
     ),
   },
   {
@@ -96,26 +97,14 @@ const socialLinks = [
   },
 ];
 
-function BrandMark() {
-  return (
-    <div
-      className="flex h-12 w-12 shrink-0 items-center justify-center border border-[#bd9143]/50 bg-[#bd9143]/10"
-      aria-hidden="true"
-    >
-      <svg viewBox="0 0 44 44" fill="none" className="h-10 w-10">
-        <path
-          d="M8 34V10H13L22 22L31 10H36V34H30V20L22 31L14 20V34H8Z"
-          fill="#d5b16b"
-        />
-        <path d="M7 38H37" stroke="#d5b16b" strokeWidth="1.5" />
-      </svg>
-    </div>
-  );
-}
-
 function FooterArrow() {
   return (
-    <svg viewBox="0 0 20 20" fill="none" className="h-4 w-4">
+    <svg
+      viewBox="0 0 20 20"
+      fill="none"
+      className="h-4 w-4"
+      aria-hidden="true"
+    >
       <path
         d="M4 10H16M10 4L16 10L10 16"
         stroke="currentColor"
@@ -130,100 +119,137 @@ function FooterArrow() {
 export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-[#0d1c27] text-white">
+
+      {/* Gold accent */}
       <div className="h-[3px] w-full bg-[#bd9143]" />
 
+      {/* Decorative background */}
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute -right-24 -top-28 h-80 w-80 rounded-full border border-white/[0.04] sm:h-96 sm:w-96"
+        className="pointer-events-none absolute -right-28 -top-28 h-96 w-96 rounded-full border border-white/[0.035]"
+      />
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute -right-16 -top-16 h-72 w-72 rounded-full border border-white/[0.035]"
       />
 
       <div className="relative mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12 xl:px-16">
-        <div className="grid grid-cols-1 gap-10 py-14 sm:grid-cols-2 lg:grid-cols-12 lg:gap-10 lg:py-16">
+
+        {/* Main footer content */}
+        <div className="grid grid-cols-1 gap-10 py-12 sm:grid-cols-2 sm:gap-x-12 lg:grid-cols-12 lg:gap-9 lg:py-14">
+
           {/* Brand */}
           <div className="lg:col-span-4">
-            <a href="/" className="inline-flex items-center gap-3">
-              <BrandMark />
-              <span>
-                <span className="block text-lg font-bold uppercase tracking-[0.13em]">
+
+            <Link
+              href="/"
+              aria-label="Makyn Construction Company Limited - Home"
+              className="group inline-flex items-center gap-4"
+            >
+              {/* Original company logo */}
+              <div className="flex h-[58px] w-[58px] shrink-0 items-center justify-center overflow-hidden rounded-sm bg-[#f7f5f0] p-1.5 transition-transform duration-500 group-hover:scale-105">
+                <Image
+                  src="/images/makyn-logo.jpg"
+                  alt="Makyn Construction Company Limited logo"
+                  width={120}
+                  height={120}
+                  className="h-full w-full object-contain"
+                />
+              </div>
+
+              <span className="flex flex-col">
+                <span className="text-[19px] font-bold uppercase leading-none tracking-[0.13em]">
                   MAKYN
                 </span>
-                <span className="mt-1 block text-[9px] uppercase tracking-[0.14em] text-white/55">
+
+                <span className="mt-2 text-[9px] font-medium uppercase tracking-[0.14em] text-white/55">
                   Construction Company Ltd.
                 </span>
               </span>
-            </a>
+            </Link>
 
-            <p className="mt-6 max-w-sm text-sm leading-7 text-white/60">
-              Building with purpose. Delivering with precision. We are
-              committed to quality workmanship and practical construction
-              solutions tailored to your vision.
+            <p className="mt-6 max-w-sm text-[13px] leading-[1.9] text-white/55">
+              Building with purpose. Delivering with precision.
+              We are committed to quality workmanship and practical
+              construction solutions tailored to your vision.
             </p>
 
             <div className="mt-6 flex items-center gap-3">
               <span className="h-px w-9 bg-[#bd9143]" />
-              <span className="text-[10px] font-semibold uppercase tracking-[0.16em] text-[#d5b16b]">
+
+              <span className="text-[9px] font-semibold uppercase tracking-[0.17em] text-[#d5b16b]">
                 Your trusted construction partner
               </span>
             </div>
+
           </div>
 
-          {/* Navigation */}
+          {/* Explore */}
           <div className="lg:col-span-2">
-            <h2 className="text-xs font-bold uppercase tracking-[0.16em]">
+
+            <h2 className="text-[11px] font-bold uppercase tracking-[0.17em]">
               Explore
             </h2>
-            <div className="mb-5 mt-3 h-[2px] w-8 bg-[#bd9143]" />
+
+            <div className="mb-6 mt-3 h-[2px] w-8 bg-[#bd9143]" />
 
             <ul className="space-y-3.5">
               {quickLinks.map((item) => (
                 <li key={item.label}>
-                  <a
+                  <Link
                     href={item.href}
-                    className="group inline-flex items-center gap-2 text-sm text-white/60 transition-colors hover:text-[#d5b16b]"
+                    className="group inline-flex items-center gap-2.5 text-[13px] text-white/55 transition-colors duration-300 hover:text-[#d5b16b]"
                   >
-                    <span className="h-px w-0 bg-[#bd9143] transition-all group-hover:w-3" />
+                    <span className="h-px w-0 shrink-0 bg-[#bd9143] transition-all duration-300 group-hover:w-3" />
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
+
           </div>
 
-          {/* Services */}
+          {/* Expertise */}
           <div className="lg:col-span-3">
-            <h2 className="text-xs font-bold uppercase tracking-[0.16em]">
+
+            <h2 className="text-[11px] font-bold uppercase tracking-[0.17em]">
               Our Expertise
             </h2>
-            <div className="mb-5 mt-3 h-[2px] w-8 bg-[#bd9143]" />
+
+            <div className="mb-6 mt-3 h-[2px] w-8 bg-[#bd9143]" />
 
             <ul className="space-y-3.5">
               {services.map((service) => (
                 <li key={service}>
-                  <a
+                  <Link
                     href="/services"
-                    className="group inline-flex items-center gap-2 text-sm text-white/60 transition-colors hover:text-[#d5b16b]"
+                    className="group flex items-center gap-2.5 text-[13px] text-white/55 transition-colors duration-300 hover:text-[#d5b16b]"
                   >
-                    <span className="text-[10px] text-[#bd9143]"></span>
+                    <span className="h-1 w-1 shrink-0 bg-[#bd9143] transition-all duration-300 group-hover:h-1.5 group-hover:w-1.5" />
                     {service}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
+
           </div>
 
-          {/* Social media and CTA */}
+          {/* Connect */}
           <div className="lg:col-span-3">
-            <h2 className="text-xs font-bold uppercase tracking-[0.16em]">
+
+            <h2 className="text-[11px] font-bold uppercase tracking-[0.17em]">
               Connect With Us
             </h2>
-            <div className="mb-5 mt-3 h-[2px] w-8 bg-[#bd9143]" />
 
-            <p className="max-w-xs text-sm leading-7 text-white/60">
-              Follow our journey, discover our work, and stay connected as we
-              build for the future.
+            <div className="mb-6 mt-3 h-[2px] w-8 bg-[#bd9143]" />
+
+            <p className="max-w-xs text-[13px] leading-[1.9] text-white/55">
+              Follow our journey, discover our work, and stay
+              connected as we build for the future.
             </p>
 
-            <div className="mt-6 flex flex-wrap gap-2.5">
+            {/* Social icons */}
+            <div className="mt-6 flex flex-wrap gap-2">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -232,12 +258,12 @@ export default function Footer() {
                   rel="noopener noreferrer"
                   aria-label={`Visit Makyn on ${social.name}`}
                   title={social.name}
-                  className="group flex h-11 w-11 items-center justify-center border border-white/15 bg-white/[0.03] text-white/65 transition-all duration-300 hover:-translate-y-1 hover:border-[#bd9143] hover:bg-[#bd9143] hover:text-[#122432] hover:shadow-lg hover:shadow-black/20"
+                  className="group flex h-10 w-10 items-center justify-center border border-white/10 bg-white/[0.025] text-white/60 transition-all duration-300 hover:-translate-y-1 hover:border-[#bd9143] hover:bg-[#bd9143] hover:text-[#122432]"
                 >
                   <svg
                     viewBox="0 0 24 24"
                     fill="none"
-                    className="h-[19px] w-[19px] transition-transform duration-300 group-hover:scale-110"
+                    className="h-[18px] w-[18px] transition-transform duration-300 group-hover:scale-110"
                     aria-hidden="true"
                   >
                     {social.icon}
@@ -246,40 +272,45 @@ export default function Footer() {
               ))}
             </div>
 
-            <p className="mt-3 text-[11px] text-white/40">
-              Facebook · Instagram · TikTok · LinkedIn · WhatsApp
+            <p className="mt-3 text-[10px] tracking-wide text-white/35">
+              Stay connected with Makyn.
             </p>
 
-            <a
+            {/* Quote CTA */}
+            <Link
               href="/contact"
-              className="group mt-6 inline-flex min-h-12 w-full max-w-[260px] items-center justify-between gap-4 bg-[#bd9143] px-5 py-3 text-xs font-bold uppercase tracking-[0.08em] text-[#122432] transition-colors hover:bg-[#d5b16b]"
+              className="group mt-6 inline-flex min-h-11 w-full max-w-[250px] items-center justify-between gap-4 bg-[#bd9143] px-5 py-3 text-[10px] font-bold uppercase tracking-[0.1em] text-[#122432] transition-all duration-300 hover:bg-[#d5b16b]"
             >
               Request a Quote
-              <span className="transition-transform group-hover:translate-x-1">
+
+              <span className="transition-transform duration-300 group-hover:translate-x-1">
                 <FooterArrow />
               </span>
-            </a>
+            </Link>
+
           </div>
         </div>
 
-       
-        {/* Copyright and designer credit */}
-        <div className="flex flex-col gap-3 border-t border-white/10 py-6 sm:flex-row sm: items-center sm:justify-between">
-          <p className="text-xs leading-6 text-white/45">
-            © 2026 Makyn Construction Company Limited. All rights reserved.
+        {/* Bottom bar */}
+        <div className="flex flex-col gap-3 border-t border-white/10 py-6 sm:flex-row sm:items-center sm:justify-between">
+
+          <p className="text-[11px] leading-6 text-white/40">
+            © 2026 Makyn Construction Company Limited.
+            All rights reserved.
           </p>
 
-          <p className="text-xs text-white/45">
+          <p className="text-[11px] text-white/40">
             Built and designed by{" "}
             <a
               href="https://lapsa.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-medium text-[#d5b16b] transition-colors duration-200 hover:text-white"
+              className="font-semibold text-[#d5b16b] transition-colors duration-300 hover:text-white"
             >
               Lapsa Web and Graphics
             </a>
           </p>
+
         </div>
 
       </div>

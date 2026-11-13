@@ -1,5 +1,9 @@
 
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
 import ArrowIcon from "@/components/ui/arrow-icon";
 import { services } from "@/components/data/home-data";
 
@@ -13,6 +17,10 @@ const serviceImages: Record<string, string> = {
 };
 
 export default function ServicesSection() {
+  const [selectedService, setSelectedService] = useState<
+    (typeof services)[number] | null
+  >(null);
+
   return (
     <section
       className="relative overflow-hidden bg-[#f7f5f0] px-5 py-20"
@@ -116,8 +124,27 @@ export default function ServicesSection() {
                     {service.description}
                   </p>
 
+                  {/* Action Buttons */}
+                  <div className="mt-5 flex w-full flex-nowrap items-center gap-2">
+                    <button
+                      type="button"
+                      onClick={() => setSelectedService(service)}
+                      className="flex min-w-0 flex-1 items-center justify-center px-2 py-2 text-[7px] font-semibold uppercase tracking-[0.08em] text-gray-900 transition-all duration-300 hoverborder-[#bd9143] bg-[#bd9143] textwhite sm:px-3 sm:text-[10px] sm:tracking-[0.12em]"
+                    >
+                      Quick View
+                    </button>
+
+                    <Link
+                      href="/services"
+                      className="flex min-w-0 flex-1 items-center justify-center gap-1 border border-[#172b3a]/20 px-2 py-2 text-[7px] font-semibold uppercase tracking-[0.08em] text-white transition-all duration-300 hover:bg-[#bd9143] sm:gap-2 sm:px-3 sm:text-[10px] sm:tracking-[0.12em]"
+                    >
+                      Explore Services
+                      <span aria-hidden="true">→</span>
+                    </Link>
+                  </div>
+
                   {/* Bottom accent */}
-                  <div className="mt-auto flex items-center justify-between pt-5">
+                  <div className="hidden mt-auto flex items-center justify-between pt-5">
                     <span className="text-[9px] font-semibold uppercase tracking-[0.18em] text-[#172b3a]/35">
                       Makyn Construction
                     </span>
@@ -129,8 +156,93 @@ export default function ServicesSection() {
             );
           })}
         </div>
-
       </div>
+
+      {/* Service Quick View Modal */}
+      {selectedService && (
+        <div
+          className="fixed inset-0 z-[100] flex items-center justify-center bg-[#101f2b]/80 px-4 py-6 backdrop-blur-sm"
+          onClick={() => setSelectedService(null)}
+          role="presentation"
+        >
+          <div
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="service-modal-title"
+            className="relative w-full max-w-xl overflow-hidden border border-white/20 bg-[#f7f5f0] shadow-2xl"
+            onClick={(event) => event.stopPropagation()}
+          >
+            {/* Modal Image */}
+            <div className="relative aspect-[16/8] w-full overflow-hidden bg-[#172b3a]/10">
+              {serviceImages[selectedService.title] && (
+                <Image
+                  src={serviceImages[selectedService.title]}
+                  alt={selectedService.title}
+                  fill
+                  sizes="(max-width: 640px) 100vw, 576px"
+                  className="object-cover"
+                />
+              )}
+
+              <div className="absolute inset-0 bg-gradient-to-t from-[#101f2b]/70 to-transparent" />
+
+              <span className="absolute bottom-4 left-5 text-xs font-semibold uppercase tracking-[0.2em] text-white">
+                {selectedService.number} / Our Services
+              </span>
+
+              {/* Close Button */}
+              <button
+                type="button"
+                onClick={() => setSelectedService(null)}
+                aria-label="Close service details"
+                className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center border border-white/50 bg-[#101f2b]/60 text-2xl leading-none text-white transition-colors hover:bg-[#bd9143]"
+              >
+                ×
+              </button>
+            </div>
+
+            {/* Modal Content */}
+            <div className="p-6 sm:p-8">
+              <div className="mb-4 flex items-center gap-3">
+                <span className="h-px w-8 bg-[#bd9143]" />
+                <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#bd9143]">
+                  Makyn Construction
+                </span>
+              </div>
+
+              <h3
+                id="service-modal-title"
+                className="font-serif text-2xl font-semibold leading-tight tracking-tight text-[#172b3a] sm:text-3xl"
+              >
+                {selectedService.title}
+              </h3>
+
+              <p className="mt-4 text-sm leading-7 text-[#172b3a]/70">
+                {selectedService.description}
+              </p>
+
+              <div className="mt-7 flex flex-nowrap gap-3">
+                <Link
+                  href="/services"
+                  onClick={() => setSelectedService(null)}
+                  className="flex flex-1 items-center justify-center gap-2 px-3 py-3 text-center text-[10px] font-semibold uppercase tracking-[0.1em] hover:text-white transition-colors bg-[#bd9143] sm:px-5"
+                >
+                  Explore Services
+                  <span aria-hidden="true">→</span>
+                </Link>
+
+                <button
+                  type="button"
+                  onClick={() => setSelectedService(null)}
+                  className="flex flex-1 items-center justify-center border border-[#172b3a]/20 px-3 py-3 text-[10px] font-semibold uppercase tracking-[0.1em] text-[#172b3a] transition-colors hover:border-[#bd9143] hover:text-[#bd9143] sm:px-5"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }

@@ -1,4 +1,6 @@
 
+import Link from "next/link";
+
 const testimonials = [
   {
     quote:
@@ -34,7 +36,6 @@ export default function TestimonialsSection() {
 
         {/* Section heading */}
         <div className="mb-12 flex flex-col justify-between gap-5 md:mb-14 md:flex-row md:items-end">
-
           <div>
             <div className="mb-4 flex items-center gap-3">
               <span className="h-px w-9 bg-[#bd9143]" />
@@ -45,11 +46,11 @@ export default function TestimonialsSection() {
 
             <h2
               id="testimonials-heading"
-              className="font-serif font-semibold text-4xl leading-[1.08] tracking-tight sm:text-5xl lg:text-[54px]"
+              className="font-serif text-4xl font-semibold leading-[1.08] tracking-tight sm:text-5xl lg:text-[54px]"
             >
               Built on trust.
               <br />
-              <span className="italic font-normal text-[#b28743]">
+              <span className="font-normal italic text-[#b28743]">
                 Remembered for quality.
               </span>
             </h2>
@@ -62,71 +63,71 @@ export default function TestimonialsSection() {
           </p>
         </div>
 
-        {/* Testimonials layout */}
-        <div className="grid gap-10 border-t border-[#172b3a]/15 pt-9 md:grid-cols-3 md:gap-0">
+        {/* Testimonial cards */}
+        <div className="grid gap-5 md:grid-cols-3">
+          {testimonials.map((testimonial) => (
+            
+<article
+  key={testimonial.number}
+  className="group relative flex min-h-[245px] flex-col justify-between overflow-hidden border border-[#172b3a]/10 bg-white/70 p-5 transition-all duration-500 hover:-translate-y-1 hover:border-[#bd9143]/50 hover:bg-white hover:shadow-[0_18px_45px_rgba(23,43,58,0.07)] sm:p-6"
+>
+  {/* Card top */}
+  <div>
+    <div className="mb-4 flex items-center justify-between">
+      <span className="text-[10px] font-semibold tracking-[0.22em] text-[#a77c35]">
+        TESTIMONIAL / {testimonial.number}
+      </span>
 
-          {testimonials.map((testimonial, index) => (
-            <article
-              key={testimonial.number}
-              className={`flex flex-col justify-between ${
-                index !== 0
-                  ? "border-t border-[#172b3a]/15 pt-8 md:border-l md:border-t-0 md:pl-8 md:pt-0 lg:pl-10"
-                  : "md:pr-9 lg:pr-12"
-              }`}
-            >
-              {/* Number and quote */}
-              <div>
-                <div className="mb-6 flex items-center justify-between">
-                  <span className="text-[10px] font-semibold tracking-[0.2em] text-[#a77c35]">
-                    {testimonial.number}
-                  </span>
+      <span
+        aria-hidden="true"
+        className="font-serif text-5xl leading-[0.7] text-[#bd9143]/50 transition-colors duration-500 group-hover:text-[#bd9143]"
+      >
+        “
+      </span>
+    </div>
 
-                  <span
-                    aria-hidden="true"
-                    className="font-serif text-5xl leading-none text-[#bd9143]/60"
-                  >
-                    “
-                  </span>
-                </div>
+    <blockquote className="font-serif text-base leading-[1.6] tracking-[-0.015em] text-[#172b3a]/85 sm:text-lg">
+      {testimonial.quote}
+      <span className="text-[#b28743]"> ”</span>
+    </blockquote>
+  </div>
 
-                <blockquote
-                  className={`fontserif leading-[1.55] tracking-[-0.015em] ${
-                    index === 0
-                      ? "text-xl sm:text-[22px]"
-                      : "text-lg text-[#172b3a]/85"
-                  }`}
-                >
-                  {testimonial.quote}
-                  <span className="text-[#b28743]"> ”</span>
-                </blockquote>
-              </div>
+  {/* Client information */}
+  <div className="mt-6 border-t border-[#172b3a]/10 pt-4">
+    <div className="flex items-center gap-3">
+      <span className="h-8 w-[3px] bg-[#bd9143] transition-all duration-500 group-hover:h-10" />
 
-              {/* Client information */}
-              <div className="mt-8 flex items-center gap-3">
-                <span className="h-px w-7 bg-[#bd9143]" />
+      <div>
+        <p className="font-serif text-sm font-semibold text-[#172b3a]">
+          {testimonial.name}
+        </p>
 
-                <div>
-                  <p className="text-xs font-serif font-semibold text-[#172b3a]">
-                    {testimonial.name}
-                  </p>
-                  <p className="mt-1 text-[11px] text-[#172b3a]/55">
-                    {testimonial.project}
-                  </p>
-                </div>
-              </div>
-            </article>
+        <p className="mt-1 text-[10px] font-medium uppercase tracking-[0.12em] text-[#172b3a]/50">
+          {testimonial.project}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  {/* Decorative number */}
+  <span
+    aria-hidden="true"
+    className="pointer-events-none absolute -bottom-6 -right-2 font-serif text-[90px] leading-none text-[#172b3a]/[0.025] transition-colors duration-500 group-hover:text-[#bd9143]/[0.07]"
+  >
+    {testimonial.number}
+  </span>
+</article>
+
           ))}
-
         </div>
 
         {/* Closing detail */}
         <div className="mt-12 flex flex-col gap-4 border-t border-[#172b3a]/15 pt-6 sm:flex-row sm:items-center sm:justify-between">
-
           <p className="font-serif text-lg italic text-[#172b3a]/75">
             Every project deserves exceptional care.
           </p>
 
-          <a
+          <Link
             href="/contact"
             className="group inline-flex w-fit items-center gap-3 text-xs font-semibold text-[#98702f] transition-colors hover:text-[#172b3a]"
           >
@@ -134,8 +135,7 @@ export default function TestimonialsSection() {
             <span className="text-base transition-transform duration-300 group-hover:translate-x-1">
               ↗
             </span>
-          </a>
-
+          </Link>
         </div>
       </div>
     </section>
