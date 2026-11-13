@@ -13,6 +13,181 @@ const galleryImages = [
     shape: "tall",
   },
   {
+    src: "/images/makyn/IMG_20260622_175627_897.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG_20260623_081821_506~2.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG_20260626_104623_454~2.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG_20260725_112308_706.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG_20260912_101424_064~2.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG_20260912_101728_429~2.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG_20260912_101815_403~2.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG_20260912_101818_989~2.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG_20260912_101853_617~2.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG_20261029_115509_734.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG_20261029_115511_034.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG_20261029_115528_547.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG-20260820-WA0011.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG-20261018-WA0044.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG-20261114-WA0001.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG-20261114-WA0002.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG-20261114-WA0003.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG-20261114-WA0004.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG-20261114-WA0005.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG-20261114-WA0006.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG-20261114-WA0007.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG-20261114-WA0008.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG-20261114-WA0009.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG-20261114-WA0010.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
+    src: "/images/makyn/IMG-20261114-WA0011.jpg",
+    title: "Building Construction",
+    category: "Construction",
+    description: "Quality construction from foundation to completion.",
+    shape: "tall",
+  },
+  {
     src: "/images/Makynco/IMG-20261113-WA0000.jpg",
     title: "Modern Architecture",
     category: "Residential",
@@ -858,13 +1033,13 @@ export default function Gallery() {
             </div>
 
             <div className="mt-4 text-center">
-              <p className="text-[10px] font-semibold uppercase tracking-widest text-[#d5b16b]">
+              <p className="hidden text-[10px] font-semibold uppercase tracking-widest text-[#d5b16b]">
                 {selectedImage.category}
               </p>
-              <h3 className="mt-1 text-lg font-semibold text-white">
+              <h3 className="hidden mt-1 text-lg font-semibold text-white">
                 {selectedImage.title}
               </h3>
-              <p className="mt-1 text-sm text-white/60">
+              <p className="hidden mt-1 text-sm text-white/60">
                 {selectedImage.description}
               </p>
             </div>

@@ -3,7 +3,7 @@
 
 import { useState, type FormEvent } from "react";
 
-const CONTACT_EMAIL = "makynconstruction@gmail.com"; // Replace with Makyn's real email
+const CONTACT_EMAIL = "makyn630@gmail.com"; // Replace with Makyn's real email
 
 const services = [
   "Building Construction",
@@ -196,7 +196,7 @@ ${name}`
                     Call Us
                   </p>
                   <p className="mt-2 text-sm font-medium text-white">
-                    +254 798 620 983
+                    +254 798 620 983 / +254 790 112 697
                   </p>
                 </div>
               </div>

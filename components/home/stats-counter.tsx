@@ -1,7 +1,7 @@
 
 const stats = [
   {
-    number: "25+",
+    number: "20+",
     label: "Projects Completed",
     description: "From initial plans to completed structures.",
     index: "01",
