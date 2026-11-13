@@ -164,7 +164,7 @@ export default function WhyChooseUs() {
                 Your trusted construction partner
               </p>
 
-              <h3 className="max-w-sm font-serif text-3xl font-medium leading-tight text-white">
+              <h3 className="max-w-sm font-serif text-lg font-medium leading-tight text-white">
                 We build more than structures.
                 <span className="block italic text-[#d5b16b]">
                   We build confidence.

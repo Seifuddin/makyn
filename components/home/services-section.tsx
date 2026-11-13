@@ -129,14 +129,14 @@ export default function ServicesSection() {
                     <button
                       type="button"
                       onClick={() => setSelectedService(service)}
-                      className="flex min-w-0 flex-1 items-center justify-center px-2 py-2 text-[7px] font-semibold uppercase tracking-[0.08em] text-gray-900 transition-all duration-300 hoverborder-[#bd9143] bg-[#bd9143] textwhite sm:px-3 sm:text-[10px] sm:tracking-[0.12em]"
+                      className="flex min-w-0 flex-1 items-center justify-center px-2 py-3 text-[9px] font-semibold uppercase tracking-[0.08em] text-gray-900 transition-all duration-300 hoverborder-[#bd9143] bg-[#bd9143] textwhite sm:px-3 sm:text-[10px] sm:tracking-[0.12em]"
                     >
                       Quick View
                     </button>
 
                     <Link
                       href="/services"
-                      className="flex min-w-0 flex-1 items-center justify-center gap-1 border border-[#172b3a]/20 px-2 py-2 text-[7px] font-semibold uppercase tracking-[0.08em] text-white transition-all duration-300 hover:bg-[#bd9143] sm:gap-2 sm:px-3 sm:text-[10px] sm:tracking-[0.12em]"
+                      className="flex min-w-0 flex-1 items-center justify-center gap-1 border border-[#172b3a]/20 px-2 py-3 text-[9px] font-semibold uppercase tracking-[0.08em] text-white transition-all duration-300 hover:bg-[#bd9143] sm:gap-2 sm:px-3 sm:text-[10px] sm:tracking-[0.12em]"
                     >
                       Explore Services
                       <span aria-hidden="true">→</span>
