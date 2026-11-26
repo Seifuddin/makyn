@@ -6,7 +6,7 @@ import { buildingCategories } from "@/components/building-categories/buildingCat
 import { projects } from "@/components/projects/projects-data";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://makynconstruction.co.ke";
+  const baseUrl = "https://www.makynconstruction.co.ke";
 
   const staticRoutes = [
     "",

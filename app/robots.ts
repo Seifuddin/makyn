@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://makynconstruction.co.ke/sitemap.xml",
+    sitemap: "https://www.makynconstruction.co.ke/sitemap.xml",
   };
 }
