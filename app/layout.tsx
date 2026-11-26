@@ -9,6 +9,7 @@ import WhatsAppButton from "@/components/home/WhatsApp";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+    
 });
 
 const geistMono = Geist_Mono({
@@ -17,28 +18,69 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-metadataBase: new URL("https://www.makyn.co.ke"),
+  metadataBase: new URL("https://makynconstruction.co.ke"),
+
   title: {
-    default: "Makyn Construction Company Limited",
+    default: "Makyn Construction Company Limited | Building Contractors in Kenya",
     template: "%s | Makyn Construction",
   },
+
   description:
-    "Makyn Construction Company Limited provides building construction, renovations, masonry, carpentry, roofing, ceiling installation, painting and finishing services.",
+    "Makyn Construction Company Limited is a construction company in Kenya providing building construction, renovations, masonry, carpentry, roofing, ceiling installation, painting and finishing services.",
+
   applicationName: "Makyn Construction Company Limited",
+
   keywords: [
     "Makyn Construction Company Limited",
+    "construction company in Kenya",
+    "building contractors in Kenya",
+    "construction company in Nairobi",
+    "house construction in Kenya",
     "building construction",
-    "construction services",
     "renovations and remodelling",
     "masonry and carpentry",
     "roofing and ceiling installation",
     "painting and finishing",
+    "residential construction",
+    "commercial construction",
   ],
+
+  authors: [
+    {
+      name: "Makyn Construction Company Limited",
+    },
+  ],
+
+  creator: "Makyn Construction Company Limited",
+
   openGraph: {
-    title: "Makyn Construction Company Limited",
-    description: "Your trusted construction partner.",
-    type: "website",
+    title:
+      "Makyn Construction Company Limited | Your Trusted Construction Partner",
+    description:
+      "Building with purpose, quality and commitment. Discover professional construction, renovation and finishing services from Makyn Construction Company Limited in Kenya.",
+    url: "https://makynconstruction.co.ke",
     siteName: "Makyn Construction Company Limited",
+    locale: "en_KE",
+    type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Makyn Construction Company Limited",
+    description:
+      "Your trusted construction partner. Quality building, renovation and construction solutions in Kenya.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
   },
 };
 
@@ -63,7 +105,7 @@ export default function RootLayout({
         {children}
         <WhatsAppButton />
         <Footer />
-        </body>
+      </body>
     </html>
   );
 }
