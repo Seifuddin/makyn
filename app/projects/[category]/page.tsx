@@ -32,6 +32,7 @@ export function generateStaticParams() {
 }
 
 // Generate metadata
+
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
@@ -41,30 +42,62 @@ export async function generateMetadata({
     (item) => item.slug === slug
   );
 
-  if (buildingCategory) {
-    return {
-      title: buildingCategory.title,
-      description: buildingCategory.description,
-    };
-  }
-
   const project = projects.find(
     (item) => item.slug === slug
   );
 
   const detail = projectDetails[slug];
 
-  if (!project || !detail) {
+  if (!buildingCategory && (!project || !detail)) {
     return {
       title: "Page Not Found",
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
   }
 
+  const title = buildingCategory
+    ? `${buildingCategory.title} | Makyn Construction`
+    : `${project!.title} | Makyn Construction`;
+
+  const description = buildingCategory
+    ? buildingCategory.description
+    : detail!.intro;
+
+  const pageUrl = `https://www.makynconstruction.co.ke/projects/${slug}`;
+
   return {
-    title: `${project.title} | Makyn Construction`,
-    description: detail.intro,
+    title,
+    description,
+
+    alternates: {
+      canonical: pageUrl,
+    },
+
+    openGraph: {
+      title,
+      description,
+      url: pageUrl,
+      siteName: "Makyn Construction Company Limited",
+      locale: "en_KE",
+      type: "website",
+    },
+
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+
+    robots: {
+      index: true,
+      follow: true,
+    },
   };
 }
+
 
 // Shared loading fallback
 function PageFallback() {

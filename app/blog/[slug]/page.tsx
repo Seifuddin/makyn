@@ -31,6 +31,7 @@ export function generateStaticParams() {
 }
 
 // Generate SEO metadata for each article
+
 export async function generateMetadata({
   params,
 }: PageProps): Promise<Metadata> {
@@ -41,16 +42,29 @@ export async function generateMetadata({
   if (!article) {
     return {
       title: "Article Not Found",
+      robots: {
+        index: false,
+        follow: false,
+      },
     };
   }
+
+  const articleUrl = `https://www.makynconstruction.co.ke/blog/${article.slug}`;
 
   return {
     title: article.title,
     description: article.description,
 
+    alternates: {
+      canonical: articleUrl,
+    },
+
     openGraph: {
       title: article.title,
       description: article.description,
+      url: articleUrl,
+      siteName: "Makyn Construction Company Limited",
+      locale: "en_KE",
       type: "article",
       publishedTime: new Date(article.date).toISOString(),
       images: [
@@ -61,11 +75,20 @@ export async function generateMetadata({
       ],
     },
 
-    alternates: {
-      canonical: `/blog/${article.slug}`,
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.description,
+      images: [article.image],
+    },
+
+    robots: {
+      index: true,
+      follow: true,
     },
   };
 }
+
 
 // Article page
 export default function ArticlePage({

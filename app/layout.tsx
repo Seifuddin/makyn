@@ -17,7 +17,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://makynconstruction.co.ke"),
+  metadataBase: new URL("https://www.makynconstruction.co.ke"),
 
   title: {
     default: "Makyn Construction Company Limited | Building Contractors in Kenya",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
       "Makyn Construction Company Limited | Your Trusted Construction Partner",
     description:
       "Building with purpose, quality and commitment. Discover professional construction, renovation and finishing services from Makyn Construction Company Limited in Kenya.",
-    url: "https://makynconstruction.co.ke",
+    url: "https://www.makynconstruction.co.ke",
     siteName: "Makyn Construction Company Limited",
     locale: "en_KE",
     type: "website",
