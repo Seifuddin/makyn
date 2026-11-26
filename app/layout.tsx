@@ -9,7 +9,6 @@ import WhatsAppButton from "@/components/home/WhatsApp";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
-    
 });
 
 const geistMono = Geist_Mono({
@@ -62,6 +61,14 @@ export const metadata: Metadata = {
     siteName: "Makyn Construction Company Limited",
     locale: "en_KE",
     type: "website",
+    images: [
+      {
+        url: "/images/projects/arcit.jpeg",
+        width: 738,
+        height: 415,
+        alt: "Construction project by Makyn Construction Company Limited",
+      },
+    ],
   },
 
   twitter: {
@@ -69,6 +76,7 @@ export const metadata: Metadata = {
     title: "Makyn Construction Company Limited",
     description:
       "Your trusted construction partner. Quality building, renovation and construction solutions in Kenya.",
+    images: ["/images/projects/arcit.jpeg"],
   },
 
   robots: {
