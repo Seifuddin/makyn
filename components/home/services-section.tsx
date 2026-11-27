@@ -8,12 +8,12 @@ import ArrowIcon from "@/components/ui/arrow-icon";
 import { services } from "@/components/data/home-data";
 
 const serviceImages: Record<string, string> = {
-  "Building Construction": "/images/services/buildingconstruction.webp",
-  "Renovations & Remodelling": "/images/services/renovations.webp",
-  "Masonry & Carpentry": "/images/services/masonry.jpg",
-  "Roofing & Ceilings": "/images/services/roofing.jpg",
-  "Painting & Finishing": "/images/services/painting.jpg",
-  "Construction Solutions": "/images/services/ConstructionSolutions.jpg",
+  "Building Construction": "/images/services/bconst.avif",
+  "Renovations & Remodelling": "/images/services/renovations.jpg",
+  "Masonry & Carpentry": "/images/services/masnry.jpg",
+  "Roofing & Ceilings": "/images/services/rufing.jpeg",
+  "Painting & Finishing": "/images/services/paint.jpg",
+  "Construction Solutions": "/images/services/sols.jpg",
 };
 
 export default function ServicesSection() {
@@ -72,7 +72,7 @@ export default function ServicesSection() {
             return (
               <article
                 key={service.number}
-                className="group relative min-w-0 overflow-hidden border border-[#172b3a]/10 bg-white transition-all duration-500 hover:-translate-y-1 hover:border-[#bd9143]/50 hover:shadow-[0_18px_45px_rgba(23,43,58,0.10)]"
+                className="group rounded-md relative min-w-0 overflow-hidden border border-[#172b3a]/10 bg-white transition-all duration-500 hover:-translate-y-1 hover:border-[#bd9143]/50 hover:shadow-[0_18px_45px_rgba(23,43,58,0.10)]"
               >
                 {/* Image */}
                 <div className="relative aspect-[16/9] w-full overflow-hidden bg-[#172b3a]/10">
@@ -129,14 +129,14 @@ export default function ServicesSection() {
                     <button
                       type="button"
                       onClick={() => setSelectedService(service)}
-                      className="flex min-w-0 flex-1 items-center justify-center px-2 py-3 text-[9px] font-semibold uppercase tracking-[0.08em] text-gray-900 transition-all duration-300 hoverborder-[#bd9143] bg-[#bd9143] textwhite sm:px-3 sm:text-[10px] sm:tracking-[0.12em]"
+                      className="flex min-w-0 rounded-md flex-1 items-center justify-center px-2 py-3 text-[9px] font-semibold uppercase tracking-[0.08em] text-gray-900 transition-all duration-300 hoverborder-[#bd9143] bg-[#bd9143] textwhite sm:px-3 sm:text-[10px] sm:tracking-[0.12em]"
                     >
                       Quick View
                     </button>
 
                     <Link
                       href="/services"
-                      className="flex min-w-0 flex-1 items-center justify-center gap-1 border border-[#172b3a]/20 px-2 py-3 text-[9px] font-semibold uppercase tracking-[0.08em] text-white transition-all duration-300 hover:bg-[#bd9143] sm:gap-2 sm:px-3 sm:text-[10px] sm:tracking-[0.12em]"
+                      className="flex min-w-0 rounded-md flex-1 items-center justify-center gap-1 border border-[#172b3a]/20 px-2 py-3 text-[9px] font-semibold uppercase tracking-[0.08em] text-white transition-all duration-300 hover:bg-[#bd9143] sm:gap-2 sm:px-3 sm:text-[10px] sm:tracking-[0.12em]"
                     >
                       Explore Services
                       <span aria-hidden="true">→</span>
