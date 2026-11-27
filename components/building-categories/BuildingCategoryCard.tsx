@@ -16,7 +16,6 @@ export default function BuildingCategoryCard({
   slug,
   number,
   title,
-  description,
   image,
   examples,
   size = "normal",
@@ -26,48 +25,53 @@ export default function BuildingCategoryCard({
   return (
     <Link
       href={`/projects/${slug}`}
-      className={`group relative isolate block h-full min-h-[280px] overflow-hidden bg-[#172b3a] ${
-  isLarge ? "min-h-[320px]" : "min-h-[280px]"
-}`}
+      className={`group relative rounded-md isolate block h-[190px] overflow-hidden bg-[#172b3a] sm:h-[210px] md:h-[225px] ${
+        isLarge ? "lg:h-[245px]" : "lg:h-[225px]"
+      }`}
     >
+      {/* Background Image */}
       <Image
         src={image}
         alt={title}
         fill
-        sizes="(max-width: 768px) 100vw, 50vw"
-        className="object-cover transition-transform duration-700 group-hover:scale-110"
+        sizes="(max-width: 640px) 50vw, (max-width: 1024px) 50vw, 33vw"
+        className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
       />
 
-      <div className="absolute inset-0 bg-gradient-to-t from-[#101f2b] via-[#172b3a]/45 to-transparent" />
+      {/* Image Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-t from-[#101f2b] via-[#172b3a]/45 to-[#172b3a]/10" />
 
-      <div className="absolute inset-0 border border-white/10 transition-colors duration-300 group-hover:border-[#d5b16b]/70" />
+      {/* Hover Border */}
+      <div className="absolute inset-0 border border-white/15 transition-colors duration-300 group-hover:border-[#d5b16b]/70" />
 
-      <div className="absolute inset-x-0 bottom-0 p-3 sm:p-4">
-        <div className="mb-3 flex items-center gap-3">
-          <span className="h-px w-8 bg-[#d5b16b]" />
-          <span className="text-xs font-semibold tracking-[0.2em] text-[#d5b16b]">
+      {/* Card Content */}
+      <div className="absolute inset-x-0 bottom-0 p-3 sm:p-3.5">
+
+        {/* Category Number */}
+        <div className="mb-1.5 flex items-center gap-2">
+          <span className="h-px w-5 bg-[#d5b16b]" />
+          <span className="text-[9px] font-semibold tracking-[0.18em] text-[#d5b16b]">
             {number}
           </span>
         </div>
 
-        <h3 className="mb-1 font-serif text-xl font-semibold text-white sm:text-2xl">
+        {/* Category Title */}
+        <h3 className="mb-1 line-clamp-2 font-serif text-[15px] leading-tight font-semibold text-white sm:text-lg">
           {title}
         </h3>
 
-        <p className="hidden mb-2 max-w-lg text-sm leading-relaxed text-white/75">
-          {description}
-        </p>
-
-        <p className="text-xs leading-relaxed text-white/55">
+        {/* Examples */}
+        <p className="line-clamp-1 text-[10px] leading-relaxed text-white/65 sm:text-[11px]">
           {examples.join(" · ")}
         </p>
 
-        <div className="mt-1 flex items-center justify-between">
-          <span className="text-xs font-semibold uppercase tracking-[0.16em] text-[#d5b16b]">
-            Explore category
+        {/* Explore Link */}
+        <div className="mt-2 flex items-center justify-between border-t border-white/20 pt-2">
+          <span className="text-[8px] font-semibold uppercase tracking-[0.13em] text-[#d5b16b] sm:text-[9px]">
+            Explore Category
           </span>
 
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-white/30 text-white transition-all duration-300 group-hover:border-[#d5b16b] group-hover:bg-[#bd9143]">
+          <span className="flex h-6 w-6 items-center justify-center rounded-full border border-white/35 text-xs text-white transition-all duration-300 group-hover:border-[#d5b16b] group-hover:bg-[#bd9143]">
             →
           </span>
         </div>

@@ -4,14 +4,14 @@ import { buildingCategories } from "./buildingCategoriesData";
 
 export default function BuildingCategories() {
   return (
-    <section className="relative overflow-hidden bg-[#f7f5f0] px-5 py-24">
+    <section className="relative overflow-hidden bg-[#f7f5f0] px-4 py-14 sm:px-5 sm:py-16 lg:py-20">
       {/* Decorative Background */}
-      <div className="pointer-events-none absolute right-0 top-0 h-80 w-80 rounded-full bg-[#bd9143]/[0.035] blur-3xl" />
+      <div className="pointer-events-none absolute right-0 top-0 h-72 w-72 rounded-full bg-[#bd9143]/[0.035] blur-3xl" />
 
       <div className="relative mx-auto max-w-7xl">
 
         {/* Introduction */}
-        <div className="mb-8 flex flex-col justify-between gap-5 lg:mb-9 lg:flex-row lg:items-end">
+        <div className="mb-7 flex flex-col justify-between gap-4 lg:mb-8 lg:flex-row lg:items-end">
           <div className="max-w-2xl">
             <div className="mb-4 flex items-center gap-3">
               <span className="h-px w-8 bg-[#bd9143]" />
@@ -23,7 +23,7 @@ export default function BuildingCategories() {
             <h2 className="font-serif text-3xl leading-[1.08] font-semibold tracking-[-0.04em] sm:text-4xl lg:text-[2.8rem]">
               Creating Spaces.
               <br />
-              <span className="italic font-normal text-[#bd9143]">
+              <span className="font-normal italic text-[#bd9143]">
                 Building Possibilities.
               </span>
             </h2>
@@ -46,7 +46,7 @@ export default function BuildingCategories() {
         </div>
 
         {/* Category Label */}
-        <div className="mb-4 flex items-center justify-between border-b border-[#172b3a]/15 pb-3">
+        <div className="mb-3 flex items-center justify-between border-b border-[#172b3a]/15 pb-2.5">
           <span className="text-[9px] font-semibold uppercase tracking-[0.2em] text-[#172b3a]/60">
             BUILDING CATEGORIES
           </span>
@@ -57,34 +57,34 @@ export default function BuildingCategories() {
         </div>
 
         {/* Categories Grid */}
-        <div className="grid grid-cols-1 gap-3 md:grid-cols-2 lg:grid-cols-6">
-          {buildingCategories.map((category, index) => (
-            <div
-              key={category.slug}
-              className={
-                index < 2
-                  ? "md:col-span-1 lg:col-span-3"
-                  : "md:col-span-1 lg:col-span-2"
-              }
-            >
-              <BuildingCategoryCard
-                slug={category.slug}
-                number={category.number}
-                title={category.title}
-                description={category.description}
-                image={category.image}
-                examples={category.examples}
-                size={index < 2 ? "large" : "normal"}
-              />
-            </div>
-          ))}
-        </div>
+       <div className="grid grid-cols-2 gap-2 sm:gap-3 md:grid-cols-2 lg:grid-cols-6">
+  {buildingCategories.map((category, index) => (
+    <div
+      key={category.slug}
+      className={
+        index < 2
+          ? "col-span-1 lg:col-span-3"
+          : "col-span-1 lg:col-span-2"
+      }
+    >
+      <BuildingCategoryCard
+        slug={category.slug}
+        number={category.number}
+        title={category.title}
+        description={category.description}
+        image={category.image}
+        examples={category.examples}
+        size={index < 2 ? "large" : "normal"}
+      />
+    </div>
+  ))}
+</div>
 
         {/* Compact CTA */}
-        <div className="hidden relative mt-8 overflow-hidden bg-[#172b3a] px-6 py-7 sm:px-8 lg:mt-10 lg:px-10">
+        <div className="relative mt-7 hidden overflow-hidden bg-[#172b3a] px-6 py-6 sm:px-8 lg:mt-9 lg:px-10">
           <div className="absolute -right-12 -top-20 h-52 w-52 rounded-full border border-[#d5b16b]/15" />
 
-          <div className="relative flex flex-col justify-between gap-5 sm:flex-row sm:items-center">
+          <div className="relative flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
             <div className="max-w-xl">
               <span className="mb-2 block text-[9px] font-semibold uppercase tracking-[0.23em] text-[#d5b16b]">
                 YOUR NEXT PROJECT STARTS HERE
@@ -111,6 +111,7 @@ export default function BuildingCategories() {
             </a>
           </div>
         </div>
+
       </div>
     </section>
   );
